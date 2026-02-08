@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <title>Food Trainer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overscroll-behavior: none;
+        }
+
+        .trainer-container {
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .screen {
+            display: none;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .screen.active {
+            display: flex;
+        }
+
+        .progress-container {
+            background: rgba(245, 158, 11, 0.15);
+            border-radius: 9999px;
+            overflow: hidden;
+            height: 8px;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+            transition: width 0.4s ease-out;
+            height: 100%;
+            border-radius: 9999px;
+        }
+
+        .question-card {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .answer-reveal {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            transition: all 0.2s;
+            min-height: 56px;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            transition: all 0.2s;
+            min-height: 56px;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            transition: all 0.2s;
+            min-height: 56px;
+        }
+
+        .filter-btn {
+            transition: all 0.2s;
+            min-height: 44px;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .swipe-left {
+            transform: translateX(-120%) rotate(-8deg);
+            opacity: 0.3;
+            transition: all 0.3s ease-out;
+        }
+
+        .swipe-right {
+            transform: translateX(120%) rotate(8deg);
+            opacity: 0.3;
+            transition: all 0.3s ease-out;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+            }
+        }
+
+        .info-btn {
+            animation: pulse-ring 2s ease-out infinite;
+        }
+
+        @keyframes celebrate {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .celebrate-emoji {
+            animation: celebrate 0.6s ease-in-out infinite;
+        }
+
+        .modal-backdrop {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+    <script src="data/loader.js"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+    <div class="trainer-container">
+        <!-- SETUP SCREEN -->
+        <div id="setupScreen" class="screen active p-4">
+            <div class="text-center py-4">
+                <a href="index.html" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-3">
+                    <span class="text-xl">←</span>
+                    <span class="text-sm font-medium">Home</span>
+                </a>
+                <h1 class="text-3xl font-bold text-amber-400 mb-1">🎓 Food Trainer</h1>
+                <p class="text-gray-400 text-sm">Scott's Richmond</p>
+            </div>
+
+            <div class="flex-1 flex flex-col justify-center">
+                <div class="mb-6">
+                    <h2 class="text-lg font-semibold text-center mb-3">Select Category</h2>
+                    <div id="categorySelect" class="flex flex-wrap justify-center gap-2"></div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-lg font-semibold text-center mb-3">Question Type</h2>
+                    <div id="typeSelect" class="flex flex-wrap justify-center gap-2">
+                        <button data-type="mix"
+                            class="filter-btn active bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">🎲
+                            Mix</button>
+                        <button data-type="description"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">📝
+                            Description</button>
+                        <button data-type="wine"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">🍷
+                            Wine</button>
+                        <button data-type="glossary"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">📖
+                            Glossary</button>
+                        <button data-type="allergens"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">⚠️
+                            Allergens</button>
+                        <button data-type="kitchenMep"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">🍳 Kitchen
+                            MEP</button>
+                        <button data-type="serviceMep"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">🍽️ Service
+                            MEP</button>
+                        <button data-type="reverse"
+                            class="filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium">🔮 Name
+                            It</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-6">
+                <div id="sessionInfo" class="text-center text-gray-400 text-sm mb-3"></div>
+                <button id="startSessionBtn"
+                    class="btn-primary w-full text-white py-4 rounded-xl font-bold text-lg shadow-lg">
+                    🚀 Start Training
+                </button>
+            </div>
+        </div>
+
+        <!-- TRAINING SCREEN -->
+        <div id="trainingScreen" class="screen p-4">
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-2">
+                    <button id="exitSessionBtn" class="text-gray-400 hover:text-white text-sm">← Exit</button>
+                    <div id="progressText" class="text-sm font-medium text-gray-300">0/0</div>
+                    <div class="flex gap-2">
+                        <span class="bg-green-900/50 text-green-400 px-3 py-1 rounded-full text-sm font-semibold">✓
+                            <span id="statCorrect">0</span></span>
+                        <span class="bg-red-900/50 text-red-400 px-3 py-1 rounded-full text-sm font-semibold">✗ <span
+                                id="statWrong">0</span></span>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="flex-1 flex items-center justify-center">
+                <div id="trainerCard" class="question-card w-full p-6">
+                    <div class="flex items-start justify-between gap-3 mb-4">
+                        <div id="questionBlock" class="text-xl font-semibold flex-1"></div>
+                        <button id="showInfoBtn"
+                            class="info-btn flex-shrink-0 bg-gradient-to-br from-amber-500 to-amber-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <button id="showAnswerBtn"
+                        class="btn-primary w-full text-white py-4 rounded-xl font-semibold shadow-lg mb-4">
+                        Show Answer
+                    </button>
+
+                    <div id="answerBlock" class="answer-reveal max-h-0 mb-4 text-center font-medium text-lg"></div>
+
+                    <div id="selfCheckBlock" class="flex gap-3 hidden">
+                        <button id="wrongBtn"
+                            class="btn-danger flex-1 text-white py-4 rounded-xl font-semibold shadow-lg flex items-center justify-center gap-2">
+                            ✗ Wrong
+                        </button>
+                        <button id="correctBtn"
+                            class="btn-success flex-1 text-white py-4 rounded-xl font-semibold shadow-lg flex items-center justify-center gap-2">
+                            ✓ Correct
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-gray-500 text-xs pb-2">
+                ← Swipe left for Correct • Swipe right for Wrong →
+            </div>
+        </div>
+
+        <!-- COMPLETE SCREEN -->
+        <div id="completeScreen" class="screen p-4">
+            <div class="flex-1 flex flex-col items-center justify-center text-center">
+                <div class="celebrate-emoji text-6xl mb-4">🎉</div>
+                <h2 class="text-3xl font-bold text-amber-400 mb-2">Session Complete!</h2>
+                <p id="completeCategory" class="text-gray-400 mb-6"></p>
+
+                <div class="bg-gray-800 rounded-2xl p-6 w-full max-w-xs mb-6">
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <div class="text-4xl font-bold text-green-400" id="finalCorrect">0</div>
+                            <div class="text-sm text-gray-400">Correct</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-red-400" id="finalWrong">0</div>
+                            <div class="text-sm text-gray-400">Mistakes</div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-700">
+                        <div class="text-2xl font-bold text-amber-400" id="finalAccuracy">0%</div>
+                        <div class="text-sm text-gray-400">Accuracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-6 space-y-3">
+                <button id="restartSessionBtn"
+                    class="btn-primary w-full text-white py-4 rounded-xl font-bold text-lg shadow-lg">
+                    🔄 Train Again
+                </button>
+                <button id="changeCategoryBtn" class="w-full text-gray-400 py-3 rounded-xl font-medium">
+                    Change Category
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div id="foodInfoModal" class="fixed inset-0 z-50 flex items-center justify-center modal-backdrop hidden">
+        <div class="bg-gray-800 rounded-2xl shadow-xl max-w-md w-full mx-4 p-6 relative max-h-[80vh] overflow-y-auto">
+            <button id="closeInfoBtn"
+                class="absolute top-3 right-3 text-gray-400 hover:text-red-500 text-2xl p-1">✕</button>
+            <div id="foodInfoContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let allFoodItems = [];
+        let sessionQueue = [];
+        let sessionCompleted = [];
+        let sessionTotal = 0;
+        let statCorrect = 0;
+        let statWrong = 0;
+        let currentQuestion = null;
+        let selectedCategory = 'all';
+        let selectedType = 'mix';
+
+        const setupScreen = document.getElementById('setupScreen');
+        const trainingScreen = document.getElementById('trainingScreen');
+        const completeScreen = document.getElementById('completeScreen');
+        const categorySelect = document.getElementById('categorySelect');
+        const typeSelect = document.getElementById('typeSelect');
+        const sessionInfo = document.getElementById('sessionInfo');
+        const startSessionBtn = document.getElementById('startSessionBtn');
+        const progressText = document.getElementById('progressText');
+        const progressBar = document.getElementById('progressBar');
+        const statCorrectEl = document.getElementById('statCorrect');
+        const statWrongEl = document.getElementById('statWrong');
+        const exitSessionBtn = document.getElementById('exitSessionBtn');
+        const trainerCard = document.getElementById('trainerCard');
+        const questionBlock = document.getElementById('questionBlock');
+        const answerBlock = document.getElementById('answerBlock');
+        const showAnswerBtn = document.getElementById('showAnswerBtn');
+        const selfCheckBlock = document.getElementById('selfCheckBlock');
+        const correctBtn = document.getElementById('correctBtn');
+        const wrongBtn = document.getElementById('wrongBtn');
+        const showInfoBtn = document.getElementById('showInfoBtn');
+        const foodInfoModal = document.getElementById('foodInfoModal');
+        const closeInfoBtn = document.getElementById('closeInfoBtn');
+        const foodInfoContent = document.getElementById('foodInfoContent');
+        const restartSessionBtn = document.getElementById('restartSessionBtn');
+        const changeCategoryBtn = document.getElementById('changeCategoryBtn');
+
+        function showScreen(screenId) {
+            [setupScreen, trainingScreen, completeScreen].forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function renderCategoryButtons() {
+            const categories = ['all', ...Array.from(new Set(allFoodItems.map(c => c.category).filter(Boolean))).sort()];
+            categorySelect.innerHTML = '';
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn bg-gray-700 text-gray-300 px-4 py-2 rounded-xl font-medium';
+                btn.textContent = cat === 'all' ? 'All' : cat;
+                btn.dataset.category = cat;
+                if (cat === selectedCategory) btn.classList.add('active');
+                btn.onclick = () => {
+                    categorySelect.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    selectedCategory = cat;
+                    updateSessionInfo();
+                };
+                categorySelect.appendChild(btn);
+            });
+        }
+
+        function setupTypeButtons() {
+            typeSelect.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.onclick = () => {
+                    typeSelect.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    selectedType = btn.dataset.type;
+                };
+            });
+        }
+
+        function updateSessionInfo() {
+            const count = getFilteredItems().length;
+            sessionInfo.textContent = `${count} dishes in this session`;
+        }
+
+        function getFilteredItems() {
+            if (selectedCategory === 'all') return allFoodItems;
+            return allFoodItems.filter(c => c.category && c.category.toLowerCase() === selectedCategory.toLowerCase());
+        }
+
+        function startSession() {
+            const items = getFilteredItems();
+            if (items.length === 0) {
+                alert('No dishes in this category');
+                return;
+            }
+            sessionQueue = shuffleArray([...items]);
+            sessionCompleted = [];
+            sessionTotal = sessionQueue.length;
+            statCorrect = 0;
+            statWrong = 0;
+            updateStats();
+            showScreen('trainingScreen');
+            nextQuestion();
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function endSession() {
+            document.getElementById('completeCategory').textContent =
+                selectedCategory === 'all' ? 'All Categories' : selectedCategory;
+            document.getElementById('finalCorrect').textContent = statCorrect;
+            document.getElementById('finalWrong').textContent = statWrong;
+            const accuracy = sessionTotal > 0 ? Math.round((statCorrect / sessionTotal) * 100) : 0;
+            document.getElementById('finalAccuracy').textContent = accuracy + '%';
+            showScreen('completeScreen');
+        }
+
+        function nextQuestion() {
+            answerBlock.innerHTML = '';
+            answerBlock.style.maxHeight = '0';
+            selfCheckBlock.classList.add('hidden');
+            showAnswerBtn.disabled = false;
+            showAnswerBtn.classList.remove('hidden');
+
+            if (sessionQueue.length === 0) {
+                endSession();
+                return;
+            }
+
+            const item = sessionQueue.shift();
+            let type = selectedType;
+            if (type === 'mix') {
+                const types = ['description', 'wine', 'glossary', 'kitchenMep', 'serviceMep'];
+                type = types[Math.floor(Math.random() * types.length)];
+            }
+
+            currentQuestion = { item, type };
+            const name = `<span class="text-amber-400 font-bold">${item.name}</span>`;
+            const subtitle = item.subtitle ? `<br><span class="text-sm text-gray-400">${item.subtitle}</span>` : '';
+
+            if (type === 'description') {
+                questionBlock.innerHTML = `What is the description of ${name}?${subtitle}`;
+            } else if (type === 'wine') {
+                if (!item.wineSuggestion) {
+                    sessionQueue.push(item);
+                    nextQuestion();
+                    return;
+                }
+                questionBlock.innerHTML = `What wine pairs with ${name}?${subtitle}`;
+            } else if (type === 'glossary') {
+                if (!item.glossary) {
+                    sessionQueue.push(item);
+                    nextQuestion();
+                    return;
+                }
+                questionBlock.innerHTML = `What's in the glossary for ${name}?${subtitle}`;
+            } else if (type === 'allergens') {
+                questionBlock.innerHTML = `What allergens are in ${name}?${subtitle}`;
+            } else if (type === 'kitchenMep') {
+                questionBlock.innerHTML = `What is the Kitchen MEP for ${name}?${subtitle}`;
+            } else if (type === 'serviceMep') {
+                questionBlock.innerHTML = `What is the Service MEP for ${name}?${subtitle}`;
+            } else if (type === 'reverse') {
+                if (!item.description) {
+                    sessionQueue.push(item);
+                    nextQuestion();
+                    return;
+                }
+                const desc = item.description.substring(0, 150) + (item.description.length > 150 ? '...' : '');
+                questionBlock.innerHTML = `Name this dish:<br><span class="text-base text-gray-300 mt-2 block">"${desc}"</span>`;
+            }
+
+            updateProgress();
+        }
+
+        function showAnswer() {
+            if (!currentQuestion) return;
+            let answerHtml = '';
+            const { item, type } = currentQuestion;
+
+            if (type === 'description') {
+                answerHtml = `<div class="text-left text-base">${item.description || 'No description'}</div>`;
+            } else if (type === 'wine') {
+                const wine = item.wineSuggestion;
+                answerHtml = `<div class="text-amber-400 text-xl font-bold mb-2">🍷 ${wine?.name || 'N/A'}</div>
+                    <div class="text-gray-400 text-sm">${wine?.notes || ''}</div>`;
+            } else if (type === 'glossary') {
+                answerHtml = `<div class="text-left text-base">${item.glossary || 'No glossary'}</div>`;
+            } else if (type === 'allergens') {
+                answerHtml = `<span class="text-2xl font-bold text-orange-400">⚠️ ${item.allergens || 'None listed'}</span>`;
+            } else if (type === 'kitchenMep') {
+                answerHtml = `<div class="text-left">🍳 ${item.kitchenMep || 'N/A'}</div>`;
+            } else if (type === 'serviceMep') {
+                answerHtml = `<div class="text-left">🍽️ ${item.serviceMep || 'N/A'}</div>`;
+            } else if (type === 'reverse') {
+                answerHtml = `<span class="text-2xl font-bold text-amber-400">🍽️ ${item.name}</span>`;
+            }
+
+            answerBlock.innerHTML = answerHtml;
+            answerBlock.style.maxHeight = '400px';
+            selfCheckBlock.classList.remove('hidden');
+            showAnswerBtn.classList.add('hidden');
+        }
+
+        function handleCorrect() {
+            statCorrect++;
+            sessionCompleted.push(currentQuestion.item);
+            updateStats();
+            animateCard('left', nextQuestion);
+        }
+
+        function handleWrong() {
+            statWrong++;
+            sessionQueue.push(currentQuestion.item);
+            updateStats();
+            animateCard('right', nextQuestion);
+        }
+
+        function animateCard(direction, callback) {
+            trainerCard.classList.add(direction === 'left' ? 'swipe-left' : 'swipe-right');
+            setTimeout(() => {
+                trainerCard.classList.remove('swipe-left', 'swipe-right');
+                callback();
+            }, 250);
+        }
+
+        function updateStats() {
+            statCorrectEl.textContent = statCorrect;
+            statWrongEl.textContent = statWrong;
+        }
+
+        function updateProgress() {
+            const completed = sessionCompleted.length;
+            const percent = sessionTotal > 0 ? Math.round((completed / sessionTotal) * 100) : 0;
+            progressText.textContent = `${completed}/${sessionTotal}`;
+            progressBar.style.width = percent + '%';
+        }
+
+        function showFoodInfo() {
+            if (!currentQuestion || !currentQuestion.item) return;
+            const c = currentQuestion.item;
+            foodInfoContent.innerHTML = `
+                <h2 class="text-2xl font-bold text-amber-400 mb-1">${c.name}</h2>
+                ${c.subtitle ? `<p class="text-gray-400 text-sm mb-4">${c.subtitle}</p>` : '<div class="mb-4"></div>'}
+                <div class="space-y-3 text-sm">
+                    <div><span class="font-semibold text-gray-400">Category:</span> ${c.category || 'N/A'}</div>
+                    ${c.description ? `<div><span class="font-semibold text-gray-400">Description:</span><br>${c.description}</div>` : ''}
+                    ${c.wineSuggestion ? `<div><span class="font-semibold text-gray-400">Wine:</span> ${c.wineSuggestion.name}</div>` : ''}
+                    ${c.allergens ? `<div><span class="font-semibold text-orange-400">⚠️ Allergens:</span> ${c.allergens}</div>` : ''}
+                    ${c.kitchenMep ? `<div><span class="font-semibold text-gray-400">Kitchen MEP:</span><br>${c.kitchenMep}</div>` : ''}
+                    ${c.serviceMep ? `<div><span class="font-semibold text-gray-400">Service MEP:</span><br>${c.serviceMep}</div>` : ''}
+                </div>
+            `;
+            foodInfoModal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            foodInfoModal.classList.add('hidden');
+        }
+
+        // Swipe support
+        let swipeStartX = null;
+        trainerCard.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) swipeStartX = e.touches[0].clientX;
+        });
+        trainerCard.addEventListener('touchmove', (e) => {
+            if (swipeStartX === null) return;
+            const deltaX = e.touches[0].clientX - swipeStartX;
+            trainerCard.style.transform = `translateX(${deltaX}px) rotate(${deltaX * 0.05}deg)`;
+        });
+        trainerCard.addEventListener('touchend', (e) => {
+            if (swipeStartX === null) return;
+            const deltaX = e.changedTouches[0].clientX - swipeStartX;
+            trainerCard.style.transition = 'transform 0.3s';
+            if (deltaX < -80) handleCorrect();
+            else if (deltaX > 80) handleWrong();
+            else trainerCard.style.transform = '';
+            setTimeout(() => trainerCard.style.transition = '', 300);
+            swipeStartX = null;
+        });
+
+        // Event listeners
+        startSessionBtn.onclick = startSession;
+        showAnswerBtn.onclick = showAnswer;
+        correctBtn.onclick = handleCorrect;
+        wrongBtn.onclick = handleWrong;
+        showInfoBtn.onclick = showFoodInfo;
+        closeInfoBtn.onclick = closeModal;
+        foodInfoModal.onclick = (e) => { if (e.target === foodInfoModal) closeModal(); };
+        exitSessionBtn.onclick = () => { if (confirm('Exit training session?')) showScreen('setupScreen'); };
+        restartSessionBtn.onclick = startSession;
+        changeCategoryBtn.onclick = () => showScreen('setupScreen');
+
+        // Initialization
+        function initializeTrainer() {
+            if (window.allFoodItems && window.allFoodItems.length > 0) {
+                allFoodItems = window.allFoodItems;
+                renderCategoryButtons();
+                setupTypeButtons();
+                updateSessionInfo();
+            } else {
+                sessionInfo.textContent = 'Loading data...';
+            }
+        }
+
+        window.addEventListener('foodLoaded', initializeTrainer);
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.foodDataReady) initializeTrainer();
+        });
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW error:', err));
+        }
+    </script>
+</body>
+
+</html>

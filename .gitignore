@@ -12,3 +12,7 @@ Thumbs.db
 # Temp
 *.tmp
 *.log
+
+# original files
+Scotts Bibles - New-23.pdf
+images_migrate.py

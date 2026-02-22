@@ -439,7 +439,7 @@
             const item = sessionQueue.shift();
             let type = selectedType;
             if (type === 'mix') {
-                const types = ['description', 'wine', 'glossary', 'kitchenMep', 'serviceMep'];
+                const types = ['description', 'wine', 'glossary', 'allergens', 'kitchenMep', 'serviceMep'];
                 type = types[Math.floor(Math.random() * types.length)];
             }
 
@@ -464,6 +464,11 @@
                 }
                 questionBlock.innerHTML = `What's in the glossary for ${name}?${subtitle}`;
             } else if (type === 'allergens') {
+                if (!item.allergens) {
+                    sessionQueue.push(item);
+                    nextQuestion();
+                    return;
+                }
                 questionBlock.innerHTML = `What allergens are in ${name}?${subtitle}`;
             } else if (type === 'kitchenMep') {
                 questionBlock.innerHTML = `What is the Kitchen MEP for ${name}?${subtitle}`;

@@ -206,6 +206,7 @@
         let allFoodItems = [];
         let filteredItems = [];
         let selectedCategory = 'all';
+        let savedScrollPosition = 0;
 
         const searchInput = document.getElementById('searchInput');
         const categoryList = document.getElementById('categoryList');
@@ -458,6 +459,7 @@
                 ` : ''}
             `;
 
+            savedScrollPosition = window.scrollY;
             catalogView.style.display = 'none';
             detailView.classList.remove('hidden');
             detailView.scrollTop = 0;
@@ -468,6 +470,7 @@
         function hideDetail() {
             detailView.classList.add('hidden');
             catalogView.style.display = '';
+            requestAnimationFrame(() => window.scrollTo(0, savedScrollPosition));
             if (location.hash) history.back();
         }
 
@@ -510,6 +513,7 @@
             if (!detailView.classList.contains('hidden')) {
                 detailView.classList.add('hidden');
                 catalogView.style.display = '';
+                requestAnimationFrame(() => window.scrollTo(0, savedScrollPosition));
             }
         });
 

@@ -117,6 +117,14 @@
             box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
         }
 
+        .compact-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2314b8a6' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 32px;
+        }
+
         .swipe-left {
             transform: translateX(-120%) rotate(-8deg);
             opacity: 0.3;
@@ -188,52 +196,34 @@
             </div>
 
             <div class="flex-1 flex flex-col justify-center">
-                <div class="mb-6">
-                    <h2 class="text-lg font-semibold text-center mb-3 flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined text-primary text-lg">category</span>
-                        Select Category
-                    </h2>
-                    <div id="categorySelect" class="flex flex-wrap justify-center gap-2"></div>
-                </div>
+                <div class="space-y-4 mb-8">
+                    <div>
+                        <label class="text-sm font-semibold text-slate-400 mb-1.5 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-lg">category</span>
+                            Category
+                        </label>
+                        <select id="categorySelect"
+                            class="compact-select w-full bg-card-dark text-white px-4 py-3 rounded-xl border border-primary/20 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30">
+                            <option value="all">All Categories</option>
+                        </select>
+                    </div>
 
-                <div class="mb-8">
-                    <h2 class="text-lg font-semibold text-center mb-3 flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined text-primary text-lg">quiz</span>
-                        Question Type
-                    </h2>
-                    <div id="typeSelect" class="flex flex-wrap justify-center gap-2">
-                        <button data-type="mix"
-                            class="filter-btn active bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">shuffle</span> Mix
-                        </button>
-                        <button data-type="description"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">description</span> Description
-                        </button>
-                        <button data-type="wine"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">wine_bar</span> Wine
-                        </button>
-                        <button data-type="glossary"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">book_2</span> Glossary
-                        </button>
-                        <button data-type="allergens"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">warning</span> Allergens
-                        </button>
-                        <button data-type="kitchenMep"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">skillet</span> Kitchen MEP
-                        </button>
-                        <button data-type="serviceMep"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">room_service</span> Service MEP
-                        </button>
-                        <button data-type="reverse"
-                            class="filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-sm">lightbulb</span> Name It
-                        </button>
+                    <div>
+                        <label class="text-sm font-semibold text-slate-400 mb-1.5 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-lg">quiz</span>
+                            Question Type
+                        </label>
+                        <select id="typeSelect"
+                            class="compact-select w-full bg-card-dark text-white px-4 py-3 rounded-xl border border-primary/20 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30">
+                            <option value="mix">🔀 Mix (All Types)</option>
+                            <option value="description">📝 Description</option>
+                            <option value="wine">🍷 Wine Pairing</option>
+                            <option value="glossary">📖 Glossary</option>
+                            <option value="allergens">⚠️ Allergens</option>
+                            <option value="kitchenMep">🍳 Kitchen MEP</option>
+                            <option value="serviceMep">🛎️ Service MEP</option>
+                            <option value="reverse">💡 Name It</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -411,30 +401,22 @@
             const categories = ['all', ...Array.from(new Set(allFoodItems.map(c => c.category).filter(Boolean))).sort()];
             categorySelect.innerHTML = '';
             categories.forEach(cat => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn bg-card-dark text-slate-300 px-4 py-2 rounded-xl font-medium border border-primary/20';
-                btn.textContent = cat === 'all' ? 'All' : cat;
-                btn.dataset.category = cat;
-                if (cat === selectedCategory) btn.classList.add('active');
-                btn.onclick = () => {
-                    categorySelect.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    selectedCategory = cat;
-                    updateSessionInfo();
-                };
-                categorySelect.appendChild(btn);
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.textContent = cat === 'all' ? 'All Categories' : cat;
+                if (cat === selectedCategory) opt.selected = true;
+                categorySelect.appendChild(opt);
             });
         }
 
-        function setupTypeButtons() {
-            typeSelect.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.onclick = () => {
-                    typeSelect.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    selectedType = btn.dataset.type;
-                };
-            });
-        }
+        categorySelect.onchange = () => {
+            selectedCategory = categorySelect.value;
+            updateSessionInfo();
+        };
+
+        typeSelect.onchange = () => {
+            selectedType = typeSelect.value;
+        };
 
         function updateSessionInfo() {
             const count = getFilteredItems().length;
@@ -708,7 +690,6 @@
             if (window.allFoodItems && window.allFoodItems.length > 0) {
                 allFoodItems = window.allFoodItems;
                 renderCategoryButtons();
-                setupTypeButtons();
                 updateSessionInfo();
             } else {
                 sessionInfo.textContent = 'Loading data...';

@@ -1104,9 +1104,7 @@ window.registerFoodCategory([
       "Stilton traditional (NOT VEG): British blue cheese made from pasteurized cow's milk in the English counties of Derbyshire, Leicestershire, and Nottinghamshire. It is known for its strong flavor, crumbly yet creamy texture"
     ],
     "additionalNotes": null,
-    "allergens": ["Dairy",
-    "Gluten",
-    "Mold"],
+    "allergens": [],
     "kitchenMep": "Large plate, cracker silver",
     "serviceMep": "Starter fork & Steak knife & Salt and pepper.",
     "image": "data/categories/menu_images/SELECTION OF THREE CHEESES.png"
@@ -1193,7 +1191,7 @@ window.registerFoodCategory([
       "notes": "Intense and vibrant floral bouquet of jasmine and orange blossom, ripe peach and grape. The sweet sensations are well balanced with a pleasant acidity and fruity aromas typical of Muscat grapes."
     },
     "glossary": [
-      "Sorbet is low-fat and dairy-free, a great dessert choice for people who are lactose intolerant or have other dairy allergies. Sorbet is made from fruit, sugar, and water."
+      "Sorbet: is low-fat and dairy-free, a great dessert choice for people who are lactose intolerant or have other dairy allergies. Sorbet is made from fruit, sugar, and water."
     ],
     "additionalNotes": "All sorbets are home made in house by our pastry chefs. No Gluten, No Dairy",
     "allergens": [
@@ -1202,7 +1200,7 @@ window.registerFoodCategory([
     ],
     "kitchenMep": "Silver coupe & side plate with square Scott’s paper napkin.",
     "serviceMep": "1 scoop- Teaspoon More than 1 scoop – Dessert spoon",
-    "image": null
+    "image": "data/categories/menu_images/selection of seasonal sorbets.png"
   },
   {
     "id": "vanilla-pannacotta51",

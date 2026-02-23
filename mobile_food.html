@@ -62,6 +62,60 @@
             box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.5);
         }
 
+        /* Menu version toggle */
+        .menu-toggle {
+            display: flex;
+            background: #1a2b2c;
+            border-radius: 12px;
+            border: 1px solid rgba(20, 184, 166, 0.15);
+            overflow: hidden;
+        }
+
+        .menu-toggle button {
+            flex: 1;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            background: transparent;
+            color: #64748b;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .menu-toggle button.active {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .new-badge {
+            display: inline-block;
+            padding: 1px 7px;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            border-radius: 6px;
+            text-transform: uppercase;
+            animation: newPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes newPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 4px rgba(20, 184, 166, 0);
+            }
+        }
+
         /* Detail view styles */
         #detailView {
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,6 +216,12 @@
                 <span id="itemCount" class="text-slate-500 text-sm">0 items</span>
             </div>
 
+            <!-- Menu Version Toggle -->
+            <div class="menu-toggle mb-3">
+                <button id="btnCurrentMenu" class="active" onclick="switchMenuVersion('current')">Current Menu</button>
+                <button id="btnPreviousMenu" onclick="switchMenuVersion('previous')">Previous Menu</button>
+            </div>
+
             <!-- Search -->
             <input type="text" id="searchInput" placeholder="Search dishes..."
                 class="search-input w-full bg-card-dark text-white px-4 py-3 rounded-xl border border-primary/20 mb-3 placeholder-slate-500">
@@ -206,7 +266,7 @@
         let allFoodItems = [];
         let filteredItems = [];
         let selectedCategory = 'all';
-        let savedScrollPosition = 0;
+        let currentMenuVersion = 'current';
 
         const searchInput = document.getElementById('searchInput');
         const categoryList = document.getElementById('categoryList');
@@ -255,22 +315,28 @@
                 return;
             }
 
-            foodList.innerHTML = filteredItems.map(item => `
+            foodList.innerHTML = filteredItems.map(item => {
+                const isNew = item.tags && item.tags.includes('new');
+                return `
                 <div class="food-card rounded-xl p-4 cursor-pointer" onclick="showDetail('${item.id}')">
                     <div class="flex items-center gap-3">
                         ${item.image ? `<img src="${item.image}" alt="${item.name}" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" onerror="this.style.display='none'">` : ''}
                         <div class="flex-1 min-w-0">
-                            <h3 class="font-semibold text-primary truncate">${item.name}</h3>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-semibold text-primary truncate">${item.name}</h3>
+                                ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+                            </div>
                             ${item.subtitle ? `<p class="text-slate-400 text-sm truncate">${item.subtitle}</p>` : ''}
                             <div class="flex gap-2 mt-1.5 flex-wrap">
                                 <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary">${item.category}</span>
                                 ${item.allergens && item.allergens.length > 0 ? `<span class="px-2 py-0.5 bg-orange-500/10 border border-orange-500/20 rounded-full text-xs text-orange-400">${item.allergens.length} allergen${item.allergens.length > 1 ? 's' : ''}</span>` : ''}
+                                ${item.price ? `<span class="px-2 py-0.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-xs text-emerald-400">${item.price}</span>` : ''}
                             </div>
                         </div>
                         <span class="material-symbols-outlined text-slate-600">chevron_right</span>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         // Parse glossary into {term, definition} pairs
@@ -459,7 +525,6 @@
                 ` : ''}
             `;
 
-            savedScrollPosition = window.scrollY;
             catalogView.style.display = 'none';
             detailView.classList.remove('hidden');
             detailView.scrollTop = 0;
@@ -470,7 +535,6 @@
         function hideDetail() {
             detailView.classList.add('hidden');
             catalogView.style.display = '';
-            requestAnimationFrame(() => window.scrollTo(0, savedScrollPosition));
             if (location.hash) history.back();
         }
 
@@ -513,11 +577,27 @@
             if (!detailView.classList.contains('hidden')) {
                 detailView.classList.add('hidden');
                 catalogView.style.display = '';
-                requestAnimationFrame(() => window.scrollTo(0, savedScrollPosition));
             }
         });
 
         searchInput.oninput = filterAndRender;
+
+        function switchMenuVersion(version) {
+            currentMenuVersion = version;
+            document.getElementById('btnCurrentMenu').classList.toggle('active', version === 'current');
+            document.getElementById('btnPreviousMenu').classList.toggle('active', version === 'previous');
+
+            if (version === 'current') {
+                allFoodItems = window.allFoodItems || [];
+            } else {
+                allFoodItems = window.previousFoodItems || [];
+            }
+
+            selectedCategory = 'all';
+            searchInput.value = '';
+            renderCategories();
+            filterAndRender();
+        }
 
         function initialize() {
             if (window.allFoodItems && window.allFoodItems.length > 0) {

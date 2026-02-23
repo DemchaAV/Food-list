@@ -6,7 +6,8 @@ const ASSETS = [
     './mobile_food.html',
     './food_builder.html',
     './data/loader.js',
-    './data/categories/scotts.js'
+    './data/categories/scotts.js',
+    './data/categories/scotts_previous.js'
 ];
 
 self.addEventListener('install', (event) => {
@@ -26,6 +27,9 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    // Only handle http/https requests (skip chrome-extension:// etc.)
+    if (!event.request.url.startsWith('http')) return;
+
     event.respondWith(
         fetch(event.request)
             .then(response => {

@@ -1,29 +1,35 @@
 // Scott's Food List - Data Loader
-// Similar to Cocktail Trainer's loader.js
+// Supports current + previous menu versions
 
 (function () {
     'use strict';
 
     window.allFoodItems = [];
+    window.previousFoodItems = [];
     window.foodDataReady = false;
 
-    // Category file mapping
+    // Current menu files
     const categoryFiles = [
         'data/categories/scotts.js'
     ];
 
+    // Previous menu files
+    const previousFiles = [
+        'data/categories/scotts_previous.js'
+    ];
+
     let loadedCount = 0;
+    const totalFiles = categoryFiles.length + previousFiles.length;
 
     function checkAllLoaded() {
         loadedCount++;
-        if (loadedCount >= categoryFiles.length) {
-            // All files loaded, dispatch event
+        if (loadedCount >= totalFiles) {
             window.foodDataReady = true;
             window.dispatchEvent(new CustomEvent('foodLoaded'));
         }
     }
 
-    // Register callback for category data
+    // Register callback for current menu data
     window.registerFoodCategory = function (data) {
         if (Array.isArray(data)) {
             window.allFoodItems = window.allFoodItems.concat(data);
@@ -31,8 +37,16 @@
         checkAllLoaded();
     };
 
-    // Load all category scripts
-    categoryFiles.forEach(file => {
+    // Register callback for previous menu data
+    window.registerPreviousFoodCategory = function (data) {
+        if (Array.isArray(data)) {
+            window.previousFoodItems = window.previousFoodItems.concat(data);
+        }
+        checkAllLoaded();
+    };
+
+    // Load all scripts
+    [...categoryFiles, ...previousFiles].forEach(file => {
         const script = document.createElement('script');
         script.src = file;
         script.async = false;

@@ -19,3 +19,5 @@ images_migrate.py
 allergens_report.txt
 fix_allergens.py
 verify_allergens.py
+fix_mep_fields.py
+update_menu_feb2026.py

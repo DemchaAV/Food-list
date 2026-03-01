@@ -402,7 +402,7 @@ window.registerFoodCategory([
       "Soya"
     ],
     "additionalNotes": "Can be made gluten free",
-    "kitchenMep": "Patsa bowl",
+    "kitchenMep": "Pasta bowl",
     "serviceMep": "Starter fork & knife",
     "image": "data/categories/menu_images/CHALKSTREAM TROUT TARTARE.jpeg",
     "glossary": [

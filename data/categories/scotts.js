@@ -229,7 +229,9 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork and knife",
     "image": "data/categories/menu_images/TIGER PRAWNS WITH GRILLED PINEAPPLE.jpeg",
     "glossary": [
-      "Plancha: A griddle, in the UK also called a gridle, is a cooking device consisting mainly of a broad, usually flat cooking surface."
+      "Plancha: A griddle, in the UK also called a gridle, is a cooking device consisting mainly of a broad, usually flat cooking surface.",
+      "Tiger prawns: Large warm-water prawns with firm, sweet meat.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ]
   },
   {
@@ -273,7 +275,8 @@ window.registerFoodCategory([
       "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
     },
     "glossary": [
-      "Sherry: A fortified wine made from white grapes. Brown crab meat: located in the top of the crab where the digestive and reproductive organs are housed. It is softer, more pate-like in texture. It has a more rich, savoury flavour often described as salty and sweet. It has a higher fat content than white crab meat. Hollandaise Sauce: Hollandaise sauce, meaning Dutch sauce in French, is a mixture of egg yolk, melted butter, and lemon juice. It is usually seasoned with salt, and either white pepper or cayenne pepper."
+      "Sherry: A fortified wine made from white grapes. Brown crab meat: located in the top of the crab where the digestive and reproductive organs are housed. It is softer, more pate-like in texture. It has a more rich, savoury flavour often described as salty and sweet. It has a higher fat content than white crab meat. Hollandaise Sauce: Hollandaise sauce, meaning Dutch sauce in French, is a mixture of egg yolk, melted butter, and lemon juice. It is usually seasoned with salt, and either white pepper or cayenne pepper.",
+      "Hollandaise/Bearnaise: Classic emulsified butter sauces finished with acidity and herbs."
     ],
     "allergens": [
       "Celery",
@@ -303,7 +306,8 @@ window.registerFoodCategory([
       "notes": "Very expressive nose of green citrus and herbaceous aromas of classic Sauvignon Blanc concentrated gooseberry fruit flavours, ripe citrus, balanced by a steely, dry palate. mineral, elegant and long finish."
     },
     "glossary": [
-      "From the Isle of Mull The clean water gives the scallops the best opportunity for max taste. Kimchi is traditional Korean banchan consisting of salted and fermented vegetables, mostly commonly using napa cabbage or Korean radish. A wide selection of seasonings are used, including gochujang, spring onions, garlic, ginger and jeotgal, etc. Nori Furikake: is a basic blend made from a base of crushed or sliced nori seaweed blended with sesame seeds, sugar and salt."
+      "From the Isle of Mull The clean water gives the scallops the best opportunity for max taste. Kimchi is traditional Korean banchan consisting of salted and fermented vegetables, mostly commonly using napa cabbage or Korean radish. A wide selection of seasonings are used, including gochujang, spring onions, garlic, ginger and jeotgal, etc. Nori Furikake: is a basic blend made from a base of crushed or sliced nori seaweed blended with sesame seeds, sugar and salt.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ],
     "additionalNotes": "For large portion, bring a burner and main hot plate per person. No Dairy, Gluten in dish",
     "allergens": [
@@ -396,7 +400,8 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork & knife",
     "image": "data/categories/menu_images/CHALKSTREAM TROUT TARTARE.jpeg",
     "glossary": [
-      "Trout- Harvested by hand in Hampshire, ChalkStream trout are a heritage British fish. Togarashi pepper- Japanese name for Capsicum annum, or red chilli peppers."
+      "Trout- Harvested by hand in Hampshire, ChalkStream trout are a heritage British fish. Togarashi pepper- Japanese name for Capsicum annum, or red chilli peppers.",
+      "Tataki/Tartare: Lightly seared or finely cut preparation to keep delicate texture."
     ]
   },
   {
@@ -447,7 +452,9 @@ window.registerFoodCategory([
       "Soya"
     ],
     "glossary": [
-      "Tigers Milk: Ginger, jalapeno, yuzu, celery, garlic, and galangal (spice closely related to ginger, turmeric) Aji amarillo- is a Peruvian chili pepper, specifically a variety of the Capsicum baccatum species, known for its yellow color and a fruity, slightly sweet flavor with a moderate level of heat. It is a staple in Peruvian cuisine and is used in various dishes, sauces, and condiments. Plaintain crisps-A plantain is a starchy, tropical fruit that looks like a banana but is larger and less sweet. It's a staple food in many tropical regions and is typically cooked before consumption, rather than eaten raw like bananas."
+      "Tigers Milk: Ginger, jalapeno, yuzu, celery, garlic, and galangal (spice closely related to ginger, turmeric) Aji amarillo- is a Peruvian chili pepper, specifically a variety of the Capsicum baccatum species, known for its yellow color and a fruity, slightly sweet flavor with a moderate level of heat. It is a staple in Peruvian cuisine and is used in various dishes, sauces, and condiments. Plaintain crisps-A plantain is a starchy, tropical fruit that looks like a banana but is larger and less sweet. It's a staple food in many tropical regions and is typically cooked before consumption, rather than eaten raw like bananas.",
+      "Ceviche: Seafood cured with citrus rather than cooked with heat.",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
     ],
     "additionalNotes": "Coriander can be removed Contains gluten",
     "kitchenMep": "White Bowl",
@@ -522,7 +529,9 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "glossary": [
-      "Frisee: Curly endive (green salad leaf)- bitter."
+      "Frisee: Curly endive (green salad leaf)- bitter.",
+      "Chocolate truffle: A rich ganache-based confection, usually hand-finished.",
+      "Hazelnut: A sweet nut with roasted, praline-like notes in desserts."
     ],
     "additionalNotes": "***CONTAINS GLUTEN, DAIRY, NUTS***",
     "kitchenMep": "White plate",
@@ -548,7 +557,8 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork and knife",
     "image": "data/categories/menu_images/PUGLIAN BURRATA.jpeg",
     "glossary": [
-      "Pink radicchio-"
+      "Pink radicchio-",
+      "Burrata: Fresh Italian cheese with a creamy center."
     ]
   },
   {
@@ -590,7 +600,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Celery",
@@ -618,7 +630,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Tiger prawns: Large warm-water prawns with firm, sweet meat."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Celery",
@@ -650,7 +664,11 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Romesco: A Spanish-style sauce of peppers, nuts, oil and acidity.",
+      "Salsa verde: A herb sauce with bright acidity and fresh aromatics.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -682,7 +700,8 @@ window.registerFoodCategory([
     },
     "glossary": [
       "Dover soles: Dover soles are a type of flatfish. Lives on sandy seabed’s, caught all around the UK.",
-      "Meuniere: Brown butter sauce (beurre noisette), finished with parsley and lemon."
+      "Meuniere: Brown butter sauce (beurre noisette), finished with parsley and lemon.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ],
     "additionalNotes": null,
     "allergens": [
@@ -705,7 +724,8 @@ window.registerFoodCategory([
       "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
     },
     "glossary": [
-      "Seabass – white fleshed fish, with a slight metallic taste. Butterflied fish – fish is opened and debones and presented flat on the plate (ours is flesh side up). Yuzu kosho – a type of Japanese seasoning made from chili peppers, yuzu peel and salt which is all fermented. Miso – a paste made from fermented soya beans"
+      "Seabass – white fleshed fish, with a slight metallic taste. Butterflied fish – fish is opened and debones and presented flat on the plate (ours is flesh side up). Yuzu kosho – a type of Japanese seasoning made from chili peppers, yuzu peel and salt which is all fermented. Miso – a paste made from fermented soya beans",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
     ],
     "allergens": [
       "Dairy",
@@ -729,7 +749,8 @@ window.registerFoodCategory([
       "notes": "Crisp, fresh organic white with bright acidity and citrus aromas on the nose leading to a well-balanced palate packed with pear and apple fruit and a bone dry, mineral finish."
     },
     "glossary": [
-      "Tartar - English condiment. Ours consists of: home made mayo, capers, gerkins and seasoned with salt. House mayo contains Gluten because it has mustard inside (English mustard)."
+      "Tartar - English condiment. Ours consists of: home made mayo, capers, gerkins and seasoned with salt. House mayo contains Gluten because it has mustard inside (English mustard).",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
     ],
     "additionalNotes": "Contains cooked alcohol - Beer batter Can be made alcohol free with a tempura batter instead of the beer batter. Can change mushy peas to garden peas.",
     "allergens": [
@@ -756,7 +777,9 @@ window.registerFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Cod is a wild fish that commonly found in the Northwest Atlantic. Chorizo is Italian spicy sausage."
+      "Cod is a wild fish that commonly found in the Northwest Atlantic. Chorizo is Italian spicy sausage.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization.",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
     ],
     "additionalNotes": "Gluten-Free",
     "allergens": [
@@ -809,7 +832,10 @@ window.registerFoodCategory([
       "notes": "Complex and elegant expression of Chardonay White flowers, a touch of oak and ripe white orchard fruits on the nose Silky, well-balanced palate with well- integrated oak, delicate stone fruits, fresh minerality and slightly creamy finish"
     },
     "glossary": [
-      "Lobster: Native or Canadian lobster; Scallops: Hand dived in Isle of Mull, Scotland; Prawns: Indian Ocean"
+      "Lobster and scallops: Sweet shellfish where gentle roasting keeps texture tender.",
+      "Tiger prawns: Large warm-water prawns with firm, sweet meat.",
+      "Sea beet: A coastal leafy green with a mild mineral, spinach-like taste.",
+      "Purslane and sea aster: Coastal herbs with fresh saline character used as sea herbs."
     ],
     "additionalNotes": "Can be done for one- Roasted shellfish for one. Half portion, half price.",
     "allergens": [
@@ -841,7 +867,8 @@ window.registerFoodCategory([
     "serviceMep": "Large fork & knife",
     "image": "data/categories/menu_images/ROASTED LOBSTER.jpeg",
     "glossary": [
-      "Lobster: Native or Canadian"
+      "Lobster: Native or Canadian",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ]
   },
   {
@@ -863,7 +890,8 @@ window.registerFoodCategory([
     "serviceMep": "Large fork & knife, lobster cracker and pick, debris bowl, Finger Bowl",
     "image": "data/categories/menu_images/GRILLED LOBSTER.jpeg",
     "glossary": [
-      "****CANNOT BE DESHELLED**** Lobster: Native or Canadian As a starter – comes with chips. As a main – comes with chips."
+      "****CANNOT BE DESHELLED**** Lobster: Native or Canadian As a starter – comes with chips. As a main – comes with chips.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ]
   },
   {
@@ -877,7 +905,9 @@ window.registerFoodCategory([
       "notes": "Intense and powerful nose with ripe black fruit notes and hints of toast. palate is wonderfully complex, with ripe blackcurrant and plum flavours combining with toasty vanilla oak to create an elegant and full-bodied wine"
     },
     "glossary": [
-      "**Remember to ask cooking temperature** Cooking: recommended- cooked medium rare Sirloin- located toward the rear of the cow, near the rump. It is covered with a layer of fat which contributes to its tenderness. Bearnaise- clarified butter, eggs yolk, white wine vinegar, herbs (tarragon)."
+      "**Remember to ask cooking temperature** Cooking: recommended- cooked medium rare Sirloin- located toward the rear of the cow, near the rump. It is covered with a layer of fat which contributes to its tenderness. Bearnaise- clarified butter, eggs yolk, white wine vinegar, herbs (tarragon).",
+      "Hollandaise/Bearnaise: Classic emulsified butter sauces finished with acidity and herbs.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ],
     "allergens": [
       "Dairy",
@@ -901,7 +931,8 @@ window.registerFoodCategory([
     },
     "glossary": [
       "Violina: Italian type of squash",
-      "Miso: Fermented soya bean paste"
+      "Miso: Fermented soya bean paste",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ],
     "additionalNotes": "Contains DAIRY and GLUTEN",
     "allergens": [
@@ -924,7 +955,8 @@ window.registerFoodCategory([
       "notes": "Fresh, bright, sweet, earthy red pit fruits and tobacco leaf on the palate the wine is round, juicy, with blackberry and currants. Tannins are ripe, medium to full body."
     },
     "glossary": [
-      "Iberico - A premium pork from the Black Iberian Pig, native to the Iberian Peninsula in southwestern Europe."
+      "Iberico - A premium pork from the Black Iberian Pig, native to the Iberian Peninsula in southwestern Europe.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
     ],
     "additionalNotes": null,
     "allergens": [
@@ -946,7 +978,11 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Veloute: A light, smooth sauce built from stock and roux/cream.",
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization.",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Crustaceans",
@@ -974,7 +1010,10 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization.",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Celery",
@@ -1003,7 +1042,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Linguini pasta cooked and tossed with picked white crab, olive oil, chilli, garlic and datterini tomatoes, finished with chopped parsley."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Crustaceans",
@@ -1031,7 +1072,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Koffmans fries."
+    ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [],
     "kitchenMep": "Chip bowl",
@@ -1048,7 +1091,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Boiled and peeled potatoes put through a moulin for buttery mashed potatoes."
+    ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [
       "Dairy"
@@ -1067,7 +1112,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Steamed spinach."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Oval silver",
@@ -1084,7 +1131,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Buttered spinach."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy"
@@ -1103,7 +1152,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Key components: Spinach with olive oil and garlic."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Oval silver",
@@ -1165,7 +1216,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -1196,7 +1249,10 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Cooking style: Pan-fried/grilled/roasted methods shape texture and caramelization.",
+      "Jerusalem artichoke: A nutty, sweet root also known as sunchoke."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Silver oval",
@@ -1428,7 +1484,8 @@ window.registerFoodCategory([
       "Dairy"
     ],
     "glossary": [
-      "Panna cotta- a simple, elegant Italian dessert meaning \"cooked cream,\" made from sweetened cream thickened with gelatin."
+      "Panna cotta- a simple, elegant Italian dessert meaning \"cooked cream,\" made from sweetened cream thickened with gelatin.",
+      "Sorbet: A dairy-free frozen dessert made from fruit, sugar and water."
     ],
     "additionalNotes": "GLUTEN FREE Contains pork gelatine",
     "kitchenMep": "White medium plate",
@@ -1446,7 +1503,8 @@ window.registerFoodCategory([
       "notes": "inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Rhubarb: A tart, herbaceous plant with stalks used in desserts and jams."
+      "Rhubarb: A tart, herbaceous plant with stalks used in desserts and jams.",
+      "Creme Chantilly: Lightly sweetened whipped cream."
     ],
     "additionalNotes": "Contains egg",
     "allergens": [
@@ -1469,7 +1527,8 @@ window.registerFoodCategory([
       "notes": "Wonderfully fresh, this botrytis free wine has plenty of honeyed, orange tinged floral fruit Naturally high acidity – delivering aromatic notes of crisp quince and pineapple with a fresh zingy finish on the palate"
     },
     "glossary": [
-      "Passionfruit: A tropical fruit with a tart, aromatic pulp."
+      "Passionfruit: A tropical fruit with a tart, aromatic pulp.",
+      "Mango/Passion fruit: Tropical fruits adding sweetness with aromatic acidity."
     ],
     "additionalNotes": "Contains dairy, pork gelatine and gluten (none can be removed)",
     "allergens": [
@@ -1516,7 +1575,8 @@ window.registerFoodCategory([
       "notes": "Inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Ice-cream: A frozen dessert typically made from milk or cream."
+      "Ice-cream: A frozen dessert typically made from milk or cream.",
+      "Bramley/Cox apples: Classic British apples balancing tartness and sweetness."
     ],
     "additionalNotes": "***CONTAINS DAIRY*** ***CONTAINS GLUTEN***",
     "allergens": [
@@ -1539,7 +1599,8 @@ window.registerFoodCategory([
       "notes": "Rich stone fruit forward slightly fizzy dessert wine."
     },
     "glossary": [
-      "Lime Sorbet: A frozen dessert made with lime juice, sugar, and water."
+      "Lime Sorbet: A frozen dessert made with lime juice, sugar, and water.",
+      "Mango/Passion fruit: Tropical fruits adding sweetness with aromatic acidity."
     ],
     "additionalNotes": "Dairy Free Gluten Free",
     "allergens": [],
@@ -1558,7 +1619,9 @@ window.registerFoodCategory([
       "notes": "Aromas of dried apricot, elderflower, honeysuckle and orange peel leap from the glass. Caramelised peaches, fresh honey, a touch of brown sugar but with contrasting lemony pith and stoney minerality. Luscious sweetness with core of uplifting and vibrant acidity"
     },
     "glossary": [
-      "A Paris–Brest is a French dessert, made of choux pastry and traditionally the praline flavoured cream. Pistachio ice cream is homemade. Edible gold is made of 99.9% 24-carat gold. Choux pastry: butter, water, flour, and eggs. Instead of a raising agent, choux pastry employs its high moisture content to create steam, as the water in the dough evaporates when baked, puffing the pastry."
+      "A Paris–Brest is a French dessert, made of choux pastry and traditionally the praline flavoured cream. Pistachio ice cream is homemade. Edible gold is made of 99.9% 24-carat gold. Choux pastry: butter, water, flour, and eggs. Instead of a raising agent, choux pastry employs its high moisture content to create steam, as the water in the dough evaporates when baked, puffing the pastry.",
+      "Paris-Brest/Choux: French choux pastry dessert, light shell with rich filling.",
+      "Creme Chantilly: Lightly sweetened whipped cream."
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1583,7 +1646,9 @@ window.registerFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "Baileys: A creamy Irish liqueur made with whiskey, cream, and vanilla."
+      "Baileys: A creamy Irish liqueur made with whiskey, cream, and vanilla.",
+      "Delice/Praline: A rich French-style dessert often combining mousse and nut caramel notes.",
+      "Chocolate truffle: A rich ganache-based confection, usually hand-finished."
     ],
     "additionalNotes": "Gluten Free, Nut Free",
     "allergens": [
@@ -1687,7 +1752,8 @@ window.registerFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "togarashi: A Japanese spice blend, typically containing chili peppers, sesame seeds, and seaweed."
+      "togarashi: A Japanese spice blend, typically containing chili peppers, sesame seeds, and seaweed.",
+      "Tataki/Tartare: Lightly seared or finely cut preparation to keep delicate texture."
     ],
     "additionalNotes": "Contains Gluten, Dairy, Eggs, Fish, Nuts. Can be removed (crisps).",
     "allergens": [
@@ -1714,7 +1780,8 @@ window.registerFoodCategory([
       "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "Roscoff onions- a sweet, pink-skinned French onion from Brittany. Tarte tatin- A Tarte Tatin is a classic French \"upside-down\" dessert. In this case it is a savoury dish."
+      "Roscoff onions- a sweet, pink-skinned French onion from Brittany. Tarte tatin- A Tarte Tatin is a classic French \"upside-down\" dessert. In this case it is a savoury dish.",
+      "Burrata: Fresh Italian cheese with a creamy center."
     ],
     "allergens": [
       "Dairy",
@@ -1738,7 +1805,8 @@ window.registerFoodCategory([
     },
     "glossary": [
       "creme fraiche: A French cultured cream, thicker and less fat than heavy cream.",
-      "goujere: A type of cheese puff."
+      "goujere: A type of cheese puff.",
+      "Chocolate truffle: A rich ganache-based confection, usually hand-finished."
     ],
     "additionalNotes": "Served table side Contains dairy which CANNOT be removed. Contains gluten which CAN be removed.",
     "allergens": [
@@ -1762,7 +1830,9 @@ window.registerFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Italian winter leaves: A type of radicchio"
+      "Italian winter leaves: A type of radicchio",
+      "Ponzu: A citrus-based Japanese sauce, bright and savory.",
+      "Miso: A fermented soybean paste that adds savory umami depth."
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1804,7 +1874,9 @@ window.registerFoodCategory([
     "serviceMep": "Main fork and knife",
     "image": "data/categories/menu_images/(SLM) SCOTTS FISH PIE.jpeg",
     "glossary": [
-      "Contains gluten and dairy – cannot be removed."
+      "Contains gluten and dairy – cannot be removed.",
+      "Veloute: A light, smooth sauce built from stock and roux/cream.",
+      "White fish profile: Delicate flesh where sauce and cookery define final character."
     ]
   },
   {
@@ -1888,7 +1960,9 @@ window.registerFoodCategory([
       "notes": "inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Feuilletine: A thin, flaky pastry made from layers of dough and butter."
+      "Feuilletine: A thin, flaky pastry made from layers of dough and butter.",
+      "Delice/Praline: A rich French-style dessert often combining mousse and nut caramel notes.",
+      "Hazelnut: A sweet nut with roasted, praline-like notes in desserts."
     ],
     "additionalNotes": null,
     "allergens": [

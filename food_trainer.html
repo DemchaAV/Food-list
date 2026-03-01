@@ -42,6 +42,7 @@
         }
 
         .trainer-container {
+            min-height: 100svh;
             min-height: 100dvh;
             display: flex;
             flex-direction: column;
@@ -175,6 +176,13 @@
         .modal-backdrop {
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(4px);
+        }
+
+        .start-cta {
+            position: sticky;
+            bottom: 0;
+            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+            background: linear-gradient(to top, rgba(15, 26, 26, 0.92), rgba(15, 26, 26, 0));
         }
 
         /* Menu version toggle */
@@ -315,7 +323,7 @@
                 </div>
             </div>
 
-            <div class="pb-4">
+            <div class="start-cta">
                 <div id="sessionInfo" class="text-center text-slate-400 text-sm mb-2"></div>
                 <button id="startSessionBtn"
                     class="btn-primary w-full text-white py-3 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 flex items-center justify-center gap-2">

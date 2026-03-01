@@ -9,7 +9,9 @@ window.registerFoodCategory([
       "name": "Ruinart Blanc de Blancs",
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. on the palate it’S is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish"
     },
-    "glossary": [],
+    "glossary": [
+      "Sorbet is a dairy-free frozen dessert made from fruit juice or puree, sugar and water."
+    ],
     "additionalNotes": "From the pass: Finger bowls, Shallot & Hogwash Dressing 1 - 4 Oysters the stand should be small side up, 6+ large side up",
     "allergens": [
       "Molluscs",
@@ -1033,7 +1035,7 @@ window.registerFoodCategory([
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [],
     "kitchenMep": "Chip bowl",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/POTATOES.jpeg"
   },
   {
@@ -1046,13 +1048,15 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Coconut and lime sorbet is a dairy-free frozen dessert with tropical sweetness and citrus acidity."
+    ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [
       "Dairy"
     ],
     "kitchenMep": "Chip bowl",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/mashed-potatoes-generated.png"
   },
   {
@@ -1065,11 +1069,13 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Blood orange sorbet is a dairy-free sorbet with bright citrus flavour and natural bitterness."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Oval silver",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/SPINACH.jpeg"
   },
   {
@@ -1082,13 +1088,15 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Honeycomb is sugar caramelised then aerated with bicarbonate soda, creating a crisp texture."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy"
     ],
     "kitchenMep": "Oval silver",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/SPINACH.jpeg"
   },
   {
@@ -1101,11 +1109,13 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Pistachio ice cream is made in house and contains nuts."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Oval silver",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/SPINACH.jpeg"
   },
   {
@@ -1163,7 +1173,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Rhubarb ripple ice cream combines a vanilla base with stewed rhubarb ripple."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -1270,13 +1282,15 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Sorbet is a dairy-free frozen dessert made from fruit juice or puree, sugar and water."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/selection of seasonal sorbets.png"
   },
   {
@@ -1289,11 +1303,13 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Coconut and lime sorbet is a dairy-free frozen dessert with tropical sweetness and citrus acidity."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/selection of seasonal sorbets.png"
   },
   {
@@ -1306,11 +1322,13 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Blood orange sorbet is a dairy-free sorbet with bright citrus flavour and natural bitterness."
+    ],
     "additionalNotes": null,
     "allergens": [],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/selection of seasonal sorbets.png"
   },
   {
@@ -1323,7 +1341,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Honeycomb is sugar caramelised then aerated with bicarbonate soda, creating a crisp texture."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -1332,7 +1352,7 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/honeycomb-ice-cream-generated.png"
   },
   {
@@ -1345,7 +1365,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Pistachio ice cream is made in house and contains nuts."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -1353,7 +1375,7 @@ window.registerFoodCategory([
       "Nuts"
     ],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/pistachio-ice-cream-generated.png"
   },
   {
@@ -1366,14 +1388,16 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Rhubarb ripple ice cream combines a vanilla base with stewed rhubarb ripple."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
       "Eggs"
     ],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/rhubarb-ripple-ice-cream-generated.png"
   },
   {
@@ -1386,7 +1410,9 @@ window.registerFoodCategory([
       "name": "",
       "notes": ""
     },
-    "glossary": [],
+    "glossary": [
+      "Chocolate ice cream is made with chocolate and contains soya."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",
@@ -1395,7 +1421,7 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Silver coupe",
-    "serviceMep": null,
+    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
     "image": "data/categories/menu_images/chocolate-ice-cream-generated.png"
   },
   {
@@ -1577,7 +1603,7 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Truffle stand",
-    "serviceMep": null,
+    "serviceMep": "No cutlery required (petit fours style).",
     "image": "data/categories/menu_images/CHOCOLATE TRUFFLES.jpeg"
   },
   {
@@ -1591,7 +1617,7 @@ window.registerFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "Pink radicchio: A variety of radicchio with a pinkish hue and slightly bitter flavour."
+      "A gift selection of assorted handmade chocolate truffles prepared for takeaway."
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1603,7 +1629,7 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Truffle box",
-    "serviceMep": null,
+    "serviceMep": "No cutlery required (takeaway presentation).",
     "image": "data/categories/menu_images/TRUFFLE GIFT BOX.jpeg"
   },
   {
@@ -1626,7 +1652,7 @@ window.registerFoodCategory([
       "Gluten"
     ],
     "kitchenMep": "Truffle stand",
-    "serviceMep": null,
+    "serviceMep": "No cutlery required (served as finger dessert).",
     "image": "data/categories/menu_images/LEMON MADELEINES.jpeg"
   },
   {
@@ -1639,7 +1665,9 @@ window.registerFoodCategory([
       "name": null,
       "notes": null
     },
-    "glossary": [],
+    "glossary": [
+      "Amedei is a premium Italian chocolate producer. This mousse balances dark chocolate richness with olive oil and sea salt."
+    ],
     "additionalNotes": null,
     "allergens": [
       "Dairy",

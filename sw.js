@@ -1,4 +1,13 @@
-const CACHE_NAME = 'food-list-v4';
+const SW_VERSION = (() => {
+    try {
+        const url = new URL(self.location.href);
+        return url.searchParams.get('v') || 'dev';
+    } catch (_) {
+        return 'dev';
+    }
+})();
+
+const CACHE_NAME = 'food-list-v' + SW_VERSION;
 const ASSETS = [
     './',
     './index.html',

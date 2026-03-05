@@ -84,12 +84,13 @@
             border: 1px solid rgba(20, 184, 166, 0.15);
             border-radius: 1.25rem;
             box-shadow: 0 10px 28px rgba(0, 0, 0, 0.26);
-            max-height: calc(100dvh - 220px);
-            overflow: auto;
+            height: 100%;
+            overflow: visible;
         }
 
         #flashcardScreen {
             padding-bottom: max(1rem, env(safe-area-inset-bottom));
+            overflow-y: auto;
         }
 
         .answer-reveal {
@@ -354,8 +355,8 @@
                 </div>
             </div>
 
-            <div class="flex-1 flex items-start justify-center">
-                <div class="learning-card w-full p-4">
+            <div class="flashcard-stage flex-1 flex items-stretch justify-center">
+                <div class="learning-card w-full p-4 flex flex-col">
                     <div id="flashCardImageWrap" class="mb-3 hidden">
                         <img id="flashCardImage" src="" alt="Dish image"
                             class="w-full h-36 object-cover rounded-xl border border-primary/20">
@@ -400,7 +401,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="flashcard-actions grid grid-cols-2 gap-2 mt-auto">
                         <button id="flashNotYetBtn"
                             class="btn-danger text-white py-2.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-1.5">
                             <span class="material-symbols-outlined text-sm">refresh</span> Not Yet

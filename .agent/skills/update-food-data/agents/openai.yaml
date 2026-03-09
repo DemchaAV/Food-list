@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Food Data"
+  short_description: "Edit menu data and validate it"
+  default_prompt: "Use $update-food-data to change Food-list menu data, validate scotts.js, and keep current/previous menu flows working."

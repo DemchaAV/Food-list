@@ -9,7 +9,8 @@ import json
 import re
 from pathlib import Path
 
-path = Path(__file__).parent / "data" / "categories" / "scotts.js"
+ROOT = Path(__file__).resolve().parents[2]
+path = ROOT / "data" / "categories" / "scotts.js"
 text = path.read_text(encoding="utf-8")
 
 # Parse current data

@@ -2,8 +2,9 @@ import json
 import os
 import re
 
-JS_FILE = r"C:\Users\Demch\OneDrive\projects\Food-list\data\categories\scotts.js"
-IMG_DIR = r"C:\Users\Demch\OneDrive\projects\Food-list\data\categories\menu_images"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+JS_FILE = os.path.join(ROOT, "data", "categories", "scotts.js")
+IMG_DIR = os.path.join(ROOT, "data", "categories", "menu_images")
 OUT_FILE = JS_FILE
 
 def normalize_name(name):

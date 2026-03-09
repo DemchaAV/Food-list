@@ -17,7 +17,7 @@ import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 SCRAPED_PATH = ROOT / "data" / "viewthemenu_allergens.json"
 SCOTTS_PATH = ROOT / "data" / "categories" / "scotts.js"
 FOOD_PATH = ROOT / "data" / "categories" / "food.json"

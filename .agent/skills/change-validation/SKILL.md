@@ -20,11 +20,11 @@ Use this skill after implementation changes in `C:\Users\Demch\OneDrive\projects
 
 ```powershell
 python .agent/skills/app-version-bump/scripts/bump_app_version.py
-python validate_scotts.py
-python validate_scotts_full.py
+python scripts/validation/validate_scotts.py
+python scripts/validation/validate_scotts_full.py
 ```
 
-Use `validate_scotts.py` as the minimum bar for current menu data changes.
+Use `scripts/validation/validate_scotts.py` as the minimum bar for current menu data changes.
 
 ### UI/static changes
 

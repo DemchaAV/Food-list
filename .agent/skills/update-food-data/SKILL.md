@@ -12,7 +12,7 @@ Use this skill for menu and content changes in `C:\Users\Demch\OneDrive\projects
 - current menu: `data/categories/scotts.js`
 - previous menu: `data/categories/scotts_previous.js`
 - raw/supporting data: `data/categories/food.json`
-- validators: `validate_scotts.py`, `validate_scotts_full.py`
+- validators: `scripts/validation/validate_scotts.py`, `scripts/validation/validate_scotts_full.py`
 
 ## Required Workflow
 
@@ -23,14 +23,14 @@ Use this skill for menu and content changes in `C:\Users\Demch\OneDrive\projects
 3. After meaningful menu changes, run:
 
 ```powershell
-python validate_scotts.py
+python scripts/validation/validate_scotts.py
 python .agent/skills/app-version-bump/scripts/bump_app_version.py
 ```
 
 4. If the change affects glossary or structure broadly, also run:
 
 ```powershell
-python validate_scotts_full.py
+python scripts/validation/validate_scotts_full.py
 ```
 
 5. Smoke-test at least one affected food page over HTTP.

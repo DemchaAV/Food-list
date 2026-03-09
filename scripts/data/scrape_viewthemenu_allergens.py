@@ -2,7 +2,7 @@
 """Scrape allergens per dish/drink from viewthe.menu pages into JSON.
 
 Example:
-    python scrape_viewthemenu_allergens.py --url https://viewthe.menu/dbav --out data/viewthemenu_allergens.json
+    python scripts/data/scrape_viewthemenu_allergens.py --url https://viewthe.menu/dbav --out data/viewthemenu_allergens.json
 """
 
 from __future__ import annotations

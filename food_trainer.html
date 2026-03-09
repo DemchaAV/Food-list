@@ -132,6 +132,10 @@
             box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
         }
 
+        .subcategory-select.hidden {
+            display: none;
+        }
+
         .swipe-left {
             transform: translateX(-120%) rotate(-8deg);
             opacity: 0.3;
@@ -261,6 +265,7 @@
                         Category
                     </h2>
                     <div id="categorySelect" class="flex flex-wrap justify-center gap-1.5"></div>
+                    <div id="subcategorySelect" class="subcategory-select hidden flex flex-wrap justify-center gap-1.5 mt-2"></div>
                 </div>
 
                 <div class="mb-3">
@@ -304,7 +309,7 @@
                         </button>
                         <button id="trainerNewFilter" onclick="toggleTrainerNewFilter()"
                             class="filter-btn bg-card-dark text-slate-300 px-3 py-1.5 rounded-xl text-sm font-medium border border-primary/20 flex items-center gap-1">
-                            <span class="material-symbols-outlined text-xs">new_releases</span> ✨ NEW
+                            <span class="material-symbols-outlined text-xs">new_releases</span> NEW
                         </button>
                     </div>
                 </div>
@@ -546,10 +551,13 @@
         let statWrong = 0;
         let currentQuestion = null;
         let selectedCategory = 'all';
+        let selectedSubcategory = 'all';
         let selectedType = 'mix';
         let selectedFlow = 'cards-quiz';
         let trainerMenuVersion = 'current';
         let trainerNewOnly = false;
+        const SLM_PARENT_CATEGORY = 'March Set Lunch (SLM)';
+        const SLM_SUBCATEGORY_ORDER = ['Starters', 'Mains', 'Desserts'];
 
         let flashcardQueue = [];
         let flashcardKnown = [];
@@ -562,6 +570,7 @@
         const trainingScreen = document.getElementById('trainingScreen');
         const completeScreen = document.getElementById('completeScreen');
         const categorySelect = document.getElementById('categorySelect');
+        const subcategorySelect = document.getElementById('subcategorySelect');
         const typeSelect = document.getElementById('typeSelect');
         const flowSelect = document.getElementById('flowSelect');
         const sessionInfo = document.getElementById('sessionInfo');
@@ -611,8 +620,89 @@
             document.getElementById(screenId).classList.add('active');
         }
 
+        function parseCategoryMeta(category) {
+            const raw = String(category || '').trim();
+            const slmMatch = raw.match(/^March Set Lunch \(SLM\)\s*-\s*(.+)$/i);
+            if (slmMatch) {
+                return {
+                    raw,
+                    parent: SLM_PARENT_CATEGORY,
+                    child: slmMatch[1].trim()
+                };
+            }
+            return {
+                raw,
+                parent: raw,
+                child: null
+            };
+        }
+
+        function sortSlmSubcategories(children) {
+            return [...children].sort((a, b) => {
+                const aIndex = SLM_SUBCATEGORY_ORDER.indexOf(a);
+                const bIndex = SLM_SUBCATEGORY_ORDER.indexOf(b);
+                if (aIndex !== -1 || bIndex !== -1) {
+                    return (aIndex === -1 ? Number.MAX_SAFE_INTEGER : aIndex) - (bIndex === -1 ? Number.MAX_SAFE_INTEGER : bIndex);
+                }
+                return a.localeCompare(b);
+            });
+        }
+
+        function getCategoryGroups(items) {
+            const standardCategories = new Set();
+            const slmChildren = new Set();
+
+            items.forEach(item => {
+                const meta = parseCategoryMeta(item.category);
+                if (!meta.parent) return;
+                if (meta.parent === SLM_PARENT_CATEGORY && meta.child) {
+                    slmChildren.add(meta.child);
+                    return;
+                }
+                standardCategories.add(meta.parent);
+            });
+
+            const categories = ['all', ...Array.from(standardCategories).sort()];
+            if (slmChildren.size > 0) categories.push(SLM_PARENT_CATEGORY);
+
+            return {
+                categories,
+                slmChildren: sortSlmSubcategories(slmChildren)
+            };
+        }
+
+        function getSelectedCategoryLabel() {
+            if (selectedCategory === 'all') return 'All Categories';
+            if (selectedCategory === SLM_PARENT_CATEGORY && selectedSubcategory !== 'all') {
+                return `${SLM_PARENT_CATEGORY} - ${selectedSubcategory}`;
+            }
+            return selectedCategory;
+        }
+
+        function renderSubcategoryButtons(children) {
+            const shouldShow = selectedCategory === SLM_PARENT_CATEGORY && children.length > 0;
+            subcategorySelect.innerHTML = '';
+            subcategorySelect.classList.toggle('hidden', !shouldShow);
+
+            if (!shouldShow) return;
+
+            ['all', ...children].forEach(child => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn bg-card-dark text-slate-300 px-3 py-1.5 rounded-xl text-sm font-medium border border-primary/20';
+                btn.textContent = child === 'all' ? 'All SLM' : child;
+                btn.dataset.subcategory = child;
+                if (child === selectedSubcategory) btn.classList.add('active');
+                btn.onclick = () => {
+                    selectedSubcategory = child;
+                    renderCategoryButtons();
+                    updateSessionInfo();
+                };
+                subcategorySelect.appendChild(btn);
+            });
+        }
+
         function renderCategoryButtons() {
-            const categories = ['all', ...Array.from(new Set(allFoodItems.map(c => c.category).filter(Boolean))).sort()];
+            const { categories, slmChildren } = getCategoryGroups(allFoodItems);
             categorySelect.innerHTML = '';
             categories.forEach(cat => {
                 const btn = document.createElement('button');
@@ -621,13 +711,14 @@
                 btn.dataset.category = cat;
                 if (cat === selectedCategory) btn.classList.add('active');
                 btn.onclick = () => {
-                    categorySelect.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
                     selectedCategory = cat;
+                    selectedSubcategory = 'all';
+                    renderCategoryButtons();
                     updateSessionInfo();
                 };
                 categorySelect.appendChild(btn);
             });
+            renderSubcategoryButtons(slmChildren);
         }
 
         function setupTypeButtons() {
@@ -654,14 +745,20 @@
         function updateSessionInfo() {
             const count = getFilteredItems().length;
             const flowLabel = selectedFlow === 'cards-quiz' ? 'cards + quiz' : 'quiz only';
-            sessionInfo.textContent = `${count} dishes • ${flowLabel}`;
+            sessionInfo.textContent = `${getSelectedCategoryLabel()} • ${count} dishes • ${flowLabel}`;
+        }
+
+        function matchesSelectedCategory(item) {
+            if (selectedCategory === 'all') return true;
+            const meta = parseCategoryMeta(item.category);
+            if (meta.parent !== selectedCategory) return false;
+            if (selectedCategory !== SLM_PARENT_CATEGORY) return true;
+            return selectedSubcategory === 'all' || meta.child === selectedSubcategory;
         }
 
         function getFilteredItems() {
             let items = allFoodItems;
-            if (selectedCategory !== 'all') {
-                items = items.filter(c => c.category && c.category.toLowerCase() === selectedCategory.toLowerCase());
-            }
+            items = items.filter(matchesSelectedCategory);
             if (trainerNewOnly) {
                 items = items.filter(c => c.tags && c.tags.includes('new'));
             }
@@ -712,8 +809,7 @@
         }
 
         function endSession() {
-            document.getElementById('completeCategory').textContent =
-                selectedCategory === 'all' ? 'All Categories' : selectedCategory;
+            document.getElementById('completeCategory').textContent = getSelectedCategoryLabel();
             document.getElementById('finalCorrect').textContent = statCorrect;
             document.getElementById('finalWrong').textContent = statWrong;
             const accuracy = sessionTotal > 0 ? Math.round((statCorrect / sessionTotal) * 100) : 0;
@@ -1075,6 +1171,8 @@
             } else {
                 allFoodItems = window.previousFoodItems || [];
             }
+            selectedCategory = 'all';
+            selectedSubcategory = 'all';
             renderCategoryButtons();
             updateSessionInfo();
         }
@@ -1108,8 +1206,20 @@
             if (window.foodDataReady) initializeTrainer();
         });
 
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW error:', err));
+        if (window.location.protocol.indexOf('http') === 0) {
+            fetch('./manifest.json', { cache: 'no-cache' })
+                .then(response => response.json())
+                .then(manifest => {
+                    const version = (manifest && manifest.version) ? String(manifest.version) : 'dev';
+                    if ('serviceWorker' in navigator) {
+                        return navigator.serviceWorker.register(`./sw.js?v=${encodeURIComponent(version)}`);
+                    }
+                })
+                .catch(() => {
+                    if ('serviceWorker' in navigator) {
+                        navigator.serviceWorker.register('./sw.js?v=dev').catch(err => console.log('SW error:', err));
+                    }
+                });
         }
     </script>
 </body>

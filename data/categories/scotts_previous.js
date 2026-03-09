@@ -1453,7 +1453,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-spicy-salmon-tartare62",
-    "name": "(SLM) SPICY SALMON TARTARE",
+    "name": "Spicy Salmon Tartare",
     "subtitle": "AVOCADO, SPRING ONION, CHILLI AND GARLIC DRESSING SESAME CRACKER.",
     "category": "Festive Menu (SLM)",
     "description": "Diced salmon mixed with cucumber, spring onion and coriander and serve on a bed of chopped avocado. Garnished with fried taro root crisps which are seasoned with togarashi pepper.",
@@ -1462,15 +1462,21 @@ window.registerPreviousFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "togarashi: A Japanese spice blend, typically containing chili peppers, sesame seeds, and seaweed."
+      "Salmon: Fresh, diced fish, the star of the tartare.",
+      "Avocado: Creamy base, providing richness and texture.",
+      "Chilli: Adds a vibrant heat to the dressing.",
+      "Taro Root: Fried crisps seasoned with togarashi spice.",
+      "Sesame Cracker: Served alongside, complements the flavors."
     ],
     "additionalNotes": "Contains Gluten, Dairy, Eggs, Fish, Nuts. Can be removed (crisps).",
     "allergens": [
-      "Gluten",
-      "Dairy",
       "Eggs",
       "Fish",
-      "Nuts"
+      "Gluten",
+      "Sesame Seeds",
+      "Soya",
+      "May contain Crustaceans",
+      "May contain Molluscs"
     ],
     "kitchenMep": "Devon crab bowl",
     "serviceMep": "Starter fork and knife",
@@ -1478,7 +1484,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-roscoff-onion-tarte-tatin63",
-    "name": "(SLM) ROSCOFF ONION TARTE TATIN",
+    "name": "Roscoff Onion Tarte Tatin",
     "subtitle": "RIPPED BURRATA AND SAUTEED WILD MUSHROOMS.",
     "category": "Festive Menu (SLM)",
     "description": "Roscoff onions are baked in a puff pastry case with a light caramel and then topped with ripped burrata cheese and sauteed wild mushrooms, then garnished with land cress.",
@@ -1487,11 +1493,15 @@ window.registerPreviousFoodCategory([
       "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "Roscoff onions- a sweet, pink-skinned French onion from Brittany. Tarte tatin- A Tarte Tatin is a classic French \"upside-down\" dessert. In this case it is a savoury dish."
+      "Tarte Tatin: A French dessert tart with caramelized fruit.",
+      "Burrata: A fresh Italian cheese with a soft, creamy center.",
+      "Wild Mushrooms: Mushrooms foraged from the wild, offering earthy notes.",
+      "Puff Pastry: A flaky, layered pastry dough, ideal for baking."
     ],
     "allergens": [
-      "Gluten",
-      "Dairy"
+      "Dairy",
+      "Eggs",
+      "Gluten"
     ],
     "additionalNotes": "Gluten and dairy CANNOT be removed.",
     "kitchenMep": "Medium plate",
@@ -1500,7 +1510,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-caramelised-jerusalem64",
-    "name": "(SLM) CARAMELISED JERUSALEM",
+    "name": "Caramelised Jerusalem Artichoke Soup",
     "subtitle": "ARTICHOKE SOUP, TRUFFLED PARMESAN GOUJERE",
     "category": "Festive Menu (SLM)",
     "description": "Jerusalem artichokes are sliced and caramelised in butter with shallots, celery and leeks then cooked out in vegetable stock before being blended with a touch of creme fraiche. On the side is a goujere filled with a truffled cheese sauce and topped with grated parmesan.",
@@ -1509,13 +1519,19 @@ window.registerPreviousFoodCategory([
       "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "creme fraiche: A French cultured cream, thicker and less fat than heavy cream.",
-      "goujere: A type of cheese puff."
+      "Jerusalem Artichokes: A root vegetable with a nutty, slightly sweet flavor.",
+      "Caramelised: Cooked slowly in sugar to develop a rich, brown color and sweetness.",
+      "Shallots: A type of onion with a milder, sweeter flavor than yellow onions.",
+      "Creme Fraiche: A cultured dairy product, thicker than cream, used for richness.",
+      "Goujere: A small, savory pastry filled with cheese.",
+      "Parmesan: A hard, granular cheese with a salty, umami flavor."
     ],
     "additionalNotes": "Served table side Contains dairy which CANNOT be removed. Contains gluten which CAN be removed.",
     "allergens": [
-      "Gluten",
-      "Dairy"
+      "Celery",
+      "Dairy",
+      "Eggs",
+      "Gluten"
     ],
     "kitchenMep": "Soup bowl, medium plate.",
     "serviceMep": "Soup spoon",
@@ -1523,7 +1539,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-fillet-of-cornish-pollock65",
-    "name": "(SLM) FILLET OF CORNISH POLLOCK",
+    "name": "Fillet of Cornish pollock",
     "subtitle": "BUTTERNUT SQUASH AND MISO PUREE, TOASTED SEEDS, BROWN BUTTER PONZU DRESSING.",
     "category": "Festive Menu (SLM)",
     "description": "Pan-fried fillet of pollock served on a butternut squash and miso puree, then garnished with toasted pumpkin seed, brown butter and balsamic. Finished with Italian winter leaves dressed with mimosa and chives.",
@@ -1532,11 +1548,22 @@ window.registerPreviousFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Italian winter leaves: A type of radicchio"
+      "Pollock: A firm, white fish from the Atlantic.",
+      "Butternut Squash: Sweet, orange winter squash.",
+      "Miso Puree: Fermented soybean paste creating a savory base.",
+      "Brown Butter: Butter cooked until nutty and browned.",
+      "Ponzu Dressing: Citrus-based sauce with soy and vinegar.",
+      "Italian Winter Leaves: Delicate microgreens with a fresh taste."
     ],
     "additionalNotes": null,
     "allergens": [
-      "Fish"
+      "Dairy",
+      "Fish",
+      "Gluten",
+      "Soya",
+      "Sulphur Dioxide/Sulphites",
+      "May contain Crustaceans",
+      "May contain Molluscs"
     ],
     "kitchenMep": "Masala bowl",
     "serviceMep": "Main fork and knife",
@@ -1544,7 +1571,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-scotts-fish-pie66",
-    "name": "(SLM) SCOTTS FISH PIE",
+    "name": "Scott’s Fish Pie",
     "subtitle": "HALIBUT, SMOKED HADDOCK, SALMON AND PRAWNS.",
     "category": "Festive Menu (SLM)",
     "description": "Halibut, salmon, smoked haddock and prawns bound in a fish veloute and topped with mashed potato, then baked in oven until golden brown on top.",
@@ -1553,23 +1580,31 @@ window.registerPreviousFoodCategory([
       "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
     },
     "allergens": [
-      "Gluten",
-      "Dairy",
+      "Celery",
       "Crustaceans",
-      "Shellfish",
-      "Fish"
+      "Dairy",
+      "Eggs",
+      "Fish",
+      "Gluten",
+      "Mustard",
+      "Soya",
+      "Sulphur Dioxide/Sulphites"
     ],
     "additionalNotes": "Cold pass give ladle.",
     "kitchenMep": "Dessert plate and Masala bowl",
     "serviceMep": "Main fork and knife",
     "image": "data/categories/menu_images/(SLM) SCOTTS FISH PIE.jpeg",
     "glossary": [
-      "Contains gluten and dairy – cannot be removed."
+      "Veloute: A creamy sauce made with stock and thickened with roux.",
+      "Halibut: A firm, white-fleshed fish, excellent for baking.",
+      "Smoked Haddock: Fish cured and cooked with smoke, adding a rich flavor.",
+      "Mashed Potato: Boiled and mashed potatoes, typically served warm.",
+      "Prawns: Small crustaceans, often cooked and served shelled."
     ]
   },
   {
     "id": "slm-fried-cauliflower-steak67",
-    "name": "(SLM) FRIED CAULIFLOWER STEAK",
+    "name": "Fried Cauliflower Steak",
     "subtitle": "CONFIT GARLIC HUMUS, PICKLED SHALLOT AND HERB SALAD.",
     "category": "Festive Menu (SLM)",
     "description": "Wedge of cauliflower which has been blanched and then fried in a light tempura batter, then served on a bed of confit garlic hummus and topped with pickled shallot and herb salad.",
@@ -1578,12 +1613,16 @@ window.registerPreviousFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Pickled Shallot: Shallots preserved in vinegar, creating a tangy and acidic flavor."
+      "Cauliflower Steak: A thick-cut, blanched cauliflower segment.",
+      "Tempura Batter: Light, crispy coating for frying.",
+      "Confit Garlic Hummus: Garlic slow-cooked in olive oil.",
+      "Pickled Shallot: Shallots preserved in vinegar for tang."
     ],
     "additionalNotes": "Contains dairy and gluten.",
     "allergens": [
       "Gluten",
-      "Dairy"
+      "Sesame Seeds",
+      "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Masala bowl",
     "serviceMep": "Main fork and knife",
@@ -1591,7 +1630,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-yorkshire-rhubarb-coupe68",
-    "name": "(SLM) YORKSHIRE RHUBARB COUPE",
+    "name": "Yorkshire Rhubarb Coupe",
     "subtitle": "VANILLA ICECREAM.",
     "category": "Festive Menu (SLM)",
     "description": "Vanilla ice cream rippled with a rhubarb jam. Served with poached rhubarb, creme Chantilly and a vanilla shortbread on the side.",
@@ -1600,12 +1639,18 @@ window.registerPreviousFoodCategory([
       "notes": "Aromas of dried apricot, elderflower, honeysuckle and orange peel leap from the glass. Caramelised peaches, fresh honey, a touch of brown sugar but with contrasting lemony pith and stoney minerality, luscious sweetness with core of uplifting and vibrant acidity"
     },
     "glossary": [
-      "Creme Chantilly: A light and airy whipped cream flavored with vanilla."
+      "Rhubarb: Tart, tangy fruit, key ingredient in the jam.",
+      "Creme Chantilly: Light, sweet whipped cream, a classic garnish.",
+      "Vanilla Shortbread: Delicate biscuit, providing a buttery base.",
+      "Poached Rhubarb: Rhubarb cooked gently in a liquid, tender texture.",
+      "Vanilla Icecream: Sweet frozen dessert, complements the rhubarb."
     ],
     "additionalNotes": "Contains dairy and gluten. Gluten can be removed (shortbread).",
     "allergens": [
+      "Dairy",
+      "Eggs",
       "Gluten",
-      "Dairy"
+      "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Dessert spoon",
     "serviceMep": "Dessert spoon",
@@ -1613,7 +1658,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-steamed-sponge-pudding69",
-    "name": "(SLM) STEAMED SPONGE PUDDING",
+    "name": "Steamed Sponge Pudding",
     "subtitle": "GOLDEN SYRUP.",
     "category": "Festive Menu (SLM)",
     "description": "Vanilla steamed sponge pudding that is cooked in a steamer for 1 hour. Served warm and drizzled with golden syrup.",
@@ -1622,13 +1667,16 @@ window.registerPreviousFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "Gluten, dairy and eggs cannot be removed."
+      "Steamed Sponge Pudding: A light, airy pudding cooked using steam.",
+      "Golden Syrup: Dark, rich syrup made from sugar and molasses.",
+      "Vanilla: A classic flavoring used in the pudding base.",
+      "Pudding: A creamy dessert, traditionally thickened with starch."
     ],
     "additionalNotes": null,
     "allergens": [
-      "Gluten",
       "Dairy",
-      "Eggs"
+      "Eggs",
+      "Gluten"
     ],
     "kitchenMep": "Devon crab bowl",
     "serviceMep": "Starter fork and dessert spoon",
@@ -1636,7 +1684,7 @@ window.registerPreviousFoodCategory([
   },
   {
     "id": "slm-chocolate-and-hazelnut-delice70",
-    "name": "(SLM) CHOCOLATE AND HAZELNUT DELICE",
+    "name": "Chocolate and Hazelnut Delice",
     "subtitle": "PRALINE ICE-CREAM.",
     "category": "Festive Menu (SLM)",
     "description": "Chocolate delice, that is dipped in a dark chocolate mirror glaze and has a crispy base of hazelnut praline, white chocolate and feuilletine. It is served with a chocolate and hazelnut tuile, hazelnut praline ice-cream and a caramelised hazelnut.",
@@ -1645,16 +1693,20 @@ window.registerPreviousFoodCategory([
       "notes": "inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Feuilletine: A thin, flaky pastry made from layers of dough and butter."
+      "Delice: A rich, dense, and decadent dessert.",
+      "Praline Ice-Cream: Cream infused with hazelnut praline.",
+      "Feuilletine: Thin, crispy, layered pastry flakes.",
+      "Mirror Glaze: A glossy, smooth chocolate coating.",
+      "Hazelnut Praline: Nut confection with caramelized sugar."
     ],
     "additionalNotes": null,
     "allergens": [
-      "Gluten",
       "Dairy",
       "Eggs",
+      "Gluten",
       "Nuts",
-      "Peanuts",
-      "Soya"
+      "Soya",
+      "Sulphur Dioxide/Sulphites"
     ],
     "kitchenMep": "Black plate",
     "serviceMep": "Starter fork and spoon",

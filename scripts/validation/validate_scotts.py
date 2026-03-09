@@ -7,7 +7,8 @@ import re
 from pathlib import Path
 from collections import Counter
 
-path = Path(__file__).parent / "data" / "categories" / "scotts.js"
+ROOT = Path(__file__).resolve().parents[2]
+path = ROOT / "data" / "categories" / "scotts.js"
 text = path.read_text(encoding="utf-8")
 
 # 1. Parse
@@ -17,14 +18,14 @@ match = re.search(
     re.DOTALL,
 )
 if not match:
-    print("❌ FATAL: Cannot find registerFoodCategory wrapper")
+    print("ERROR: Cannot find registerFoodCategory wrapper")
     exit(1)
 
 try:
     items = json.loads(match.group(1))
-    print(f"✅ Valid JSON — {len(items)} items parsed")
+    print(f"OK: Valid JSON - {len(items)} items parsed")
 except json.JSONDecodeError as e:
-    print(f"❌ FATAL: Invalid JSON — {e}")
+    print(f"ERROR: Invalid JSON - {e}")
     exit(1)
 
 # 2. Required fields
@@ -39,11 +40,11 @@ for i, item in enumerate(items):
             missing_fields.append(f"  Item {i} ({item.get('name','?')}): missing '{f}'")
 
 if missing_fields:
-    print(f"⚠️  Missing fields ({len(missing_fields)}):")
+    print(f"WARN: Missing fields ({len(missing_fields)}):")
     for m in missing_fields:
         print(m)
 else:
-    print("✅ All items have all required fields")
+    print("OK: All items have all required fields")
 
 # 3. Type consistency
 glossary_types = Counter()
@@ -57,7 +58,7 @@ for item in items:
     wine_types[type(item.get("wineSuggestion")).__name__] += 1
     additionalNotes_types[type(item.get("additionalNotes")).__name__] += 1
 
-print(f"\n📊 Field type distribution:")
+print("\nField type distribution:")
 print(f"  glossary:        {dict(glossary_types)}")
 print(f"  allergens:       {dict(allergens_types)}")
 print(f"  wineSuggestion:  {dict(wine_types)}")
@@ -79,19 +80,19 @@ for i, item in enumerate(items):
         )
 
 if glossary_issues:
-    print(f"\n⚠️  Glossary consistency issues ({len(glossary_issues)}):")
+    print(f"\nWARN: Glossary consistency issues ({len(glossary_issues)}):")
     for g in glossary_issues:
         print(g)
 else:
-    print("✅ Glossary format consistent")
+    print("OK: Glossary format consistent")
 
 # 5. Check unique IDs
 ids = [item["id"] for item in items]
 dupes = [id for id, count in Counter(ids).items() if count > 1]
 if dupes:
-    print(f"❌ Duplicate IDs: {dupes}")
+    print(f"ERROR: Duplicate IDs: {dupes}")
 else:
-    print(f"✅ All {len(ids)} IDs unique")
+    print(f"OK: All {len(ids)} IDs unique")
 
 # 6. Check allergens are arrays
 allergen_issues = []
@@ -101,11 +102,11 @@ for i, item in enumerate(items):
         allergen_issues.append(f"  Item {i} ({item['name']}): allergens is {type(a).__name__}: {a}")
 
 if allergen_issues:
-    print(f"❌ Allergens not arrays ({len(allergen_issues)}):")
+    print(f"ERROR: Allergens not arrays ({len(allergen_issues)}):")
     for a in allergen_issues:
         print(a)
 else:
-    print("✅ All allergens are arrays")
+    print("OK: All allergens are arrays")
 
 # 7. Check wineSuggestion structure
 wine_issues = []
@@ -120,11 +121,11 @@ for i, item in enumerate(items):
             wine_issues.append(f"  Item {i} ({item['name']}): wineSuggestion missing 'notes'")
 
 if wine_issues:
-    print(f"⚠️  Wine suggestion issues ({len(wine_issues)}):")
+    print(f"WARN: Wine suggestion issues ({len(wine_issues)}):")
     for w in wine_issues:
         print(w)
 else:
-    print("✅ All wineSuggestions valid (dict with name+notes or null)")
+    print("OK: All wineSuggestions valid (dict with name+notes or null)")
 
 # 8. Null fields summary
 null_counts = Counter()
@@ -134,8 +135,8 @@ for item in items:
             null_counts[f] += 1
 
 if null_counts:
-    print(f"\n📊 Null field counts:")
+    print("\nNull field counts:")
     for field, count in sorted(null_counts.items(), key=lambda x: -x[1]):
         print(f"  {field}: {count}/{len(items)} null")
 
-print("\n✅ Validation complete!")
+print("\nOK: Validation complete!")

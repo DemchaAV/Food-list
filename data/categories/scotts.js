@@ -1868,265 +1868,283 @@ window.registerFoodCategory([
     "service": "Posset glass, side plate"
   },
   {
-    "id": "slm-spicy-salmon-tartare62",
-    "name": "Spicy Salmon Tartare",
-    "subtitle": "AVOCADO, SPRING ONION, CHILLI AND GARLIC DRESSING SESAME CRACKER.",
-    "category": "Festive Menu (SLM)",
-    "description": "Diced salmon mixed with cucumber, spring onion and coriander and serve on a bed of chopped avocado. Garnished with fried taro root crisps which are seasoned with togarashi pepper.",
+    "id": "slm-sea-bream-crudo-01",
+    "name": "Sea Bream Crudo",
+    "subtitle": "RUBY GRAPEFRUIT, BASIL, AJI AMARILLO.",
+    "category": "March Set Lunch (SLM) - Starters",
+    "description": "Slices of raw sea bream served with shaved fennel and ruby grapefruit segments, dressed with aji amarillo dressing and garnished with spring onion curls.",
     "wineSuggestion": {
-      "name": "Chablis Domaine de la Genillotte",
-      "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
+      "name": "Albariño",
+      "notes": "Bright citrus and saline freshness pair well with raw fish, grapefruit and fennel."
     },
     "glossary": [
-      "Salmon: Fresh, diced fish, the star of the tartare.",
-      "Avocado: Creamy base, providing richness and texture.",
-      "Chilli: Adds a vibrant heat to the dressing.",
-      "Taro Root: Fried crisps seasoned with togarashi spice.",
-      "Sesame Cracker: Served alongside, complements the flavors."
+      "Sea Bream: A delicate white fish served raw in thin slices.",
+      "Ruby Grapefruit: Adds sharp citrus freshness and light bitterness.",
+      "Aji Amarillo: A yellow chilli pepper used here in a bright, fruity dressing.",
+      "Fennel: Thinly shaved for a crisp anise note.",
+      "Spring Onion: Used as a fresh garnish with gentle allium flavour."
     ],
-    "additionalNotes": "Contains Gluten, Dairy, Eggs, Fish, Nuts. Can be removed (crisps).",
+    "additionalNotes": "Served raw. Contains Fish, Sulphites, Gluten, Celery.",
     "allergens": [
-      "Eggs",
       "Fish",
+      "Sulphites",
       "Gluten",
-      "Sesame Seeds",
-      "Soya",
-      "May contain Crustaceans",
-      "May contain Molluscs"
+      "Celery"
     ],
-    "kitchenMep": "Devon crab bowl",
-    "serviceMep": "Starter fork and knife",
-    "image": "data/categories/menu_images/(SLM) SPICY SALMON TARTARE.jpeg"
+    "kitchenMep": "White bowl",
+    "serviceMep": "Small knife and fork",
+    "image": "data/categories/menu_images/sea-bream-crudo-generated.png"
   },
   {
-    "id": "slm-roscoff-onion-tarte-tatin63",
-    "name": "Roscoff Onion Tarte Tatin",
-    "subtitle": "RIPPED BURRATA AND SAUTEED WILD MUSHROOMS.",
-    "category": "Festive Menu (SLM)",
-    "description": "Roscoff onions are baked in a puff pastry case with a light caramel and then topped with ripped burrata cheese and sauteed wild mushrooms, then garnished with land cress.",
+    "id": "slm-steak-tartare-02",
+    "name": "Steak Tartare",
+    "subtitle": "HAND CUT CRISPS.",
+    "category": "March Set Lunch (SLM) - Starters",
+    "description": "Minced Black Angus sirloin mixed with finely chopped shallots, gherkins and capers, dressed with ketchup, Dijon mustard, Worcestershire sauce and Tabasco, then finished with chopped chives and served with hand cut crisps.",
     "wineSuggestion": {
-      "name": "Bourgogne Pinot Noir OKA Arlaud",
-      "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
+      "name": "Pinot Noir",
+      "notes": "Soft tannins and fresh acidity work nicely with beef, capers and mustard."
     },
     "glossary": [
-      "Tarte Tatin: A French dessert tart with caramelized fruit.",
-      "Burrata: A fresh Italian cheese with a soft, creamy center.",
-      "Wild Mushrooms: Mushrooms foraged from the wild, offering earthy notes.",
-      "Puff Pastry: A flaky, layered pastry dough, ideal for baking."
+      "Black Angus Sirloin: Tender beef used as the base of the tartare.",
+      "Shallots: Finely chopped for mild onion sweetness.",
+      "Gherkins: Add acidity and crunch.",
+      "Capers: Bring briny, savoury intensity.",
+      "Worcestershire Sauce: Adds umami depth to the dressing."
     ],
+    "additionalNotes": "Served raw. Contains Fish, Sulphites, Mustard.",
     "allergens": [
+      "Fish",
+      "Sulphites",
+      "Mustard"
+    ],
+    "kitchenMep": "White bowl",
+    "serviceMep": "Small knife and fork",
+    "image": "data/categories/menu_images/steak-tartare-generated.png"
+  },
+  {
+    "id": "slm-wedge-salad-03",
+    "name": "Wedge Salad",
+    "subtitle": "SOURDOUGH CROUTONS, CHIVES AND RANCH DRESSING.",
+    "category": "March Set Lunch (SLM) - Starters",
+    "description": "A wedge of iceberg lettuce dressed with ranch dressing made from crème fraîche, mayonnaise, garlic and herbs, then topped with sourdough croutons, chives and pickled shallots.",
+    "wineSuggestion": {
+      "name": "Sauvignon Blanc",
+      "notes": "Fresh acidity and herbal lift complement the creamy dressing and crisp salad."
+    },
+    "glossary": [
+      "Iceberg Lettuce: Served as a crisp wedge with a cool, crunchy texture.",
+      "Ranch Dressing: Creamy dressing made with crème fraîche, mayonnaise, garlic and herbs.",
+      "Sourdough Croutons: Toasted bread pieces adding crunch.",
+      "Chives: Mild onion herb used as a fresh garnish.",
+      "Pickled Shallots: Add sweetness and acidity."
+    ],
+    "additionalNotes": "Contains Gluten, Dairy, Celery, Mustard, Eggs, Sulphites.",
+    "allergens": [
+      "Gluten",
       "Dairy",
-      "Eggs",
-      "Gluten"
-    ],
-    "additionalNotes": "Gluten and dairy CANNOT be removed.",
-    "kitchenMep": "Medium plate",
-    "serviceMep": "Starter knife and fork",
-    "image": "data/categories/menu_images/(SLM) ROSCOFF ONION TARTE TATIN.jpeg"
-  },
-  {
-    "id": "slm-caramelised-jerusalem64",
-    "name": "Caramelised Jerusalem Artichoke Soup",
-    "subtitle": "ARTICHOKE SOUP, TRUFFLED PARMESAN GOUJERE",
-    "category": "Festive Menu (SLM)",
-    "description": "Jerusalem artichokes are sliced and caramelised in butter with shallots, celery and leeks then cooked out in vegetable stock before being blended with a touch of creme fraiche. On the side is a goujere filled with a truffled cheese sauce and topped with grated parmesan.",
-    "wineSuggestion": {
-      "name": "Bourgogne Pinot Noir OKA Arlaud",
-      "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
-    },
-    "glossary": [
-      "Jerusalem Artichokes: A root vegetable with a nutty, slightly sweet flavor.",
-      "Caramelised: Cooked slowly in sugar to develop a rich, brown color and sweetness.",
-      "Shallots: A type of onion with a milder, sweeter flavor than yellow onions.",
-      "Creme Fraiche: A cultured dairy product, thicker than cream, used for richness.",
-      "Goujere: A small, savory pastry filled with cheese.",
-      "Parmesan: A hard, granular cheese with a salty, umami flavor."
-    ],
-    "additionalNotes": "Served table side Contains dairy which CANNOT be removed. Contains gluten which CAN be removed.",
-    "allergens": [
       "Celery",
-      "Dairy",
-      "Eggs",
-      "Gluten"
-    ],
-    "kitchenMep": "Soup bowl, medium plate.",
-    "serviceMep": "Soup spoon",
-    "image": "data/categories/menu_images/(SLM) CARAMELISED JERUSALEM.jpeg"
-  },
-  {
-    "id": "slm-fillet-of-cornish-pollock65",
-    "name": "Fillet of Cornish pollock",
-    "subtitle": "BUTTERNUT SQUASH AND MISO PUREE, TOASTED SEEDS, BROWN BUTTER PONZU DRESSING.",
-    "category": "Festive Menu (SLM)",
-    "description": "Pan-fried fillet of pollock served on a butternut squash and miso puree, then garnished with toasted pumpkin seed, brown butter and balsamic. Finished with Italian winter leaves dressed with mimosa and chives.",
-    "wineSuggestion": {
-      "name": "Chablis Domaine de la Genillotte",
-      "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
-    },
-    "glossary": [
-      "Pollock: A firm, white fish from the Atlantic.",
-      "Butternut Squash: Sweet, orange winter squash.",
-      "Miso Puree: Fermented soybean paste creating a savory base.",
-      "Brown Butter: Butter cooked until nutty and browned.",
-      "Ponzu Dressing: Citrus-based sauce with soy and vinegar.",
-      "Italian Winter Leaves: Delicate microgreens with a fresh taste."
-    ],
-    "additionalNotes": null,
-    "allergens": [
-      "Dairy",
-      "Fish",
-      "Gluten",
-      "Soya",
-      "Sulphur Dioxide/Sulphites",
-      "May contain Crustaceans",
-      "May contain Molluscs"
-    ],
-    "kitchenMep": "Masala bowl",
-    "serviceMep": "Main fork and knife",
-    "image": "data/categories/menu_images/(SLM) FILLET OF CORNISH POLLOCK.jpeg"
-  },
-  {
-    "id": "slm-scotts-fish-pie66",
-    "name": "Scott’s Fish Pie",
-    "subtitle": "HALIBUT, SMOKED HADDOCK, SALMON AND PRAWNS.",
-    "category": "Festive Menu (SLM)",
-    "description": "Halibut, salmon, smoked haddock and prawns bound in a fish veloute and topped with mashed potato, then baked in oven until golden brown on top.",
-    "wineSuggestion": {
-      "name": "Chenin Blanc The Lark Olifantsberg",
-      "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
-    },
-    "allergens": [
-      "Celery",
-      "Crustaceans",
-      "Dairy",
-      "Eggs",
-      "Fish",
-      "Gluten",
       "Mustard",
+      "Eggs",
+      "Sulphites"
+    ],
+    "kitchenMep": "Speckled plate",
+    "serviceMep": "Small knife and fork",
+    "image": "data/categories/menu_images/wedge-salad-generated.png"
+  },
+  {
+    "id": "slm-miso-glazed-chalkstream-trout-04",
+    "name": "Miso Glazed Chalkstream Trout",
+    "subtitle": "DAIKON, SPRING ONION AND DASHI BROTH.",
+    "category": "March Set Lunch (SLM) - Mains",
+    "description": "Fillet of Chalkstream trout marinated in miso, then caramelised and served with dashi broth and a salad of daikon, spring onion, carrot and coriander.",
+    "wineSuggestion": {
+      "name": "Dry Riesling",
+      "notes": "Crisp acidity and mineral freshness balance the umami of miso and dashi."
+    },
+    "glossary": [
+      "Chalkstream Trout: Premium freshwater trout with a clean, delicate flavour.",
+      "Miso: Fermented soybean paste used for savoury glaze and caramelisation.",
+      "Daikon: Mild white radish served in the accompanying salad.",
+      "Dashi: Light Japanese stock adding umami depth.",
+      "Coriander: Fresh herb that lifts the broth and salad."
+    ],
+    "additionalNotes": "Contains Fish, Sulphites, Soya, Gluten.",
+    "allergens": [
+      "Fish",
+      "Sulphites",
       "Soya",
-      "Sulphur Dioxide/Sulphites"
-    ],
-    "additionalNotes": "Cold pass give ladle.",
-    "kitchenMep": "Dessert plate and Masala bowl",
-    "serviceMep": "Main fork and knife",
-    "image": "data/categories/menu_images/(SLM) SCOTTS FISH PIE.jpeg",
-    "glossary": [
-      "Veloute: A creamy sauce made with stock and thickened with roux.",
-      "Halibut: A firm, white-fleshed fish, excellent for baking.",
-      "Smoked Haddock: Fish cured and cooked with smoke, adding a rich flavor.",
-      "Mashed Potato: Boiled and mashed potatoes, typically served warm.",
-      "Prawns: Small crustaceans, often cooked and served shelled."
-    ]
-  },
-  {
-    "id": "slm-fried-cauliflower-steak67",
-    "name": "Fried Cauliflower Steak",
-    "subtitle": "CONFIT GARLIC HUMUS, PICKLED SHALLOT AND HERB SALAD.",
-    "category": "Festive Menu (SLM)",
-    "description": "Wedge of cauliflower which has been blanched and then fried in a light tempura batter, then served on a bed of confit garlic hummus and topped with pickled shallot and herb salad.",
-    "wineSuggestion": {
-      "name": "Chablis Domaine de la Genillotte",
-      "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
-    },
-    "glossary": [
-      "Cauliflower Steak: A thick-cut, blanched cauliflower segment.",
-      "Tempura Batter: Light, crispy coating for frying.",
-      "Confit Garlic Hummus: Garlic slow-cooked in olive oil.",
-      "Pickled Shallot: Shallots preserved in vinegar for tang."
-    ],
-    "additionalNotes": "Contains dairy and gluten.",
-    "allergens": [
-      "Gluten",
-      "Sesame Seeds",
-      "Sulphur Dioxide/Sulphites"
-    ],
-    "kitchenMep": "Masala bowl",
-    "serviceMep": "Main fork and knife",
-    "image": "data/categories/menu_images/(SLM) FRIED CAULIFLOWER STEAK.jpeg"
-  },
-  {
-    "id": "slm-yorkshire-rhubarb-coupe68",
-    "name": "Yorkshire Rhubarb Coupe",
-    "subtitle": "VANILLA ICECREAM.",
-    "category": "Festive Menu (SLM)",
-    "description": "Vanilla ice cream rippled with a rhubarb jam. Served with poached rhubarb, creme Chantilly and a vanilla shortbread on the side.",
-    "wineSuggestion": {
-      "name": "Aszú 6 Puttonyos, Royal Tokaji",
-      "notes": "Aromas of dried apricot, elderflower, honeysuckle and orange peel leap from the glass. Caramelised peaches, fresh honey, a touch of brown sugar but with contrasting lemony pith and stoney minerality, luscious sweetness with core of uplifting and vibrant acidity"
-    },
-    "glossary": [
-      "Rhubarb: Tart, tangy fruit, key ingredient in the jam.",
-      "Creme Chantilly: Light, sweet whipped cream, a classic garnish.",
-      "Vanilla Shortbread: Delicate biscuit, providing a buttery base.",
-      "Poached Rhubarb: Rhubarb cooked gently in a liquid, tender texture.",
-      "Vanilla Icecream: Sweet frozen dessert, complements the rhubarb."
-    ],
-    "additionalNotes": "Contains dairy and gluten. Gluten can be removed (shortbread).",
-    "allergens": [
-      "Dairy",
-      "Eggs",
-      "Gluten",
-      "Sulphur Dioxide/Sulphites"
-    ],
-    "kitchenMep": "Dessert spoon",
-    "serviceMep": "Dessert spoon",
-    "image": "data/categories/menu_images/(SLM) YORKSHIRE RHUBARB COUPE.jpeg"
-  },
-  {
-    "id": "slm-steamed-sponge-pudding69",
-    "name": "Steamed Sponge Pudding",
-    "subtitle": "GOLDEN SYRUP.",
-    "category": "Festive Menu (SLM)",
-    "description": "Vanilla steamed sponge pudding that is cooked in a steamer for 1 hour. Served warm and drizzled with golden syrup.",
-    "wineSuggestion": {
-      "name": "Graham’s LBV port 2019",
-      "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
-    },
-    "glossary": [
-      "Steamed Sponge Pudding: A light, airy pudding cooked using steam.",
-      "Golden Syrup: Dark, rich syrup made from sugar and molasses.",
-      "Vanilla: A classic flavoring used in the pudding base.",
-      "Pudding: A creamy dessert, traditionally thickened with starch."
-    ],
-    "additionalNotes": null,
-    "allergens": [
-      "Dairy",
-      "Eggs",
       "Gluten"
     ],
-    "kitchenMep": "Devon crab bowl",
-    "serviceMep": "Starter fork and dessert spoon",
-    "image": "data/categories/menu_images/(SLM) STEAMED SPONGE PUDDING.jpeg"
+    "kitchenMep": "Bowl plate",
+    "serviceMep": "Large knife and fork",
+    "image": "data/categories/menu_images/miso-glazed-chalkstream-trout-generated.png"
   },
   {
-    "id": "slm-chocolate-and-hazelnut-delice70",
-    "name": "Chocolate and Hazelnut Delice",
-    "subtitle": "PRALINE ICE-CREAM.",
-    "category": "Festive Menu (SLM)",
-    "description": "Chocolate delice, that is dipped in a dark chocolate mirror glaze and has a crispy base of hazelnut praline, white chocolate and feuilletine. It is served with a chocolate and hazelnut tuile, hazelnut praline ice-cream and a caramelised hazelnut.",
+    "id": "slm-fillet-of-gurnard-05",
+    "name": "Fillet of Gurnard",
+    "subtitle": "KASHMIRI MASALA SAUCE, CORIANDER AND PICKLED SHALLOTS.",
+    "category": "March Set Lunch (SLM) - Mains",
+    "description": "Fillets of gurnard coated in breadcrumbs and deep-fried, served on a Kashmiri curry sauce and garnished with pickled shallots and picked coriander.",
     "wineSuggestion": {
-      "name": "Sauternes La Fleur d’Or 2021",
-      "notes": "inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
+      "name": "Viognier",
+      "notes": "Round texture and aromatic fruit can handle warm spice and fried fish."
     },
     "glossary": [
-      "Delice: A rich, dense, and decadent dessert.",
-      "Praline Ice-Cream: Cream infused with hazelnut praline.",
-      "Feuilletine: Thin, crispy, layered pastry flakes.",
-      "Mirror Glaze: A glossy, smooth chocolate coating.",
-      "Hazelnut Praline: Nut confection with caramelized sugar."
+      "Gurnard: A firm white fish suited to frying.",
+      "Breadcrumbs: Coating used to create a crisp exterior.",
+      "Kashmiri Masala: Fragrant curry-style sauce with gentle warmth.",
+      "Pickled Shallots: Add acidity to balance richness.",
+      "Coriander: Fresh herb garnish for brightness."
     ],
-    "additionalNotes": null,
+    "additionalNotes": "Contains Fish, Sulphites, Dairy, Egg, Gluten.",
     "allergens": [
+      "Fish",
+      "Sulphites",
       "Dairy",
-      "Eggs",
-      "Gluten",
-      "Nuts",
-      "Soya",
-      "Sulphur Dioxide/Sulphites"
+      "Egg",
+      "Gluten"
     ],
-    "kitchenMep": "Black plate",
-    "serviceMep": "Starter fork and spoon",
-    "image": "data/categories/menu_images/CHOCOLATE AND HAZELNUT DELICE.jpeg"
+    "kitchenMep": "Bowl plate",
+    "serviceMep": "Large knife and fork",
+    "image": "data/categories/menu_images/fillet-of-gurnard-generated.png"
+  },
+  {
+    "id": "slm-artichoke-wild-garlic-risotto-06",
+    "name": "Artichoke and Wild Garlic Risotto",
+    "subtitle": "",
+    "category": "March Set Lunch (SLM) - Mains",
+    "description": "Carnaroli risotto rice cooked in vegetable stock and finished with diced artichokes, wild garlic, Parmesan and butter.",
+    "wineSuggestion": {
+      "name": "Gavi",
+      "notes": "Clean acidity and subtle orchard fruit keep the risotto balanced without overpowering it."
+    },
+    "glossary": [
+      "Carnaroli Rice: Italian risotto rice prized for its creamy texture.",
+      "Artichoke: Adds earthy, slightly nutty flavour.",
+      "Wild Garlic: Brings a soft green garlic note.",
+      "Parmesan: Adds savoury richness and depth.",
+      "Butter: Finishes the risotto with gloss and creaminess."
+    ],
+    "additionalNotes": "Contains Sulphites, Dairy, Celery.",
+    "allergens": [
+      "Sulphites",
+      "Dairy",
+      "Celery"
+    ],
+    "kitchenMep": "Bowl plate",
+    "serviceMep": "Large knife and fork",
+    "image": "data/categories/menu_images/artichoke-and-wild-garlic-risotto-generated.png"
+  },
+  {
+    "id": "slm-black-angus-sirloin-steak-07",
+    "name": "Black Angus Sirloin Steak",
+    "subtitle": "POTATO ROSTI AND CHIMICHURRI SAUCE.",
+    "category": "March Set Lunch (SLM) - Mains",
+    "description": "Sirloin steak served with crispy potato rosti and chimichurri sauce made with parsley, oregano, shallot, chilli flakes, olive oil, garlic and vinegar.",
+    "wineSuggestion": {
+      "name": "Malbec",
+      "notes": "Dark fruit and structure pair naturally with grilled beef and herb sauce."
+    },
+    "glossary": [
+      "Black Angus Sirloin: Flavourful beef steak cut served as the main protein.",
+      "Potato Rosti: Crisp shredded potato cake served alongside the steak.",
+      "Chimichurri: Herb sauce made with parsley, oregano, garlic, shallot and vinegar.",
+      "Oregano: Adds an earthy herbal note to the sauce.",
+      "Chilli Flakes: Bring gentle heat to the chimichurri."
+    ],
+    "additionalNotes": "Contains Sulphites, Dairy.",
+    "allergens": [
+      "Sulphites",
+      "Dairy"
+    ],
+    "kitchenMep": "Fish plate",
+    "serviceMep": "Steak knife and fork",
+    "image": "data/categories/menu_images/black-angus-sirloin-steak-generated.png"
+  },
+  {
+    "id": "slm-raspberry-bakewell-tart-08",
+    "name": "Raspberry Bakewell Tart",
+    "subtitle": "CRÈME FRAÎCHE.",
+    "category": "March Set Lunch (SLM) - Desserts",
+    "description": "A sweet pastry tart shell filled with raspberry jam and almond sponge, topped with fresh raspberries, baked in the oven, dusted with icing sugar and served with a rocher of crème fraîche.",
+    "wineSuggestion": {
+      "name": "Moscato d'Asti",
+      "notes": "Light sweetness and floral fruit suit raspberry and almond without feeling heavy."
+    },
+    "glossary": [
+      "Raspberry Jam: Fruity layer inside the tart.",
+      "Almond Sponge: Classic Bakewell-style filling with nutty sweetness.",
+      "Fresh Raspberries: Used as the topping before baking.",
+      "Icing Sugar: Light finishing dust over the tart.",
+      "Crème Fraîche: Tangy cultured cream served on the side."
+    ],
+    "additionalNotes": "Contains Eggs, Dairy, Gluten, Almonds (Nuts).",
+    "allergens": [
+      "Eggs",
+      "Dairy",
+      "Gluten",
+      "Almonds",
+      "Nuts"
+    ],
+    "kitchenMep": "Speckled plate",
+    "serviceMep": "Dessert spoon",
+    "image": "data/categories/menu_images/raspberry-bakewell-tart-generated.png"
+  },
+  {
+    "id": "slm-amedei-chocolate-mousse-09",
+    "name": "Amedei Chocolate Mousse",
+    "subtitle": "SEA SALT, OLIVE OIL AND SOURDOUGH CRISP.",
+    "category": "March Set Lunch (SLM) - Desserts",
+    "description": "Diced chocolate sponge is placed at the bottom of the glass, then topped with chocolate mousse and garnished with sea salt, olive oil, cocoa nibs and a sourdough crisp.",
+    "wineSuggestion": {
+      "name": "Ruby Port",
+      "notes": "Rich berry fruit and sweetness stand up well to dark chocolate and sea salt."
+    },
+    "glossary": [
+      "Amedei Chocolate: Premium chocolate used for the mousse.",
+      "Chocolate Sponge: Diced cake base layered in the glass.",
+      "Sea Salt: Enhances the chocolate flavour.",
+      "Olive Oil: Adds richness and a savoury edge.",
+      "Cocoa Nibs: Provide bitterness and crunch."
+    ],
+    "additionalNotes": "Contains Eggs, Dairy, Gelatine, Gluten.",
+    "allergens": [
+      "Eggs",
+      "Dairy",
+      "Gelatine",
+      "Gluten"
+    ],
+    "kitchenMep": "Glass",
+    "serviceMep": "Dessert spoon",
+    "image": "data/categories/menu_images/amedei-chocolate-mousse-generated.png"
+  },
+  {
+    "id": "slm-yorkshire-rhubarb-ripple-coupe-10",
+    "name": "Yorkshire Rhubarb Ripple Coupe",
+    "subtitle": "VANILLA SHORTBREAD.",
+    "category": "March Set Lunch (SLM) - Desserts",
+    "description": "Vanilla ice cream rippled with rhubarb jam, served with poached rhubarb, crème chantilly and a vanilla shortbread on the side.",
+    "wineSuggestion": {
+      "name": "Late Harvest Chenin Blanc",
+      "notes": "Honeyed fruit and balancing acidity complement rhubarb and cream."
+    },
+    "glossary": [
+      "Yorkshire Rhubarb: Regional rhubarb used for the ripple and garnish.",
+      "Vanilla Ice Cream: Base of the coupe dessert.",
+      "Rhubarb Jam: Swirled through the ice cream.",
+      "Crème Chantilly: Light whipped cream garnish.",
+      "Vanilla Shortbread: Buttery biscuit served on the side."
+    ],
+    "additionalNotes": "Contains Eggs, Dairy, Gluten.",
+    "allergens": [
+      "Eggs",
+      "Dairy",
+      "Gluten"
+    ],
+    "kitchenMep": "Side plate",
+    "serviceMep": "Dessert spoon",
+    "image": "data/categories/menu_images/yorkshire-rhubarb-ripple-coupe-generated.png"
   }
 ]);
 

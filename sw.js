@@ -37,11 +37,14 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     // Only handle http/https requests (skip chrome-extension:// etc.)
-    if (!event.request.url.startsWith('http')) return;
+    if (!event.request.url.startsWith('http') || event.request.method !== 'GET') return;
 
     event.respondWith(
         fetch(event.request)
             .then(response => {
+                if (!response || !response.ok) {
+                    return response;
+                }
                 const responseClone = response.clone();
                 caches.open(CACHE_NAME).then(cache => {
                     cache.put(event.request, responseClone);
@@ -50,7 +53,13 @@ self.addEventListener('fetch', (event) => {
             })
             .catch(() => {
                 return caches.match(event.request)
-                    .then(cached => cached || caches.match('./index.html'));
+                    .then(cached => {
+                        if (cached) return cached;
+                        if (event.request.mode === 'navigate') {
+                            return caches.match('./index.html');
+                        }
+                        return Response.error();
+                    });
             })
     );
 });

@@ -55,6 +55,12 @@
         .category-btn.active {
             background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
             color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.24);
+        }
+
+        .subcategory-row.hidden {
+            display: none;
         }
 
         .search-input:focus {
@@ -227,11 +233,16 @@
                 class="search-input w-full bg-card-dark text-white px-4 py-3 rounded-xl border border-primary/20 mb-3 placeholder-slate-500">
 
             <!-- Categories -->
-            <div class="flex gap-2 items-center">
+            <div class="flex flex-col gap-2">
+                <div class="flex gap-2 items-start">
                 <button id="newFilterBtn" onclick="toggleNewFilter()"
-                    class="flex-shrink-0 px-3 py-2 rounded-xl font-medium text-sm bg-card-dark text-slate-400 border border-primary/10 flex items-center gap-1 whitespace-nowrap transition-all">✨
-                    NEW</button>
-                <div id="categoryList" class="flex gap-2 overflow-x-auto pb-2"></div>
+                    class="category-btn flex-shrink-0 self-start px-4 py-2 rounded-xl font-medium text-sm bg-card-dark text-slate-400 border border-primary/10 flex items-center gap-1.5 whitespace-nowrap transition-all">
+                    <span class="material-symbols-outlined text-sm">new_releases</span>
+                    <span>NEW</span>
+                </button>
+                <div id="categoryList" class="flex gap-2 overflow-x-auto"></div>
+                </div>
+                <div id="subcategoryList" class="subcategory-row hidden flex gap-2 overflow-x-auto pb-2 pl-[56px]"></div>
             </div>
         </div>
 
@@ -271,11 +282,15 @@
         let allFoodItems = [];
         let filteredItems = [];
         let selectedCategory = 'all';
+        let selectedSubcategory = 'all';
         let currentMenuVersion = 'current';
         let filterNewOnly = false;
+        const SLM_PARENT_CATEGORY = 'March Set Lunch (SLM)';
+        const SLM_SUBCATEGORY_ORDER = ['Starters', 'Mains', 'Desserts'];
 
         const searchInput = document.getElementById('searchInput');
         const categoryList = document.getElementById('categoryList');
+        const subcategoryList = document.getElementById('subcategoryList');
         const foodList = document.getElementById('foodList');
         const itemCount = document.getElementById('itemCount');
         const catalogView = document.getElementById('catalogView');
@@ -283,8 +298,81 @@
         const detailContent = document.getElementById('detailContent');
         const detailBack = document.getElementById('detailBack');
 
+        function parseCategoryMeta(category) {
+            const raw = String(category || '').trim();
+            const slmMatch = raw.match(/^March Set Lunch \(SLM\)\s*-\s*(.+)$/i);
+            if (slmMatch) {
+                return {
+                    raw,
+                    parent: SLM_PARENT_CATEGORY,
+                    child: slmMatch[1].trim()
+                };
+            }
+            return {
+                raw,
+                parent: raw,
+                child: null
+            };
+        }
+
+        function sortSlmSubcategories(children) {
+            return [...children].sort((a, b) => {
+                const aIndex = SLM_SUBCATEGORY_ORDER.indexOf(a);
+                const bIndex = SLM_SUBCATEGORY_ORDER.indexOf(b);
+                if (aIndex !== -1 || bIndex !== -1) {
+                    return (aIndex === -1 ? Number.MAX_SAFE_INTEGER : aIndex) - (bIndex === -1 ? Number.MAX_SAFE_INTEGER : bIndex);
+                }
+                return a.localeCompare(b);
+            });
+        }
+
+        function getCategoryGroups(items) {
+            const standardCategories = new Set();
+            const slmChildren = new Set();
+
+            items.forEach(item => {
+                const meta = parseCategoryMeta(item.category);
+                if (!meta.parent) return;
+                if (meta.parent === SLM_PARENT_CATEGORY && meta.child) {
+                    slmChildren.add(meta.child);
+                    return;
+                }
+                standardCategories.add(meta.parent);
+            });
+
+            const categories = ['all', ...Array.from(standardCategories).sort()];
+            if (slmChildren.size > 0) categories.push(SLM_PARENT_CATEGORY);
+
+            return {
+                categories,
+                slmChildren: sortSlmSubcategories(slmChildren)
+            };
+        }
+
+        function renderSubcategories(children) {
+            const shouldShow = selectedCategory === SLM_PARENT_CATEGORY && children.length > 0;
+            subcategoryList.innerHTML = '';
+            subcategoryList.classList.toggle('hidden', !shouldShow);
+
+            if (!shouldShow) return;
+
+            const options = ['all', ...children];
+            options.forEach(child => {
+                const btn = document.createElement('button');
+                btn.className = 'category-btn flex-shrink-0 px-3 py-2 rounded-xl font-medium text-sm bg-card-dark text-slate-400 whitespace-nowrap border border-primary/10';
+                btn.textContent = child === 'all' ? 'All SLM' : child;
+                if (child === selectedSubcategory) btn.classList.add('active');
+                btn.onclick = () => {
+                    selectedSubcategory = child;
+                    filterAndRender();
+                    renderCategories();
+                };
+                subcategoryList.appendChild(btn);
+            });
+        }
+
         function renderCategories() {
-            const categories = ['all', ...Array.from(new Set(allFoodItems.map(c => c.category).filter(Boolean))).sort()];
+            const { categories, slmChildren } = getCategoryGroups(allFoodItems);
             categoryList.innerHTML = '';
             categories.forEach(cat => {
                 const btn = document.createElement('button');
@@ -293,18 +381,27 @@
                 if (cat === selectedCategory) btn.classList.add('active');
                 btn.onclick = () => {
                     selectedCategory = cat;
-                    categoryList.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
+                    selectedSubcategory = 'all';
                     filterAndRender();
+                    renderCategories();
                 };
                 categoryList.appendChild(btn);
             });
+            renderSubcategories(slmChildren);
+        }
+
+        function matchesSelectedCategory(item) {
+            if (selectedCategory === 'all') return true;
+            const meta = parseCategoryMeta(item.category);
+            if (selectedCategory !== meta.parent) return false;
+            if (selectedCategory !== SLM_PARENT_CATEGORY) return true;
+            return selectedSubcategory === 'all' || meta.child === selectedSubcategory;
         }
 
         function filterAndRender() {
             const query = searchInput.value.toLowerCase().trim();
             filteredItems = allFoodItems.filter(item => {
-                const matchCategory = selectedCategory === 'all' || item.category === selectedCategory;
+                const matchCategory = matchesSelectedCategory(item);
                 const matchSearch = !query ||
                     item.name.toLowerCase().includes(query) ||
                     (item.subtitle && item.subtitle.toLowerCase().includes(query)) ||
@@ -592,17 +689,7 @@
         function toggleNewFilter() {
             filterNewOnly = !filterNewOnly;
             const btn = document.getElementById('newFilterBtn');
-            if (filterNewOnly) {
-                btn.classList.add('active');
-                btn.style.background = 'linear-gradient(135deg, #14b8a6 0%, #0d9488 100%)';
-                btn.style.color = 'white';
-                btn.style.borderColor = 'transparent';
-            } else {
-                btn.classList.remove('active');
-                btn.style.background = '';
-                btn.style.color = '';
-                btn.style.borderColor = '';
-            }
+            btn.classList.toggle('active', filterNewOnly);
             filterAndRender();
         }
 
@@ -618,6 +705,7 @@
             }
 
             selectedCategory = 'all';
+            selectedSubcategory = 'all';
             searchInput.value = '';
             renderCategories();
             filterAndRender();
@@ -642,8 +730,20 @@
             if (window.foodDataReady) initialize();
         });
 
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW error:', err));
+        if (window.location.protocol.indexOf('http') === 0) {
+            fetch('./manifest.json', { cache: 'no-cache' })
+                .then(response => response.json())
+                .then(manifest => {
+                    const version = (manifest && manifest.version) ? String(manifest.version) : 'dev';
+                    if ('serviceWorker' in navigator) {
+                        return navigator.serviceWorker.register(`./sw.js?v=${encodeURIComponent(version)}`);
+                    }
+                })
+                .catch(() => {
+                    if ('serviceWorker' in navigator) {
+                        navigator.serviceWorker.register('./sw.js?v=dev').catch(err => console.log('SW error:', err));
+                    }
+                });
         }
     </script>
 </body>

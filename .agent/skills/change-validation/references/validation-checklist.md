@@ -4,13 +4,13 @@
 
 ```powershell
 python .agent/skills/app-version-bump/scripts/bump_app_version.py
-python validate_scotts.py
+python scripts/validation/validate_scotts.py
 ```
 
 Optional deeper validation:
 
 ```powershell
-python validate_scotts_full.py
+python scripts/validation/validate_scotts_full.py
 ```
 
 Verify:

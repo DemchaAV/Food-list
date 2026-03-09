@@ -8,7 +8,7 @@ and writes a corrected version.
 Requirements: pip install requests   (usually pre-installed)
 GPU:          NVIDIA GTX 1660 Ti 6 GB — gemma3:4b fits comfortably.
 
-Usage:        python cleanup_scotts.py
+Usage:        python scripts/data/cleanup_scotts.py
 """
 
 import json
@@ -25,7 +25,8 @@ except ImportError:
     sys.exit(1)
 
 # ─── Configuration ────────────────────────────────────────────────────
-SCOTTS_JS_PATH = Path(__file__).parent / "data" / "categories" / "scotts.js"
+ROOT = Path(__file__).resolve().parents[2]
+SCOTTS_JS_PATH = ROOT / "data" / "categories" / "scotts.js"
 BACKUP_PATH = SCOTTS_JS_PATH.with_suffix(".js.backup")
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "gemma3:4b"

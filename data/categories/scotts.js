@@ -948,8 +948,8 @@ window.registerFoodCategory(
     "category": "Starters",
     "description": "Roasted parsnips blended in vegetable stock and cream with onions, leeks and curry powder until smooth. On the side are onion pakora. Sliced onion in a chickpea flour batter, deep-fried until crispy.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Cuvée Chérie Demi-Sec",
+      "notes": "Its gentle sweetness and lively bubbles work well with the warming curry spices and crisp onion pakora."
     },
     "glossary": [
       {
@@ -1001,8 +1001,8 @@ window.registerFoodCategory(
     "category": "Starters",
     "description": "Silver coupe filled with shredded iceberg lettuce, cucumber, spring onion and dill, topped with Marie Rose sauce and finished with five peeled prawns and a gem leaf.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Champagne Ruinart Blanc de Blancs",
+      "notes": "Bright citrus, fine mousse and clean freshness lift the prawns and balance the creamy Marie Rose sauce."
     },
     "glossary": [
       {
@@ -1050,8 +1050,8 @@ window.registerFoodCategory(
     "category": "Starters",
     "description": "Grilled octopus served on a romesco sauce (peppers, almonds, smoked paprika) and finished with salsa verde (parsley, basil, mint and capers) and crispy fried pink fir potatoes.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Yalumba Samuel's Collection Eden Valley Viognier",
+      "notes": "Apricot, ginger and floral notes suit the smoky octopus, sweet romesco and herbaceous salsa verde."
     },
     "glossary": [
       {
@@ -1572,8 +1572,8 @@ window.registerFoodCategory(
     "category": "Mains",
     "description": "Pan-fried fillet of halibut served on a bed of whipped, buttered pink fir potatoes and topped with a light cream based Champagne veloute finished with peeled brown shrimp, diced cucumber and chives. Finished with chive oil.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Puligny-Montrachet Le Trézin",
+      "notes": "A refined white with freshness and depth that matches the halibut, brown shrimp and rich Champagne veloute."
     },
     "glossary": [
       {
@@ -1625,8 +1625,8 @@ window.registerFoodCategory(
     "category": "Mains",
     "description": "Pan fried fillet of hake cooked until crispy and golden brown, served on a bed of braised white butter beans, sauteed cavolo nero, and smoked pancetta. Finished with a light chicken butter sauce.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Brookdale Chenin Blanc 2023",
+      "notes": "Its texture and bright acidity handle the buttery hake, white beans and savoury pancetta without feeling heavy."
     },
     "glossary": [
       {
@@ -1679,8 +1679,8 @@ window.registerFoodCategory(
     "category": "Mains",
     "description": "Linguini pasta cooked and tossed with picked white crab, olive oil, chilli, garlic and datterini tomatoes, finished with chopped parsley.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Schloss Johannisberg Riesling",
+      "notes": "Fresh acidity and stone-fruit lift keep the crab sweet and delicate while cutting through chilli, garlic and tomato."
     },
     "glossary": [
       {
@@ -1937,8 +1937,8 @@ window.registerFoodCategory(
     "category": "Sides",
     "description": "Chargrilled hispi cabbage served on a bed of Bagna Cauda (anchovy, parmesan, garlic, milk). Topped with crispy golden bread crumbs and heaps of shaved Parmigiano Reggiano.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Mâcon-Villages 2023",
+      "notes": "Its citrus, ripe apple and gentle roundness complement the charred cabbage, anchovy richness and Parmesan."
     },
     "glossary": [
       {
@@ -1985,8 +1985,8 @@ window.registerFoodCategory(
     "category": "Sides",
     "description": "First roasted at a low temperature until soft and then fried at a low temperature to create a blistered skin. Finish by frying at a high temperature until crispy and golden brown and then tossed in hot honey dressing, chives and spring onions.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Trebbiano d'Abruzzo - Organic",
+      "notes": "Juicy orchard fruit and clean acidity balance the nutty artichokes and the sweet heat of the hot honey dressing."
     },
     "glossary": [
       {
@@ -2684,8 +2684,8 @@ window.registerFoodCategory(
     "category": "Desserts",
     "description": "Dark chocolate mousse, served with chocolate sponge, olive oil, sea salt and sourdough crisp that has been lightly toasted.",
     "wineSuggestion": {
-      "name": null,
-      "notes": null
+      "name": "Graham's LBV Port 2019",
+      "notes": "Rich dark fruit and chocolate notes make this the strongest match for the deep cocoa character of the mousse."
     },
     "glossary": [
       {
@@ -2730,8 +2730,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Starters",
     "description": "Slices of raw sea bream served with shaved fennel and ruby grapefruit segments, dressed with aji amarillo dressing and garnished with spring onion curls.",
     "wineSuggestion": {
-      "name": "Albariño",
-      "notes": "Bright citrus and saline freshness pair well with raw fish, grapefruit and fennel."
+      "name": "Trebbiano d'Abruzzo - Organic",
+      "notes": "Bright floral aromas and a crisp mineral finish suit raw sea bream, grapefruit and fresh herbs."
     },
     "glossary": [
       {
@@ -2773,8 +2773,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Starters",
     "description": "Minced Black Angus sirloin mixed with finely chopped shallots, gherkins and capers, dressed with ketchup, Dijon mustard, Worcestershire sauce and Tabasco, then finished with chopped chives and served with hand cut crisps.",
     "wineSuggestion": {
-      "name": "Pinot Noir",
-      "notes": "Soft tannins and fresh acidity work nicely with beef, capers and mustard."
+      "name": "Château Beaumont 2021",
+      "notes": "Fresh red fruit and silky tannins support the beef without overpowering the capers, mustard and crisps."
     },
     "glossary": [
       {
@@ -2815,8 +2815,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Starters",
     "description": "A wedge of iceberg lettuce dressed with ranch dressing made from crème fraîche, mayonnaise, garlic and herbs, then topped with sourdough croutons, chives and pickled shallots.",
     "wineSuggestion": {
-      "name": "Sauvignon Blanc",
-      "notes": "Fresh acidity and herbal lift complement the creamy dressing and crisp salad."
+      "name": "Florão White",
+      "notes": "Lively acidity and citrus-floral lift keep the creamy ranch dressing and crisp salad feeling fresh."
     },
     "glossary": [
       {
@@ -2860,8 +2860,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Mains",
     "description": "Fillet of Chalkstream trout marinated in miso, then caramelised and served with dashi broth and a salad of daikon, spring onion, carrot and coriander.",
     "wineSuggestion": {
-      "name": "Dry Riesling",
-      "notes": "Crisp acidity and mineral freshness balance the umami of miso and dashi."
+      "name": "Schloss Johannisberg Riesling",
+      "notes": "Peach, apricot and grapefruit notes with fresh acidity balance the umami of miso, dashi and trout."
     },
     "glossary": [
       {
@@ -2903,8 +2903,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Mains",
     "description": "Fillets of gurnard coated in breadcrumbs and deep-fried, served on a Kashmiri curry sauce and garnished with pickled shallots and picked coriander.",
     "wineSuggestion": {
-      "name": "Viognier",
-      "notes": "Round texture and aromatic fruit can handle warm spice and fried fish."
+      "name": "Yalumba Samuel's Collection Eden Valley Viognier",
+      "notes": "Apricot, ginger and white flowers with a rich but fresh palate stand up well to warm spice and fried fish."
     },
     "glossary": [
       {
@@ -2947,8 +2947,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Mains",
     "description": "Carnaroli risotto rice cooked in vegetable stock and finished with diced artichokes, wild garlic, Parmesan and butter.",
     "wineSuggestion": {
-      "name": "Gavi",
-      "notes": "Clean acidity and subtle orchard fruit keep the risotto balanced without overpowering it."
+      "name": "Mâcon-Villages 2023",
+      "notes": "Round stone-fruit character and zippy acidity complement buttery risotto, wild garlic and Parmesan."
     },
     "glossary": [
       {
@@ -2989,8 +2989,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Mains",
     "description": "Sirloin steak served with crispy potato rosti and chimichurri sauce made with parsley, oregano, shallot, chilli flakes, olive oil, garlic and vinegar.",
     "wineSuggestion": {
-      "name": "Malbec",
-      "notes": "Dark fruit and structure pair naturally with grilled beef and herb sauce."
+      "name": "El Enemigo Malbec 2022",
+      "notes": "Dark fruit, spice and structure pair naturally with sirloin steak, potato rosti and chimichurri."
     },
     "glossary": [
       {
@@ -3030,8 +3030,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Desserts",
     "description": "A sweet pastry tart shell filled with raspberry jam and almond sponge, topped with fresh raspberries, baked in the oven, dusted with icing sugar and served with a rocher of crème fraîche.",
     "wineSuggestion": {
-      "name": "Moscato d'Asti",
-      "notes": "Light sweetness and floral fruit suit raspberry and almond without feeling heavy."
+      "name": "Moscato d’Asti DOCG",
+      "notes": "Sweet floral fruit and refreshing acidity suit raspberry, almond sponge and crème fraîche without feeling heavy."
     },
     "glossary": [
       {
@@ -3074,8 +3074,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Desserts",
     "description": "Diced chocolate sponge is placed at the bottom of the glass, then topped with chocolate mousse and garnished with sea salt, olive oil, cocoa nibs and a sourdough crisp.",
     "wineSuggestion": {
-      "name": "Ruby Port",
-      "notes": "Rich berry fruit and sweetness stand up well to dark chocolate and sea salt."
+      "name": "Graham's LBV Port 2019",
+      "notes": "Rich dark fruit and chocolate notes match the mousse while the structure handles sea salt and olive oil."
     },
     "glossary": [
       {
@@ -3117,8 +3117,8 @@ window.registerFoodCategory(
     "category": "March Set Lunch (SLM) - Desserts",
     "description": "Vanilla ice cream rippled with rhubarb jam, served with poached rhubarb, crème chantilly and a vanilla shortbread on the side.",
     "wineSuggestion": {
-      "name": "Late Harvest Chenin Blanc",
-      "notes": "Honeyed fruit and balancing acidity complement rhubarb and cream."
+      "name": "Jurançon Sweet Wine",
+      "notes": "Honeyed citrus, mango and vibrant acidity complement rhubarb, cream and vanilla shortbread."
     },
     "glossary": [
       {

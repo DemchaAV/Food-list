@@ -520,8 +520,8 @@
                         }
                         return { term: '', definition: entry };
                     }
-                    if (typeof entry === 'object' && entry.term) {
-                        return { term: entry.term, definition: entry.definition || '' };
+                    if (typeof entry === 'object' && (entry.term || entry.definition)) {
+                        return { term: entry.term || 'Info', definition: entry.definition || '' };
                     }
                     return null;
                 }).filter(Boolean);
@@ -592,7 +592,10 @@
                 const term = row.querySelector('.glossary-term').value.trim();
                 const def = row.querySelector('.glossary-def').value.trim();
                 if (term || def) {
-                    glossary.push(term ? `${term}: ${def}` : def);
+                    glossary.push({
+                        term: term || 'Info',
+                        definition: def
+                    });
                 }
             });
 

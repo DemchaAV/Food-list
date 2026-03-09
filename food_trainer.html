@@ -999,8 +999,10 @@
                         }
                         return `<div class="mb-1">${entry}</div>`;
                     }
-                    if (typeof entry === 'object' && entry.term) {
-                        return `<div class="mb-2"><span class="font-bold text-primary">${entry.term}</span>: ${entry.definition || ''}</div>`;
+                    if (typeof entry === 'object' && (entry.term || entry.definition)) {
+                        const label = entry.term || 'Info';
+                        const definition = entry.definition || '';
+                        return `<div class="mb-2"><span class="font-bold text-primary">${label}</span>${definition ? `: ${definition}` : ''}</div>`;
                     }
                     return '';
                 }).join('');

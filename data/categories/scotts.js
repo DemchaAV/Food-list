@@ -1,4 +1,5 @@
-window.registerFoodCategory([
+window.registerFoodCategory(
+[
   {
     "id": "gillardeau-fr-oyster0",
     "name": "Gillardeau (FR)",
@@ -10,10 +11,22 @@ window.registerFoodCategory([
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. on the palate it’S is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish"
     },
     "glossary": [
-      "Gillardeau: Oysters from the Gillardeau family near La Rochelle, France.",
-      "Firm: Describes the oyster's texture – solid and resilient.",
-      "Sweet: The oyster's primary taste characteristic, like dried fruit.",
-      "Shell: The protective exterior of the oyster, laser engraved 'G'."
+      {
+        "term": "Gillardeau",
+        "definition": "Oysters from the Gillardeau family near La Rochelle, France."
+      },
+      {
+        "term": "Firm",
+        "definition": "Describes the oyster's texture – solid and resilient."
+      },
+      {
+        "term": "Sweet",
+        "definition": "The oyster's primary taste characteristic, like dried fruit."
+      },
+      {
+        "term": "Shell",
+        "definition": "The protective exterior of the oyster, laser engraved 'G'."
+      }
     ],
     "additionalNotes": "From the pass: Finger bowls, Shallot & Hogwash Dressing 1 - 4 Oysters the stand should be small side up, 6+ large side up",
     "allergens": [
@@ -35,9 +48,18 @@ window.registerFoodCategory([
       "notes": "A golden colour, marked by delicate bubbles. On the nose the aromas are distinctly Blanc de Blanc - peach, citrus and floral notes backed by an almond-pastry-like richness. On the palate the citrus-fruit flavours give way to biscuity notes, and a exceptional balance and freshness is achieved"
     },
     "glossary": [
-      "Oysters: Freshly harvested bivalve shellfish with a meaty texture.",
-      "Mineral Finish: A subtle, lingering taste of minerals from the sea.",
-      "Full Bodied: Describes the oyster's rich and intense flavor."
+      {
+        "term": "Oysters",
+        "definition": "Freshly harvested bivalve shellfish with a meaty texture."
+      },
+      {
+        "term": "Mineral Finish",
+        "definition": "A subtle, lingering taste of minerals from the sea."
+      },
+      {
+        "term": "Full Bodied",
+        "definition": "Describes the oyster's rich and intense flavor."
+      }
     ],
     "additionalNotes": "1 - 4 Oysters the stand should be small side up, 6+ large side up",
     "allergens": [
@@ -59,9 +81,18 @@ window.registerFoodCategory([
       "notes": "A golden colour, marked by delicate bubbles. On the nose the aromas are distinctly Blanc de Blanc - peach, citrus and floral notes backed by an almond-pastry-like richness. On the palate the citrus-fruit flavours give way to biscuity notes, and a exceptional balance and freshness is achieved"
     },
     "glossary": [
-      "Oysters: Freshly harvested from Jersey, UK.",
-      "Cucumber: Adds a refreshing coolness to the taste.",
-      "Lemon: Provides a bright, citrusy accent."
+      {
+        "term": "Oysters",
+        "definition": "Freshly harvested from Jersey, UK."
+      },
+      {
+        "term": "Cucumber",
+        "definition": "Adds a refreshing coolness to the taste."
+      },
+      {
+        "term": "Lemon",
+        "definition": "Provides a bright, citrusy accent."
+      }
     ],
     "additionalNotes": "1 -4 Oysters the stand should be small side up, 6+ large side up",
     "allergens": [
@@ -83,8 +114,14 @@ window.registerFoodCategory([
       "notes": "On the nose the aromas are distinctly Blanc de Blanc - peach, citrus and floral notes backed by an almond-pastry-like richness. On the palate the citrus-fruit flavours give way to biscuity notes, and a exceptional balance and freshness is achieved"
     },
     "glossary": [
-      "Oysters: Freshly harvested from Carlingford Lough, Northern Ireland.",
-      "Meaty Body: Refers to the substantial, full-bodied taste of the oyster."
+      {
+        "term": "Oysters",
+        "definition": "Freshly harvested from Carlingford Lough, Northern Ireland."
+      },
+      {
+        "term": "Meaty Body",
+        "definition": "Refers to the substantial, full-bodied taste of the oyster."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -110,12 +147,30 @@ window.registerFoodCategory([
     ],
     "additionalNotes": "The oyster is still connected to its shell.",
     "glossary": [
-      "Aguachile: A Mexican chilled seafood sauce.",
-      "Blood Orange: Citrus fruit with a deep red hue.",
-      "Yuzu Kosho: Japanese citrus chili paste.",
-      "Lemongrass: A fragrant grass used in Southeast Asian cuisine.",
-      "Fennel: A vegetable with a distinctive anise flavor.",
-      "Pickled Fennel: Fennel preserved in vinegar."
+      {
+        "term": "Aguachile",
+        "definition": "A Mexican chilled seafood sauce."
+      },
+      {
+        "term": "Blood Orange",
+        "definition": "Citrus fruit with a deep red hue."
+      },
+      {
+        "term": "Yuzu Kosho",
+        "definition": "Japanese citrus chili paste."
+      },
+      {
+        "term": "Lemongrass",
+        "definition": "A fragrant grass used in Southeast Asian cuisine."
+      },
+      {
+        "term": "Fennel",
+        "definition": "A vegetable with a distinctive anise flavor."
+      },
+      {
+        "term": "Pickled Fennel",
+        "definition": "Fennel preserved in vinegar."
+      }
     ],
     "kitchenMep": "Blue bowl, crushed ice, seaweed.",
     "serviceMep": "Small fork (oyster fork) If 4/6 or more will need stand and plate aswell.",
@@ -132,11 +187,26 @@ window.registerFoodCategory([
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. On the palate it is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish."
     },
     "glossary": [
-      "Oysters: Filtered shellfish, harvested from coastal waters.",
-      "Wild Boar Sausages: Pork sausages made with wild boar meat.",
-      "Hogwash Dressing: A creamy, emulsified sauce with pork fat.",
-      "Shallot Vinegar: Vinegar infused with shallots for a sharp flavor.",
-      "Ruinart Blanc de Blancs: A dry, sparkling white wine."
+      {
+        "term": "Oysters",
+        "definition": "Filtered shellfish, harvested from coastal waters."
+      },
+      {
+        "term": "Wild Boar Sausages",
+        "definition": "Pork sausages made with wild boar meat."
+      },
+      {
+        "term": "Hogwash Dressing",
+        "definition": "A creamy, emulsified sauce with pork fat."
+      },
+      {
+        "term": "Shallot Vinegar",
+        "definition": "Vinegar infused with shallots for a sharp flavor."
+      },
+      {
+        "term": "Ruinart Blanc de Blancs",
+        "definition": "A dry, sparkling white wine."
+      }
     ],
     "additionalNotes": "Describe from the lemon then oysters are in alphabetic order – clockwise (2/2/2) (4/4/4) When serving mixed oysters, they will be set out in alphabetical order starting with Brownsea island, Carlingford, Jersey. There is no GILLARDEAU or dressed oysters in the mixed oysters.",
     "allergens": [
@@ -158,8 +228,14 @@ window.registerFoodCategory([
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. On the palate it is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish"
     },
     "glossary": [
-      "Caviar: Small, dark grey eggs from sturgeon fish.",
-      "Texture: Known for a firm, almost creamy consistency."
+      {
+        "term": "Caviar",
+        "definition": "Small, dark grey eggs from sturgeon fish."
+      },
+      {
+        "term": "Texture",
+        "definition": "Known for a firm, almost creamy consistency."
+      }
     ],
     "additionalNotes": "From the pass: Comes with creme fraiche and blinis.",
     "allergens": [
@@ -183,8 +259,14 @@ window.registerFoodCategory([
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. On the palate it is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish"
     },
     "glossary": [
-      "Caviar: Small, cured fish eggs, often from sturgeon.",
-      "Walnut taste: Notes of creamy walnut are prominent."
+      {
+        "term": "Caviar",
+        "definition": "Small, cured fish eggs, often from sturgeon."
+      },
+      {
+        "term": "Walnut taste",
+        "definition": "Notes of creamy walnut are prominent."
+      }
     ],
     "additionalNotes": "Served with creme fraiche and blinis.",
     "allergens": [
@@ -208,11 +290,26 @@ window.registerFoodCategory([
       "notes": "Elegant, fresh and lively character, with delicate aromas of white flowers, citrus fruits, and brioche. On the palate it is crisp and creamy, with a fine, persistent mousse and a long, refreshing finish"
     },
     "glossary": [
-      "Prawns: Large, succulent crustaceans from the Atlantic.",
-      "Whelks: A type of edible sea snail with a chewy texture.",
-      "Oysters: Filter-feeding mollusks, known for their briney taste.",
-      "Palourde Clams: Small, flat clams with a delicate flavor.",
-      "Ceviche: Seafood marinated in citrus juice to 'cook' it."
+      {
+        "term": "Prawns",
+        "definition": "Large, succulent crustaceans from the Atlantic."
+      },
+      {
+        "term": "Whelks",
+        "definition": "A type of edible sea snail with a chewy texture."
+      },
+      {
+        "term": "Oysters",
+        "definition": "Filter-feeding mollusks, known for their briney taste."
+      },
+      {
+        "term": "Palourde Clams",
+        "definition": "Small, flat clams with a delicate flavor."
+      },
+      {
+        "term": "Ceviche",
+        "definition": "Seafood marinated in citrus juice to 'cook' it."
+      }
     ],
     "additionalNotes": "All served with mayonnaise, Marie rose sauce, Tomato & horseradish sauce served with the deluxe dor the lobster Marie Rose – Seafood Sauce (Cocktail Sauce). Homemade Mayo, ketchup, Worcester sauce, tabasco, brandy . Tomato Horseradish – American Sauce, grated fresh horseradish, tomato and vinegar.",
     "allergens": [
@@ -249,10 +346,22 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork and knife",
     "image": "data/categories/menu_images/TIGER PRAWNS WITH GRILLED PINEAPPLE.jpeg",
     "glossary": [
-      "Prawns: Large, succulent tiger prawns grilled on the plancha.",
-      "Chilli Sauce: Lightly spiced sauce with chili peppers.",
-      "Pineapple: Grilled pineapple, diced and added as a topping.",
-      "Coriander: Freshly chopped coriander for garnish and flavor."
+      {
+        "term": "Prawns",
+        "definition": "Large, succulent tiger prawns grilled on the plancha."
+      },
+      {
+        "term": "Chilli Sauce",
+        "definition": "Lightly spiced sauce with chili peppers."
+      },
+      {
+        "term": "Pineapple",
+        "definition": "Grilled pineapple, diced and added as a topping."
+      },
+      {
+        "term": "Coriander",
+        "definition": "Freshly chopped coriander for garnish and flavor."
+      }
     ]
   },
   {
@@ -266,10 +375,22 @@ window.registerFoodCategory([
       "notes": "Very expressive nose of green citrus and herbaceous aromas of classic Sauvignon Blanc concentrated gooseberry fruit flavors, ripe citrus, balanced by a steely, dry palate. mineral, elegant and long finish."
     },
     "glossary": [
-      "Crab Mayo: Creamy sauce made with brown crab meat and mayonnaise.",
-      "Avocado: Ripe avocado, pressed and seasoned with salt, olive oil, and lemon zest.",
-      "Melba Toast: Two slices of toasted bread, a classic accompaniment.",
-      "Fine Herb Salad: A fresh salad featuring dill, chervil, chives, and tarragon."
+      {
+        "term": "Crab Mayo",
+        "definition": "Creamy sauce made with brown crab meat and mayonnaise."
+      },
+      {
+        "term": "Avocado",
+        "definition": "Ripe avocado, pressed and seasoned with salt, olive oil, and lemon zest."
+      },
+      {
+        "term": "Melba Toast",
+        "definition": "Two slices of toasted bread, a classic accompaniment."
+      },
+      {
+        "term": "Fine Herb Salad",
+        "definition": "A fresh salad featuring dill, chervil, chives, and tarragon."
+      }
     ],
     "additionalNotes": "White crab meat is found in the claws, legs and some of the main body section of the crab. White crab meat it is low in fat and high in protein. Its sweet and more delicate in flavour than brown crab meat and it has a moist, meaty, flaky texture.",
     "allergens": [
@@ -296,12 +417,30 @@ window.registerFoodCategory([
       "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
     },
     "glossary": [
-      "Crab Meat: Tender, cooked crab meat, the star of the dish.",
-      "Shallots: Mild onion-like bulb, adds sweetness and depth.",
-      "Sherry: Dry fortified wine, contributes savory notes.",
-      "Hollandaise: Classic emulsified sauce, creamy and rich.",
-      "Breadcrumbs: Toasted coating, adds texture and crunch.",
-      "Garlic Butter: Infused butter, complements the crab flavor."
+      {
+        "term": "Crab Meat",
+        "definition": "Tender, cooked crab meat, the star of the dish."
+      },
+      {
+        "term": "Shallots",
+        "definition": "Mild onion-like bulb, adds sweetness and depth."
+      },
+      {
+        "term": "Sherry",
+        "definition": "Dry fortified wine, contributes savory notes."
+      },
+      {
+        "term": "Hollandaise",
+        "definition": "Classic emulsified sauce, creamy and rich."
+      },
+      {
+        "term": "Breadcrumbs",
+        "definition": "Toasted coating, adds texture and crunch."
+      },
+      {
+        "term": "Garlic Butter",
+        "definition": "Infused butter, complements the crab flavor."
+      }
     ],
     "allergens": [
       "Celery",
@@ -331,11 +470,26 @@ window.registerFoodCategory([
       "notes": "Very expressive nose of green citrus and herbaceous aromas of classic Sauvignon Blanc concentrated gooseberry fruit flavours, ripe citrus, balanced by a steely, dry palate. mineral, elegant and long finish."
     },
     "glossary": [
-      "Scallops: Fresh, succulent seafood served in their natural shell.",
-      "Kimchi Butter: A rich sauce made with fermented kimchi and butter.",
-      "Nori Furikake: A spice blend featuring seaweed (nori), sesame seeds, and chili flakes.",
-      "Furikake: Japanese seasoning – sesame, nori, and chili flakes.",
-      "Lime Juice: Adds brightness and acidity to the kimchi butter sauce."
+      {
+        "term": "Scallops",
+        "definition": "Fresh, succulent seafood served in their natural shell."
+      },
+      {
+        "term": "Kimchi Butter",
+        "definition": "A rich sauce made with fermented kimchi and butter."
+      },
+      {
+        "term": "Nori Furikake",
+        "definition": "A spice blend featuring seaweed (nori), sesame seeds, and chili flakes."
+      },
+      {
+        "term": "Furikake",
+        "definition": "Japanese seasoning – sesame, nori, and chili flakes."
+      },
+      {
+        "term": "Lime Juice",
+        "definition": "Adds brightness and acidity to the kimchi butter sauce."
+      }
     ],
     "additionalNotes": "For large portion, bring a burner and main hot plate per person. No Dairy, Gluten in dish",
     "allergens": [
@@ -360,11 +514,26 @@ window.registerFoodCategory([
       "notes": "A classic German Riesling The wine offers a fragrant, fruity bouquet of lemon and peach. With delicate petrol note Fuller on the palate, off dry, peachy, crisp acidity, and a long finish."
     },
     "glossary": [
-      "Tempura: A Japanese frying technique using a light, crispy batter.",
-      "Prawns: Shellfish, typically from the crustacean family, used in this dish.",
-      "Cocktail Sauce: A tangy sauce, often containing ketchup, horseradish, and spices.",
-      "Mooli: A crisp, white radish, providing a refreshing bite.",
-      "Togarashi: A Japanese spice blend with chili peppers and other seasonings."
+      {
+        "term": "Tempura",
+        "definition": "A Japanese frying technique using a light, crispy batter."
+      },
+      {
+        "term": "Prawns",
+        "definition": "Shellfish, typically from the crustacean family, used in this dish."
+      },
+      {
+        "term": "Cocktail Sauce",
+        "definition": "A tangy sauce, often containing ketchup, horseradish, and spices."
+      },
+      {
+        "term": "Mooli",
+        "definition": "A crisp, white radish, providing a refreshing bite."
+      },
+      {
+        "term": "Togarashi",
+        "definition": "A Japanese spice blend with chili peppers and other seasonings."
+      }
     ],
     "allergens": [
       "Celery",
@@ -393,11 +562,26 @@ window.registerFoodCategory([
       "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "Beetroot: Root vegetable, typically red, known for its earthy sweetness.",
-      "Labneh: Thick, strained yogurt, a creamy Middle Eastern base.",
-      "Walnut Granola: Toasted nuts and grains, adding crunch and texture.",
-      "Pickled Walnut Ketchup: Sweet and tangy condiment made with walnuts.",
-      "Cabernet Sauvignon Vinegar: Bold red wine vinegar for dressing."
+      {
+        "term": "Beetroot",
+        "definition": "Root vegetable, typically red, known for its earthy sweetness."
+      },
+      {
+        "term": "Labneh",
+        "definition": "Thick, strained yogurt, a creamy Middle Eastern base."
+      },
+      {
+        "term": "Walnut Granola",
+        "definition": "Toasted nuts and grains, adding crunch and texture."
+      },
+      {
+        "term": "Pickled Walnut Ketchup",
+        "definition": "Sweet and tangy condiment made with walnuts."
+      },
+      {
+        "term": "Cabernet Sauvignon Vinegar",
+        "definition": "Bold red wine vinegar for dressing."
+      }
     ],
     "additionalNotes": "Watermelon is pickled and cured.",
     "allergens": [
@@ -430,10 +614,22 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork & knife",
     "image": "data/categories/menu_images/CHALKSTREAM TROUT TARTARE.jpeg",
     "glossary": [
-      "Chalkstream trout: Fresh river trout, diced finely.",
-      "Avocado: Creamy base for the tartare, providing richness.",
-      "Taro Root: Crispy fried root vegetable, seasoned with togarashi.",
-      "Sesame Cracker: Served alongside to complement the tartare."
+      {
+        "term": "Chalkstream trout",
+        "definition": "Fresh river trout, diced finely."
+      },
+      {
+        "term": "Avocado",
+        "definition": "Creamy base for the tartare, providing richness."
+      },
+      {
+        "term": "Taro Root",
+        "definition": "Crispy fried root vegetable, seasoned with togarashi."
+      },
+      {
+        "term": "Sesame Cracker",
+        "definition": "Served alongside to complement the tartare."
+      }
     ]
   },
   {
@@ -447,12 +643,30 @@ window.registerFoodCategory([
       "notes": "A classic German Riesling. The wine offers a fragrant, fruity bouquet of lemon and peach. With delicate petrol note, fuller on the palate, off dry, peachy, crisp acidity, and a long finish"
     },
     "glossary": [
-      "Tataki: Thinly sliced, quickly seared tuna.",
-      "Ponzu: Citrus-based sauce, often with soy and vinegar.",
-      "Wasabi: Japanese horseradish, adding a spicy kick.",
-      "Shiso: A fragrant herb with a minty, basil-like flavor.",
-      "Bonito Aioli: Mayonnaise flavored with smoked bonito flakes.",
-      "Seaweed Salad: A refreshing mix of various seaweed types."
+      {
+        "term": "Tataki",
+        "definition": "Thinly sliced, quickly seared tuna."
+      },
+      {
+        "term": "Ponzu",
+        "definition": "Citrus-based sauce, often with soy and vinegar."
+      },
+      {
+        "term": "Wasabi",
+        "definition": "Japanese horseradish, adding a spicy kick."
+      },
+      {
+        "term": "Shiso",
+        "definition": "A fragrant herb with a minty, basil-like flavor."
+      },
+      {
+        "term": "Bonito Aioli",
+        "definition": "Mayonnaise flavored with smoked bonito flakes."
+      },
+      {
+        "term": "Seaweed Salad",
+        "definition": "A refreshing mix of various seaweed types."
+      }
     ],
     "additionalNotes": [
       "Contains Gluten"
@@ -484,10 +698,22 @@ window.registerFoodCategory([
       "Soya"
     ],
     "glossary": [
-      "Aji Amarillo: Peruvian chili pepper paste, adding vibrant heat.",
-      "Ceviche: Seafood marinated in citrus juice to ‘cook’ it.",
-      "Seabass: A mild, white-fleshed fish, perfect for this dish.",
-      "Plantain Crisps: Thin, fried slices of ripe plantains for texture."
+      {
+        "term": "Aji Amarillo",
+        "definition": "Peruvian chili pepper paste, adding vibrant heat."
+      },
+      {
+        "term": "Ceviche",
+        "definition": "Seafood marinated in citrus juice to ‘cook’ it."
+      },
+      {
+        "term": "Seabass",
+        "definition": "A mild, white-fleshed fish, perfect for this dish."
+      },
+      {
+        "term": "Plantain Crisps",
+        "definition": "Thin, fried slices of ripe plantains for texture."
+      }
     ],
     "additionalNotes": "Coriander can be removed Contains gluten",
     "kitchenMep": "White Bowl",
@@ -505,11 +731,26 @@ window.registerFoodCategory([
       "notes": "Slightly oaked, rich and textured. Intense yellow fruit flavours."
     },
     "glossary": [
-      "Hot Smoked Trout: Trout cured in sugar & salt, then hot smoked.",
-      "Horseradish Butter: Creamy sauce with sharp horseradish flavor.",
-      "Fir Potatoes: Pink potatoes cooked in butter, creamy texture.",
-      "Crispy Bacon: Cooked until crisp and browned, adds texture.",
-      "Land Cress: A peppery herb, similar to watercress."
+      {
+        "term": "Hot Smoked Trout",
+        "definition": "Trout cured in sugar & salt, then hot smoked."
+      },
+      {
+        "term": "Horseradish Butter",
+        "definition": "Creamy sauce with sharp horseradish flavor."
+      },
+      {
+        "term": "Fir Potatoes",
+        "definition": "Pink potatoes cooked in butter, creamy texture."
+      },
+      {
+        "term": "Crispy Bacon",
+        "definition": "Cooked until crisp and browned, adds texture."
+      },
+      {
+        "term": "Land Cress",
+        "definition": "A peppery herb, similar to watercress."
+      }
     ],
     "allergens": [
       "Dairy",
@@ -533,11 +774,26 @@ window.registerFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Risotto: Arborio rice cooked slowly to achieve a creamy texture.",
-      "Carnaroli: A premium rice variety known for its starch content.",
-      "Mushroom Stock: A rich broth made from various mushrooms.",
-      "Parmigiano Reggiano: A hard Italian cheese, adding salty, nutty notes.",
-      "Shallots: A mild onion variety, providing a subtle aromatic base."
+      {
+        "term": "Risotto",
+        "definition": "Arborio rice cooked slowly to achieve a creamy texture."
+      },
+      {
+        "term": "Carnaroli",
+        "definition": "A premium rice variety known for its starch content."
+      },
+      {
+        "term": "Mushroom Stock",
+        "definition": "A rich broth made from various mushrooms."
+      },
+      {
+        "term": "Parmigiano Reggiano",
+        "definition": "A hard Italian cheese, adding salty, nutty notes."
+      },
+      {
+        "term": "Shallots",
+        "definition": "A mild onion variety, providing a subtle aromatic base."
+      }
     ],
     "additionalNotes": "Can be made vegan, Can be made dairy free. Contains cooked alcohol - White wine. Cannot be made without alcohol (sulphites). Is gluten free.",
     "allergens": [
@@ -569,12 +825,30 @@ window.registerFoodCategory([
       "Sulphur Dioxide/Sulphites"
     ],
     "glossary": [
-      "Roscoff Onion: Sweet, caramelized onion, a key ingredient.",
-      "Goat’s Cheese: Tangy, creamy cheese, complements the sweetness.",
-      "Tarte Tatin: French upside-down caramelized dessert base.",
-      "Frisee: A bitter green salad, adds textural contrast.",
-      "Truffled Honey: Honey infused with earthy truffle flavor.",
-      "Hazelnuts: Toasted nuts, providing crunch and nutty notes."
+      {
+        "term": "Roscoff Onion",
+        "definition": "Sweet, caramelized onion, a key ingredient."
+      },
+      {
+        "term": "Goat’s Cheese",
+        "definition": "Tangy, creamy cheese, complements the sweetness."
+      },
+      {
+        "term": "Tarte Tatin",
+        "definition": "French upside-down caramelized dessert base."
+      },
+      {
+        "term": "Frisee",
+        "definition": "A bitter green salad, adds textural contrast."
+      },
+      {
+        "term": "Truffled Honey",
+        "definition": "Honey infused with earthy truffle flavor."
+      },
+      {
+        "term": "Hazelnuts",
+        "definition": "Toasted nuts, providing crunch and nutty notes."
+      }
     ],
     "additionalNotes": "***CONTAINS GLUTEN, DAIRY, NUTS***",
     "kitchenMep": "White plate",
@@ -600,11 +874,26 @@ window.registerFoodCategory([
     "serviceMep": "Starter fork and knife",
     "image": "data/categories/menu_images/PUGLIAN BURRATA.jpeg",
     "glossary": [
-      "Burrata: Fresh Italian cheese with a soft, creamy center.",
-      "Blood Orange: Citrus fruit known for its rich, sweet flavor.",
-      "Fennel: Anise-flavored bulb, often shaved thinly for salads.",
-      "Radicchio: A bitter, leafy vegetable with a deep red hue.",
-      "Pickled Chilli: Chilli peppers preserved in vinegar for a tangy kick."
+      {
+        "term": "Burrata",
+        "definition": "Fresh Italian cheese with a soft, creamy center."
+      },
+      {
+        "term": "Blood Orange",
+        "definition": "Citrus fruit known for its rich, sweet flavor."
+      },
+      {
+        "term": "Fennel",
+        "definition": "Anise-flavored bulb, often shaved thinly for salads."
+      },
+      {
+        "term": "Radicchio",
+        "definition": "A bitter, leafy vegetable with a deep red hue."
+      },
+      {
+        "term": "Pickled Chilli",
+        "definition": "Chilli peppers preserved in vinegar for a tangy kick."
+      }
     ]
   },
   {
@@ -618,11 +907,26 @@ window.registerFoodCategory([
       "notes": "fine bouquet of black cherry, red berries, blackberries, delicate spice ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "Monkfish Cheeks: Tender, meaty cheeks of monkfish.",
-      "Snails: Gastropods harvested and prepared for service.",
-      "Lardons: Smoked pork belly, adding a savory note.",
-      "Bone Marrow: Rich, gelatinous tissue from the bone.",
-      "Sourdough: Crusty bread, toasted with garlic butter."
+      {
+        "term": "Monkfish Cheeks",
+        "definition": "Tender, meaty cheeks of monkfish."
+      },
+      {
+        "term": "Snails",
+        "definition": "Gastropods harvested and prepared for service."
+      },
+      {
+        "term": "Lardons",
+        "definition": "Smoked pork belly, adding a savory note."
+      },
+      {
+        "term": "Bone Marrow",
+        "definition": "Rich, gelatinous tissue from the bone."
+      },
+      {
+        "term": "Sourdough",
+        "definition": "Crusty bread, toasted with garlic butter."
+      }
     ],
     "additionalNotes": "Can be made gluten free. Contains alcohol - Bordelaise red wine",
     "allergens": [
@@ -648,12 +952,30 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Parsnip: Root vegetable, subtly sweet and earthy.",
-      "Curry Powder: Spice blend with turmeric, coriander, and chili.",
-      "Vegetable Stock: Base liquid for the soup, adds depth of flavor.",
-      "Cream: Adds richness and smoothness to the soup.",
-      "Pakora: Deep-fried onion fritters in chickpea batter.",
-      "Chickpea Flour: Used to create the batter for the pakora."
+      {
+        "term": "Parsnip",
+        "definition": "Root vegetable, subtly sweet and earthy."
+      },
+      {
+        "term": "Curry Powder",
+        "definition": "Spice blend with turmeric, coriander, and chili."
+      },
+      {
+        "term": "Vegetable Stock",
+        "definition": "Base liquid for the soup, adds depth of flavor."
+      },
+      {
+        "term": "Cream",
+        "definition": "Adds richness and smoothness to the soup."
+      },
+      {
+        "term": "Pakora",
+        "definition": "Deep-fried onion fritters in chickpea batter."
+      },
+      {
+        "term": "Chickpea Flour",
+        "definition": "Used to create the batter for the pakora."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -683,10 +1005,22 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Marie Rose: A classic sauce made with tomato, white wine, and herbs.",
-      "Prawns: Large, shelled crustaceans, cooked and served chilled.",
-      "Gem Leaf: A delicate herb offering a fresh, citrusy note.",
-      "Iceberg Lettuce: Crisp, pale green lettuce providing a refreshing base."
+      {
+        "term": "Marie Rose",
+        "definition": "A classic sauce made with tomato, white wine, and herbs."
+      },
+      {
+        "term": "Prawns",
+        "definition": "Large, shelled crustaceans, cooked and served chilled."
+      },
+      {
+        "term": "Gem Leaf",
+        "definition": "A delicate herb offering a fresh, citrusy note."
+      },
+      {
+        "term": "Iceberg Lettuce",
+        "definition": "Crisp, pale green lettuce providing a refreshing base."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -720,11 +1054,26 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Octopus: Grilled cephalopod, expertly charred on the robata grill.",
-      "Romesco Sauce: A vibrant sauce made with roasted peppers, almonds, and smoked paprika.",
-      "Salsa Verde: A fresh sauce featuring parsley, basil, mint, and capers.",
-      "Pink Fir Potatoes: Small, creamy potatoes with a distinctive pink hue.",
-      "Crispy Fried: Potatoes cooked until golden brown and delightfully crunchy."
+      {
+        "term": "Octopus",
+        "definition": "Grilled cephalopod, expertly charred on the robata grill."
+      },
+      {
+        "term": "Romesco Sauce",
+        "definition": "A vibrant sauce made with roasted peppers, almonds, and smoked paprika."
+      },
+      {
+        "term": "Salsa Verde",
+        "definition": "A fresh sauce featuring parsley, basil, mint, and capers."
+      },
+      {
+        "term": "Pink Fir Potatoes",
+        "definition": "Small, creamy potatoes with a distinctive pink hue."
+      },
+      {
+        "term": "Crispy Fried",
+        "definition": "Potatoes cooked until golden brown and delightfully crunchy."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -756,11 +1105,26 @@ window.registerFoodCategory([
       "notes": "Complex and elegant expession of Chardonay White flowers, a touch of oak and ripe white orchard fruits on the nose Silky, well-balanced palate with well- integrated oak, delicate stone fruits, fresh minerality and slightly creamy finish"
     },
     "glossary": [
-      "Dover Sole: A type of flatfish, a delicious flatfish.",
-      "Meunière: A classic French cooking technique using butter and flour.",
-      "Brown Butter: Butter cooked until nutty and fragrant, adds richness.",
-      "Parsley: Fresh herb, commonly used for garnish and flavor.",
-      "Olive Oil: Used for grilling, providing a light, fruity base."
+      {
+        "term": "Dover Sole",
+        "definition": "A type of flatfish, a delicious flatfish."
+      },
+      {
+        "term": "Meunière",
+        "definition": "A classic French cooking technique using butter and flour."
+      },
+      {
+        "term": "Brown Butter",
+        "definition": "Butter cooked until nutty and fragrant, adds richness."
+      },
+      {
+        "term": "Parsley",
+        "definition": "Fresh herb, commonly used for garnish and flavor."
+      },
+      {
+        "term": "Olive Oil",
+        "definition": "Used for grilling, providing a light, fruity base."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -783,11 +1147,26 @@ window.registerFoodCategory([
       "notes": "Nose full of melon, yellow apple and mandarin notes with a whiff of white spice and pastry. Lots of yellow fruit in the mouth, with a rich, textured, warm finish and fuller body"
     },
     "glossary": [
-      "Seared sea bass: Fish dish featuring pan-seared seabass.",
-      "Miso: Fermented soybean paste used as a key flavoring.",
-      "Yuzu koshu: Citrus-based Japanese condiment adding zest.",
-      "Chives: Fresh, mild herb, finely chopped and added as garnish.",
-      "Koshu Butter: Butter infused with yuzu koshu for a unique taste."
+      {
+        "term": "Seared sea bass",
+        "definition": "Fish dish featuring pan-seared seabass."
+      },
+      {
+        "term": "Miso",
+        "definition": "Fermented soybean paste used as a key flavoring."
+      },
+      {
+        "term": "Yuzu koshu",
+        "definition": "Citrus-based Japanese condiment adding zest."
+      },
+      {
+        "term": "Chives",
+        "definition": "Fresh, mild herb, finely chopped and added as garnish."
+      },
+      {
+        "term": "Koshu Butter",
+        "definition": "Butter infused with yuzu koshu for a unique taste."
+      }
     ],
     "allergens": [
       "Dairy",
@@ -811,10 +1190,22 @@ window.registerFoodCategory([
       "notes": "Crisp, fresh organic white with bright acidity and citrus aromas on the nose leading to a well-balanced palate packed with pear and apple fruit and a bone dry, mineral finish."
     },
     "glossary": [
-      "Haddock: A type of North Atlantic cod fish.",
-      "Beer Batter: A light coating of flour and beer used for frying.",
-      "Mushy Peas: Cooked peas, mashed until smooth and soft.",
-      "Tartar Sauce: A sauce made with mayonnaise, capers, and herbs."
+      {
+        "term": "Haddock",
+        "definition": "A type of North Atlantic cod fish."
+      },
+      {
+        "term": "Beer Batter",
+        "definition": "A light coating of flour and beer used for frying."
+      },
+      {
+        "term": "Mushy Peas",
+        "definition": "Cooked peas, mashed until smooth and soft."
+      },
+      {
+        "term": "Tartar Sauce",
+        "definition": "A sauce made with mayonnaise, capers, and herbs."
+      }
     ],
     "additionalNotes": "Contains cooked alcohol - Beer batter Can be made alcohol free with a tempura batter instead of the beer batter. Can change mushy peas to garden peas.",
     "allergens": [
@@ -841,11 +1232,26 @@ window.registerFoodCategory([
       "notes": "Complex, mineral and remarkably fresh wine with aromas of white-stone fruits and citrus"
     },
     "glossary": [
-      "Cod: A firm, white, flaky fish.",
-      "Chorizo: A spicy, cured sausage made from pork.",
-      "Rosti: Sliced potatoes, grated and pan-fried until crispy.",
-      "Cauliflower Puree: Smooth, creamy puree made from cauliflower.",
-      "Velouté: A light, white sauce traditionally made with stock and roux."
+      {
+        "term": "Cod",
+        "definition": "A firm, white, flaky fish."
+      },
+      {
+        "term": "Chorizo",
+        "definition": "A spicy, cured sausage made from pork."
+      },
+      {
+        "term": "Rosti",
+        "definition": "Sliced potatoes, grated and pan-fried until crispy."
+      },
+      {
+        "term": "Cauliflower Puree",
+        "definition": "Smooth, creamy puree made from cauliflower."
+      },
+      {
+        "term": "Velouté",
+        "definition": "A light, white sauce traditionally made with stock and roux."
+      }
     ],
     "additionalNotes": "Gluten-Free",
     "allergens": [
@@ -868,12 +1274,30 @@ window.registerFoodCategory([
       "notes": "A classic German Riesling The wine offers a fragrant, fruity bouquet of lemon and peach. With delicate petrol note Fuller on the palate, off dry, peachy, crisp acidity, and a long finish"
     },
     "glossary": [
-      "Kashmiri Curry: A spice blend originating from Kashmir region.",
-      "Masala: A complex Indian spice mixture, often fragrant and warm.",
-      "Butternut Squash: A sweet, nutty winter squash, roasted for tenderness.",
-      "Cashews: Adds richness and a creamy texture to the curry.",
-      "Pilaf Rice: Aromatic rice cooked in broth, often with spices.",
-      "Shallots: A type of onion with a milder, sweeter flavor."
+      {
+        "term": "Kashmiri Curry",
+        "definition": "A spice blend originating from Kashmir region."
+      },
+      {
+        "term": "Masala",
+        "definition": "A complex Indian spice mixture, often fragrant and warm."
+      },
+      {
+        "term": "Butternut Squash",
+        "definition": "A sweet, nutty winter squash, roasted for tenderness."
+      },
+      {
+        "term": "Cashews",
+        "definition": "Adds richness and a creamy texture to the curry."
+      },
+      {
+        "term": "Pilaf Rice",
+        "definition": "Aromatic rice cooked in broth, often with spices."
+      },
+      {
+        "term": "Shallots",
+        "definition": "A type of onion with a milder, sweeter flavor."
+      }
     ],
     "additionalNotes": "Vegetarian option available.",
     "allergens": [
@@ -901,11 +1325,26 @@ window.registerFoodCategory([
       "notes": "Complex and elegant expression of Chardonay White flowers, a touch of oak and ripe white orchard fruits on the nose Silky, well-balanced palate with well- integrated oak, delicate stone fruits, fresh minerality and slightly creamy finish"
     },
     "glossary": [
-      "Lobster: A large, spiny crustacean, cooked by roasting.",
-      "Scallops: Sea snails, typically pan-seared or roasted.",
-      "Prawns: Small freshwater or saltwater crustaceans, often roasted.",
-      "Garlic Butter: Butter infused with garlic, a common roasting sauce.",
-      "Sea Herbs: Herbs native to the sea, like sea beets, purslane, and sea aster."
+      {
+        "term": "Lobster",
+        "definition": "A large, spiny crustacean, cooked by roasting."
+      },
+      {
+        "term": "Scallops",
+        "definition": "Sea snails, typically pan-seared or roasted."
+      },
+      {
+        "term": "Prawns",
+        "definition": "Small freshwater or saltwater crustaceans, often roasted."
+      },
+      {
+        "term": "Garlic Butter",
+        "definition": "Butter infused with garlic, a common roasting sauce."
+      },
+      {
+        "term": "Sea Herbs",
+        "definition": "Herbs native to the sea, like sea beets, purslane, and sea aster."
+      }
     ],
     "additionalNotes": "Can be done for one- Roasted shellfish for one. Half portion, half price.",
     "allergens": [
@@ -937,12 +1376,30 @@ window.registerFoodCategory([
     "serviceMep": "Large fork & knife",
     "image": "data/categories/menu_images/ROASTED LOBSTER.jpeg",
     "glossary": [
-      "Lobster: The main protein of this dish.",
-      "Butter: Rich sauce made with butter, chilli, ginger, and coriander.",
-      "Chilli: Adds a spicy kick to the sauce.",
-      "Ginger: Provides warmth and aromatic notes.",
-      "Coriander: Offers a citrusy and herbaceous flavor.",
-      "Chips: Accompaniment served alongside the lobster."
+      {
+        "term": "Lobster",
+        "definition": "The main protein of this dish."
+      },
+      {
+        "term": "Butter",
+        "definition": "Rich sauce made with butter, chilli, ginger, and coriander."
+      },
+      {
+        "term": "Chilli",
+        "definition": "Adds a spicy kick to the sauce."
+      },
+      {
+        "term": "Ginger",
+        "definition": "Provides warmth and aromatic notes."
+      },
+      {
+        "term": "Coriander",
+        "definition": "Offers a citrusy and herbaceous flavor."
+      },
+      {
+        "term": "Chips",
+        "definition": "Accompaniment served alongside the lobster."
+      }
     ]
   },
   {
@@ -964,10 +1421,22 @@ window.registerFoodCategory([
     "serviceMep": "Large fork & knife, lobster cracker and pick, debris bowl, Finger Bowl",
     "image": "data/categories/menu_images/GRILLED LOBSTER.jpeg",
     "glossary": [
-      "Lobster: Whole cooked lobster, the main ingredient.",
-      "Garlic Butter: A rich sauce made with garlic and butter.",
-      "Sea Herbs: Fresh herbs like parsley or chives used for flavor.",
-      "Chips: Thinly sliced potatoes, a common side dish."
+      {
+        "term": "Lobster",
+        "definition": "Whole cooked lobster, the main ingredient."
+      },
+      {
+        "term": "Garlic Butter",
+        "definition": "A rich sauce made with garlic and butter."
+      },
+      {
+        "term": "Sea Herbs",
+        "definition": "Fresh herbs like parsley or chives used for flavor."
+      },
+      {
+        "term": "Chips",
+        "definition": "Thinly sliced potatoes, a common side dish."
+      }
     ]
   },
   {
@@ -981,10 +1450,22 @@ window.registerFoodCategory([
       "notes": "Intense and powerful nose with ripe black fruit notes and hints of toast. palate is wonderfully complex, with ripe blackcurrant and plum flavours combining with toasty vanilla oak to create an elegant and full-bodied wine"
     },
     "glossary": [
-      "Charcoal grilled: Steak cooked over charcoal for smoky flavor.",
-      "Black Angus: A specific cut of beef, known for tenderness.",
-      "Bearnaise Sauce: An emulsified egg yolk sauce with vinegar & herbs.",
-      "Chips: Thinly sliced potatoes, deep-fried until crispy."
+      {
+        "term": "Charcoal grilled",
+        "definition": "Steak cooked over charcoal for smoky flavor."
+      },
+      {
+        "term": "Black Angus",
+        "definition": "A specific cut of beef, known for tenderness."
+      },
+      {
+        "term": "Bearnaise Sauce",
+        "definition": "An emulsified egg yolk sauce with vinegar & herbs."
+      },
+      {
+        "term": "Chips",
+        "definition": "Thinly sliced potatoes, deep-fried until crispy."
+      }
     ],
     "allergens": [
       "Dairy",
@@ -1007,12 +1488,30 @@ window.registerFoodCategory([
       "notes": "Fine bouquet of black cherry, red berries, blackberries, delicate spice. Ripe and velvety with good complexity of dark cherries and plums combine with soft tannins to give a well-rounded finish."
     },
     "glossary": [
-      "Devonshire Chicken: A classic roast chicken breast.",
-      "Miso Puree: Creamy base made with fermented soybean paste.",
-      "Violina Squash: A sweet, winter squash variety.",
-      "Trompette Mushrooms: Meaty, grey-capped mushrooms.",
-      "Shiso Leaf: A fragrant herb with a citrusy flavor.",
-      "Chicken Jus: A rich sauce made from chicken stock and pan drippings."
+      {
+        "term": "Devonshire Chicken",
+        "definition": "A classic roast chicken breast."
+      },
+      {
+        "term": "Miso Puree",
+        "definition": "Creamy base made with fermented soybean paste."
+      },
+      {
+        "term": "Violina Squash",
+        "definition": "A sweet, winter squash variety."
+      },
+      {
+        "term": "Trompette Mushrooms",
+        "definition": "Meaty, grey-capped mushrooms."
+      },
+      {
+        "term": "Shiso Leaf",
+        "definition": "A fragrant herb with a citrusy flavor."
+      },
+      {
+        "term": "Chicken Jus",
+        "definition": "A rich sauce made from chicken stock and pan drippings."
+      }
     ],
     "additionalNotes": "Contains DAIRY and GLUTEN",
     "allergens": [
@@ -1035,11 +1534,26 @@ window.registerFoodCategory([
       "notes": "Fresh, bright, sweet, earthy red pit fruits and tobacco leaf on the palate the wine is round, juicy, with blackberry and currants. Tannins are ripe, medium to full body."
     },
     "glossary": [
-      "Iberico Pork: Cured Spanish pork with high fat content and rich flavor.",
-      "Peperonata: Grilled sweet peppers, typically bell peppers, seasoned with herbs.",
-      "Pedro Ximenez: A Spanish sweet sherry wine with notes of fig and caramel.",
-      "Sherry Jus: A rich sauce made from reduced sherry wine, stock, and pork drippings.",
-      "Brown Butter: Butter cooked until browned, developing nutty flavor."
+      {
+        "term": "Iberico Pork",
+        "definition": "Cured Spanish pork with high fat content and rich flavor."
+      },
+      {
+        "term": "Peperonata",
+        "definition": "Grilled sweet peppers, typically bell peppers, seasoned with herbs."
+      },
+      {
+        "term": "Pedro Ximenez",
+        "definition": "A Spanish sweet sherry wine with notes of fig and caramel."
+      },
+      {
+        "term": "Sherry Jus",
+        "definition": "A rich sauce made from reduced sherry wine, stock, and pork drippings."
+      },
+      {
+        "term": "Brown Butter",
+        "definition": "Butter cooked until browned, developing nutty flavor."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1062,12 +1576,30 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Halibut: A firm, white-fleshed fish, excellent for pan-frying.",
-      "Veloute: A light, creamy sauce traditionally made with stock and roux.",
-      "Champagne: Used to create a delicate, bubbly sauce.",
-      "Pink Fir Potatoes: Potatoes cooked until incredibly tender and pale pink.",
-      "Shrimp: Peeled and deveined, adding a sweet and briny element.",
-      "Cucumber: Diced for a refreshing, crisp contrast."
+      {
+        "term": "Halibut",
+        "definition": "A firm, white-fleshed fish, excellent for pan-frying."
+      },
+      {
+        "term": "Veloute",
+        "definition": "A light, creamy sauce traditionally made with stock and roux."
+      },
+      {
+        "term": "Champagne",
+        "definition": "Used to create a delicate, bubbly sauce."
+      },
+      {
+        "term": "Pink Fir Potatoes",
+        "definition": "Potatoes cooked until incredibly tender and pale pink."
+      },
+      {
+        "term": "Shrimp",
+        "definition": "Peeled and deveined, adding a sweet and briny element."
+      },
+      {
+        "term": "Cucumber",
+        "definition": "Diced for a refreshing, crisp contrast."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1097,12 +1629,30 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Hake: A firm, white fish, often flaky and mild in flavor.",
-      "Crispy: Refers to the browned, textured exterior achieved through pan-frying.",
-      "Butter Beans: Small, white beans braised in a flavorful liquid.",
-      "Cavolo Nero: A dark green, slightly bitter Italian kale.",
-      "Pancetta: Cured pork belly, adding a salty, smoky element.",
-      "Chicken Butter Sauce: A creamy sauce made with chicken stock and butter."
+      {
+        "term": "Hake",
+        "definition": "A firm, white fish, often flaky and mild in flavor."
+      },
+      {
+        "term": "Crispy",
+        "definition": "Refers to the browned, textured exterior achieved through pan-frying."
+      },
+      {
+        "term": "Butter Beans",
+        "definition": "Small, white beans braised in a flavorful liquid."
+      },
+      {
+        "term": "Cavolo Nero",
+        "definition": "A dark green, slightly bitter Italian kale."
+      },
+      {
+        "term": "Pancetta",
+        "definition": "Cured pork belly, adding a salty, smoky element."
+      },
+      {
+        "term": "Chicken Butter Sauce",
+        "definition": "A creamy sauce made with chicken stock and butter."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1133,11 +1683,26 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Linguini: Long, thin pasta, perfect for this dish.",
-      "Crab: Picked white crab provides a delicate seafood flavor.",
-      "Datterini Tomatoes: Small, sweet cherry tomatoes add brightness.",
-      "Chilli: Adds a touch of heat to the sauce.",
-      "Parsley: Freshly chopped parsley enhances the overall taste."
+      {
+        "term": "Linguini",
+        "definition": "Long, thin pasta, perfect for this dish."
+      },
+      {
+        "term": "Crab",
+        "definition": "Picked white crab provides a delicate seafood flavor."
+      },
+      {
+        "term": "Datterini Tomatoes",
+        "definition": "Small, sweet cherry tomatoes add brightness."
+      },
+      {
+        "term": "Chilli",
+        "definition": "Adds a touch of heat to the sauce."
+      },
+      {
+        "term": "Parsley",
+        "definition": "Freshly chopped parsley enhances the overall taste."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1167,7 +1732,10 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Chipped Potatoes: Small, crispy potato wedges."
+      {
+        "term": "Chipped Potatoes",
+        "definition": "Small, crispy potato wedges."
+      }
     ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [],
@@ -1186,9 +1754,18 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Mashed Potatoes: Potatoes boiled and peeled, then processed through a moulin.",
-      "Moulin: A food processor used to create a smooth, buttery texture.",
-      "Buttery: Incorporates butter for richness and flavor in the mash."
+      {
+        "term": "Mashed Potatoes",
+        "definition": "Potatoes boiled and peeled, then processed through a moulin."
+      },
+      {
+        "term": "Moulin",
+        "definition": "A food processor used to create a smooth, buttery texture."
+      },
+      {
+        "term": "Buttery",
+        "definition": "Incorporates butter for richness and flavor in the mash."
+      }
     ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [
@@ -1209,7 +1786,10 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Spinach: Fresh leafy greens, lightly steamed."
+      {
+        "term": "Spinach",
+        "definition": "Fresh leafy greens, lightly steamed."
+      }
     ],
     "additionalNotes": null,
     "allergens": [],
@@ -1228,8 +1808,14 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Butter: Adds richness and smooth texture to the spinach.",
-      "Spinach: Fresh, leafy green vegetable, lightly cooked."
+      {
+        "term": "Butter",
+        "definition": "Adds richness and smooth texture to the spinach."
+      },
+      {
+        "term": "Spinach",
+        "definition": "Fresh, leafy green vegetable, lightly cooked."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1250,9 +1836,18 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Spinach: Fresh leafy green vegetable.",
-      "Olive Oil: Extra virgin olive oil used for flavor and richness.",
-      "Garlic: Adds a pungent and aromatic element to the dish."
+      {
+        "term": "Spinach",
+        "definition": "Fresh leafy green vegetable."
+      },
+      {
+        "term": "Olive Oil",
+        "definition": "Extra virgin olive oil used for flavor and richness."
+      },
+      {
+        "term": "Garlic",
+        "definition": "Adds a pungent and aromatic element to the dish."
+      }
     ],
     "additionalNotes": null,
     "allergens": [],
@@ -1271,10 +1866,22 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Rocket: A peppery green leafy vegetable.",
-      "Parmesan: Hard Italian cheese, grated for flavor.",
-      "Balsamic Dressing: A sweet and tangy vinegar-based sauce.",
-      "Parmesan Shavings: Finely grated parmesan for garnish."
+      {
+        "term": "Rocket",
+        "definition": "A peppery green leafy vegetable."
+      },
+      {
+        "term": "Parmesan",
+        "definition": "Hard Italian cheese, grated for flavor."
+      },
+      {
+        "term": "Balsamic Dressing",
+        "definition": "A sweet and tangy vinegar-based sauce."
+      },
+      {
+        "term": "Parmesan Shavings",
+        "definition": "Finely grated parmesan for garnish."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1296,10 +1903,22 @@ window.registerFoodCategory([
       "notes": "red vinegar, buttermilk, creme fraiche, celery, chives, parsley, shallots, mustard (English), mayo."
     },
     "glossary": [
-      "Gem heart salad: Features baby gem lettuce.",
-      "Ranch dressing: Our homemade creamy dressing.",
-      "Shallots: Picked shallots add a sharp bite.",
-      "Fried shallots: Crispy, golden-brown shallots."
+      {
+        "term": "Gem heart salad",
+        "definition": "Features baby gem lettuce."
+      },
+      {
+        "term": "Ranch dressing",
+        "definition": "Our homemade creamy dressing."
+      },
+      {
+        "term": "Shallots",
+        "definition": "Picked shallots add a sharp bite."
+      },
+      {
+        "term": "Fried shallots",
+        "definition": "Crispy, golden-brown shallots."
+      }
     ],
     "additionalNotes": "Contains gluten- crispy shallots, croutons and dressing Contains dairy- Crispy shallots (milk), croutons (butter) and dressing (creme fraiche and butter milk)",
     "allergens": [
@@ -1322,10 +1941,22 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Hispi Cabbage: A small, round variety of cabbage.",
-      "Bagna Cauda: A warm, emulsified Italian dip with anchovies, parmesan, garlic, and milk.",
-      "Parmigiano Reggiano: A hard, granular Italian cheese.",
-      "Bread Crumbs: Small pieces of toasted bread, providing a crispy texture."
+      {
+        "term": "Hispi Cabbage",
+        "definition": "A small, round variety of cabbage."
+      },
+      {
+        "term": "Bagna Cauda",
+        "definition": "A warm, emulsified Italian dip with anchovies, parmesan, garlic, and milk."
+      },
+      {
+        "term": "Parmigiano Reggiano",
+        "definition": "A hard, granular Italian cheese."
+      },
+      {
+        "term": "Bread Crumbs",
+        "definition": "Small pieces of toasted bread, providing a crispy texture."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1358,11 +1989,26 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Jerusalem artichokes: A root vegetable with a nutty flavor.",
-      "Roasted: Prepared at a low temperature to soften the root.",
-      "Blistered skin: Created by frying at a low temperature for texture.",
-      "Crispy: Achieving a golden brown and firm exterior.",
-      "Honey dressing: A sweet sauce made with honey and seasonings."
+      {
+        "term": "Jerusalem artichokes",
+        "definition": "A root vegetable with a nutty flavor."
+      },
+      {
+        "term": "Roasted",
+        "definition": "Prepared at a low temperature to soften the root."
+      },
+      {
+        "term": "Blistered skin",
+        "definition": "Created by frying at a low temperature for texture."
+      },
+      {
+        "term": "Crispy",
+        "definition": "Achieving a golden brown and firm exterior."
+      },
+      {
+        "term": "Honey dressing",
+        "definition": "A sweet sauce made with honey and seasonings."
+      }
     ],
     "additionalNotes": null,
     "allergens": [],
@@ -1388,10 +2034,22 @@ window.registerFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "KERN: A creamy, washed-rind cheese with earthy notes.",
-      "BARON BIGOD: A rich, bloomy-rind cheese with a mushroomy aroma.",
-      "PEALES: A fresh, soft cow's milk cheese, delicate and buttery.",
-      "Onion Chutney: Sweet and savory relish made with caramelized onions."
+      {
+        "term": "KERN",
+        "definition": "A creamy, washed-rind cheese with earthy notes."
+      },
+      {
+        "term": "BARON BIGOD",
+        "definition": "A rich, bloomy-rind cheese with a mushroomy aroma."
+      },
+      {
+        "term": "PEALES",
+        "definition": "A fresh, soft cow's milk cheese, delicate and buttery."
+      },
+      {
+        "term": "Onion Chutney",
+        "definition": "Sweet and savory relish made with caramelized onions."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1416,8 +2074,14 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Sorbet: Frozen dessert made with fruit juice, sugar, and water.",
-      "Lemon: Citrus fruit providing a tangy, refreshing flavor."
+      {
+        "term": "Sorbet",
+        "definition": "Frozen dessert made with fruit juice, sugar, and water."
+      },
+      {
+        "term": "Lemon",
+        "definition": "Citrus fruit providing a tangy, refreshing flavor."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1438,9 +2102,18 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Sorbet: Frozen dessert made with fruit, sugar, and water.",
-      "Coconut: A tropical fruit with a sweet, milky flavor.",
-      "Lime: A citrus fruit known for its tart and refreshing juice."
+      {
+        "term": "Sorbet",
+        "definition": "Frozen dessert made with fruit, sugar, and water."
+      },
+      {
+        "term": "Coconut",
+        "definition": "A tropical fruit with a sweet, milky flavor."
+      },
+      {
+        "term": "Lime",
+        "definition": "A citrus fruit known for its tart and refreshing juice."
+      }
     ],
     "additionalNotes": null,
     "allergens": [],
@@ -1459,8 +2132,14 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Blood Orange: Citrus fruit known for its deep red color and tangy flavor.",
-      "Sorbet: Frozen dessert made with fruit juice, sugar, and water."
+      {
+        "term": "Blood Orange",
+        "definition": "Citrus fruit known for its deep red color and tangy flavor."
+      },
+      {
+        "term": "Sorbet",
+        "definition": "Frozen dessert made with fruit juice, sugar, and water."
+      }
     ],
     "additionalNotes": null,
     "allergens": [],
@@ -1479,7 +2158,10 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Honeycomb: Refers to the crunchy, hexagonal candy pieces."
+      {
+        "term": "Honeycomb",
+        "definition": "Refers to the crunchy, hexagonal candy pieces."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1503,8 +2185,14 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Pistachio: Creamy frozen dessert made with pistachios.",
-      "Ice Cream: Frozen dessert made from dairy, sugar, and flavorings."
+      {
+        "term": "Pistachio",
+        "definition": "Creamy frozen dessert made with pistachios."
+      },
+      {
+        "term": "Ice Cream",
+        "definition": "Frozen dessert made from dairy, sugar, and flavorings."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1527,9 +2215,18 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Rhubarb: Tart, tangy root vegetable used in this dessert.",
-      "Ripple: Indicates streaks or swirls of rhubarb puree within the ice cream.",
-      "Ice Cream: Frozen dessert made with dairy, sugar, and flavorings."
+      {
+        "term": "Rhubarb",
+        "definition": "Tart, tangy root vegetable used in this dessert."
+      },
+      {
+        "term": "Ripple",
+        "definition": "Indicates streaks or swirls of rhubarb puree within the ice cream."
+      },
+      {
+        "term": "Ice Cream",
+        "definition": "Frozen dessert made with dairy, sugar, and flavorings."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1551,7 +2248,10 @@ window.registerFoodCategory([
       "notes": ""
     },
     "glossary": [
-      "Chocolate ice cream: Frozen dessert made with chocolate and dairy."
+      {
+        "term": "Chocolate ice cream",
+        "definition": "Frozen dessert made with chocolate and dairy."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1578,11 +2278,26 @@ window.registerFoodCategory([
       "Dairy"
     ],
     "glossary": [
-      "Pannacotta: A chilled, creamy Italian dessert.",
-      "Blood Orange: Citrus fruit known for its vibrant color and tart flavor.",
-      "Sorbet: Frozen dessert made with fruit juice and sugar.",
-      "Jelly: A firm, translucent dessert made with fruit juice and gelatin.",
-      "Crisp: A thin, brittle candy made from sugar and fruit juice."
+      {
+        "term": "Pannacotta",
+        "definition": "A chilled, creamy Italian dessert."
+      },
+      {
+        "term": "Blood Orange",
+        "definition": "Citrus fruit known for its vibrant color and tart flavor."
+      },
+      {
+        "term": "Sorbet",
+        "definition": "Frozen dessert made with fruit juice and sugar."
+      },
+      {
+        "term": "Jelly",
+        "definition": "A firm, translucent dessert made with fruit juice and gelatin."
+      },
+      {
+        "term": "Crisp",
+        "definition": "A thin, brittle candy made from sugar and fruit juice."
+      }
     ],
     "additionalNotes": "GLUTEN FREE Contains pork gelatine",
     "kitchenMep": "White medium plate",
@@ -1600,11 +2315,26 @@ window.registerFoodCategory([
       "notes": "inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Pavlova: A meringue-based dessert.",
-      "Poached Yorkshire Rhubarb: A cooked rhubarb preparation.",
-      "Rhubarb Sauce: A sweet and tart rhubarb reduction.",
-      "Rhubarb Compote: Softened rhubarb cooked with sugar.",
-      "Ripple Ice Cream: Ice cream with a swirled texture."
+      {
+        "term": "Pavlova",
+        "definition": "A meringue-based dessert."
+      },
+      {
+        "term": "Poached Yorkshire Rhubarb",
+        "definition": "A cooked rhubarb preparation."
+      },
+      {
+        "term": "Rhubarb Sauce",
+        "definition": "A sweet and tart rhubarb reduction."
+      },
+      {
+        "term": "Rhubarb Compote",
+        "definition": "Softened rhubarb cooked with sugar."
+      },
+      {
+        "term": "Ripple Ice Cream",
+        "definition": "Ice cream with a swirled texture."
+      }
     ],
     "additionalNotes": "Contains egg",
     "allergens": [
@@ -1627,9 +2357,18 @@ window.registerFoodCategory([
       "notes": "Wonderfully fresh, this botrytis free wine has plenty of honeyed, orange tinged floral fruit Naturally high acidity – delivering aromatic notes of crisp quince and pineapple with a fresh zingy finish on the palate"
     },
     "glossary": [
-      "Mascarpone: Soft, Italian cream cheese used in the cheesecake.",
-      "Passionfruit Gel: A vibrant, tropical fruit puree used as a centre.",
-      "Mango Jelly: A sweet, translucent jelly made from mango puree."
+      {
+        "term": "Mascarpone",
+        "definition": "Soft, Italian cream cheese used in the cheesecake."
+      },
+      {
+        "term": "Passionfruit Gel",
+        "definition": "A vibrant, tropical fruit puree used as a centre."
+      },
+      {
+        "term": "Mango Jelly",
+        "definition": "A sweet, translucent jelly made from mango puree."
+      }
     ],
     "additionalNotes": "Contains dairy, pork gelatine and gluten (none can be removed)",
     "allergens": [
@@ -1652,12 +2391,30 @@ window.registerFoodCategory([
       "notes": "Aromas of dried apricot, elderflower, honeysuckle and orange peel leap from the glass Caramelised peaches, fresh honey, a touch of brown sugar but with contrasting lemony pith and stoney minerality luscious sweetness with core of uplifting and vibrant acidity"
     },
     "glossary": [
-      "Cinnamon: Spice derived from the bark of the cinnamon tree.",
-      "Doughnuts: Deep-fried yeast-leavened sweet buns.",
-      "Cinnamon Sugar: Mixture of granulated sugar and ground cinnamon.",
-      "Yuzu Curd: Citrus-based dessert sauce with a tangy flavor.",
-      "Hot Chocolate Sauce: Rich chocolate sauce, typically heated.",
-      "Raspberry Sauce: Fruit-based sauce made from raspberries."
+      {
+        "term": "Cinnamon",
+        "definition": "Spice derived from the bark of the cinnamon tree."
+      },
+      {
+        "term": "Doughnuts",
+        "definition": "Deep-fried yeast-leavened sweet buns."
+      },
+      {
+        "term": "Cinnamon Sugar",
+        "definition": "Mixture of granulated sugar and ground cinnamon."
+      },
+      {
+        "term": "Yuzu Curd",
+        "definition": "Citrus-based dessert sauce with a tangy flavor."
+      },
+      {
+        "term": "Hot Chocolate Sauce",
+        "definition": "Rich chocolate sauce, typically heated."
+      },
+      {
+        "term": "Raspberry Sauce",
+        "definition": "Fruit-based sauce made from raspberries."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1681,11 +2438,26 @@ window.registerFoodCategory([
       "notes": "Inviting nose, combining apricot fruit, creamy patisserie notes and a certain citrus brightness, leads to a sweet yet beautifully balanced palate. Luscious and rich"
     },
     "glossary": [
-      "Apple Compote: Cooked Bramley and Cox's apples in butter and vanilla.",
-      "Pie Pastry: Sweet pastry used to line and top the pie tin.",
-      "Custard: A creamy sauce served alongside the pie.",
-      "Clotted Cream: A rich, thick cream often served with desserts.",
-      "Vanilla Ice-Cream: A frozen dessert option for serving."
+      {
+        "term": "Apple Compote",
+        "definition": "Cooked Bramley and Cox's apples in butter and vanilla."
+      },
+      {
+        "term": "Pie Pastry",
+        "definition": "Sweet pastry used to line and top the pie tin."
+      },
+      {
+        "term": "Custard",
+        "definition": "A creamy sauce served alongside the pie."
+      },
+      {
+        "term": "Clotted Cream",
+        "definition": "A rich, thick cream often served with desserts."
+      },
+      {
+        "term": "Vanilla Ice-Cream",
+        "definition": "A frozen dessert option for serving."
+      }
     ],
     "additionalNotes": "***CONTAINS DAIRY*** ***CONTAINS GLUTEN***",
     "allergens": [
@@ -1708,12 +2480,30 @@ window.registerFoodCategory([
       "notes": "Rich stone fruit forward slightly fizzy dessert wine."
     },
     "glossary": [
-      "Pineapple: Sweet and tangy tropical fruit.",
-      "Pomegranate: Rich, juicy seed with a tart flavor.",
-      "Mango: Creamy, sweet stone fruit with tropical notes.",
-      "Passion Fruit: Tangy, aromatic fruit with a seedy pulp.",
-      "Coconut: Creamy, sweet flesh from the coconut palm.",
-      "Lime Sorbet: Frozen dessert with a refreshing citrus taste."
+      {
+        "term": "Pineapple",
+        "definition": "Sweet and tangy tropical fruit."
+      },
+      {
+        "term": "Pomegranate",
+        "definition": "Rich, juicy seed with a tart flavor."
+      },
+      {
+        "term": "Mango",
+        "definition": "Creamy, sweet stone fruit with tropical notes."
+      },
+      {
+        "term": "Passion Fruit",
+        "definition": "Tangy, aromatic fruit with a seedy pulp."
+      },
+      {
+        "term": "Coconut",
+        "definition": "Creamy, sweet flesh from the coconut palm."
+      },
+      {
+        "term": "Lime Sorbet",
+        "definition": "Frozen dessert with a refreshing citrus taste."
+      }
     ],
     "additionalNotes": "Dairy Free Gluten Free",
     "allergens": [],
@@ -1732,11 +2522,26 @@ window.registerFoodCategory([
       "notes": "Aromas of dried apricot, elderflower, honeysuckle and orange peel leap from the glass. Caramelised peaches, fresh honey, a touch of brown sugar but with contrasting lemony pith and stoney minerality. Luscious sweetness with core of uplifting and vibrant acidity"
     },
     "glossary": [
-      "Paris-Brest: Choux pastry ring – a classic French dessert.",
-      "Pistachio Ice Cream: Homemade ice cream with rich pistachio flavor.",
-      "Crème Chantilly: Lightly sweetened whipped cream, a delicate topping.",
-      "Toasted Pistachio Nuts: Adds a crunchy texture and nutty taste.",
-      "Icing Sugar: Fine sugar used for dusting and a sweet finish."
+      {
+        "term": "Paris-Brest",
+        "definition": "Choux pastry ring – a classic French dessert."
+      },
+      {
+        "term": "Pistachio Ice Cream",
+        "definition": "Homemade ice cream with rich pistachio flavor."
+      },
+      {
+        "term": "Crème Chantilly",
+        "definition": "Lightly sweetened whipped cream, a delicate topping."
+      },
+      {
+        "term": "Toasted Pistachio Nuts",
+        "definition": "Adds a crunchy texture and nutty taste."
+      },
+      {
+        "term": "Icing Sugar",
+        "definition": "Fine sugar used for dusting and a sweet finish."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1761,11 +2566,26 @@ window.registerFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "Truffles: Small, dense chocolate confections.",
-      "Dark Chocolate: Rich, bittersweet cocoa bean product.",
-      "Salted Caramel: Caramel sauce with added salt.",
-      "Hazelnut Praline: Chopped hazelnuts mixed with sugar.",
-      "Shells: The outer coating of the truffles."
+      {
+        "term": "Truffles",
+        "definition": "Small, dense chocolate confections."
+      },
+      {
+        "term": "Dark Chocolate",
+        "definition": "Rich, bittersweet cocoa bean product."
+      },
+      {
+        "term": "Salted Caramel",
+        "definition": "Caramel sauce with added salt."
+      },
+      {
+        "term": "Hazelnut Praline",
+        "definition": "Chopped hazelnuts mixed with sugar."
+      },
+      {
+        "term": "Shells",
+        "definition": "The outer coating of the truffles."
+      }
     ],
     "additionalNotes": "Gluten Free, Nut Free",
     "allergens": [
@@ -1789,9 +2609,18 @@ window.registerFoodCategory([
       "notes": "Raspberry, cherry, and red plum, subtly infused with richer notes of blackcurrant and liquorice. The finish is impressively long and vigorous, with rich dark chocolate flavours adding a touch of lusciousness and opulence to the intense berry fruit."
     },
     "glossary": [
-      "Truffles: Small, rich chocolate confections.",
-      "Chocolate: The primary ingredient, offering sweetness.",
-      "Arranged: The truffles are presented artfully."
+      {
+        "term": "Truffles",
+        "definition": "Small, rich chocolate confections."
+      },
+      {
+        "term": "Chocolate",
+        "definition": "The primary ingredient, offering sweetness."
+      },
+      {
+        "term": "Arranged",
+        "definition": "The truffles are presented artfully."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1817,11 +2646,26 @@ window.registerFoodCategory([
       "notes": "Wonderfully fresh, this botrytis free wine has plenty of honeyed, orange tinged floral fruit Naturally high acidity – delivering aromatic notes of crisp quince and pineapple with a fresh zingy finish on the palate"
     },
     "glossary": [
-      "Madeleines: Small, shell-shaped sponge cakes.",
-      "Sponge Mix: A light and airy batter base.",
-      "Brown Butter: Butter cooked until nutty and browned.",
-      "Emulsified: Ingredients blended smoothly, creating a stable mixture.",
-      "Lemon Syrup: Sweet syrup flavored with lemon juice."
+      {
+        "term": "Madeleines",
+        "definition": "Small, shell-shaped sponge cakes."
+      },
+      {
+        "term": "Sponge Mix",
+        "definition": "A light and airy batter base."
+      },
+      {
+        "term": "Brown Butter",
+        "definition": "Butter cooked until nutty and browned."
+      },
+      {
+        "term": "Emulsified",
+        "definition": "Ingredients blended smoothly, creating a stable mixture."
+      },
+      {
+        "term": "Lemon Syrup",
+        "definition": "Sweet syrup flavored with lemon juice."
+      }
     ],
     "additionalNotes": "Freshly cooked to order. It takes 6 mins in the oven. Worth the wait! ***CONTAINS EGGS, DAIRY & GLUTEN*** -all cannot be removed",
     "allergens": [
@@ -1844,10 +2688,22 @@ window.registerFoodCategory([
       "notes": null
     },
     "glossary": [
-      "Amedei Chocolate: High-quality dark chocolate from Italy.",
-      "Mousse: A light, airy chocolate dessert.",
-      "Sourdough Crisp: A tangy, toasted bread element.",
-      "Olive Oil: Adds richness and subtle flavor notes."
+      {
+        "term": "Amedei Chocolate",
+        "definition": "High-quality dark chocolate from Italy."
+      },
+      {
+        "term": "Mousse",
+        "definition": "A light, airy chocolate dessert."
+      },
+      {
+        "term": "Sourdough Crisp",
+        "definition": "A tangy, toasted bread element."
+      },
+      {
+        "term": "Olive Oil",
+        "definition": "Adds richness and subtle flavor notes."
+      }
     ],
     "additionalNotes": null,
     "allergens": [
@@ -1878,11 +2734,26 @@ window.registerFoodCategory([
       "notes": "Bright citrus and saline freshness pair well with raw fish, grapefruit and fennel."
     },
     "glossary": [
-      "Sea Bream: A delicate white fish served raw in thin slices.",
-      "Ruby Grapefruit: Adds sharp citrus freshness and light bitterness.",
-      "Aji Amarillo: A yellow chilli pepper used here in a bright, fruity dressing.",
-      "Fennel: Thinly shaved for a crisp anise note.",
-      "Spring Onion: Used as a fresh garnish with gentle allium flavour."
+      {
+        "term": "Sea Bream",
+        "definition": "A delicate white fish served raw in thin slices."
+      },
+      {
+        "term": "Ruby Grapefruit",
+        "definition": "Adds sharp citrus freshness and light bitterness."
+      },
+      {
+        "term": "Aji Amarillo",
+        "definition": "A yellow chilli pepper used here in a bright, fruity dressing."
+      },
+      {
+        "term": "Fennel",
+        "definition": "Thinly shaved for a crisp anise note."
+      },
+      {
+        "term": "Spring Onion",
+        "definition": "Used as a fresh garnish with gentle allium flavour."
+      }
     ],
     "additionalNotes": "Served raw. Contains Fish, Sulphites, Gluten, Celery.",
     "allergens": [
@@ -1906,11 +2777,26 @@ window.registerFoodCategory([
       "notes": "Soft tannins and fresh acidity work nicely with beef, capers and mustard."
     },
     "glossary": [
-      "Black Angus Sirloin: Tender beef used as the base of the tartare.",
-      "Shallots: Finely chopped for mild onion sweetness.",
-      "Gherkins: Add acidity and crunch.",
-      "Capers: Bring briny, savoury intensity.",
-      "Worcestershire Sauce: Adds umami depth to the dressing."
+      {
+        "term": "Black Angus Sirloin",
+        "definition": "Tender beef used as the base of the tartare."
+      },
+      {
+        "term": "Shallots",
+        "definition": "Finely chopped for mild onion sweetness."
+      },
+      {
+        "term": "Gherkins",
+        "definition": "Add acidity and crunch."
+      },
+      {
+        "term": "Capers",
+        "definition": "Bring briny, savoury intensity."
+      },
+      {
+        "term": "Worcestershire Sauce",
+        "definition": "Adds umami depth to the dressing."
+      }
     ],
     "additionalNotes": "Served raw. Contains Fish, Sulphites, Mustard.",
     "allergens": [
@@ -1933,11 +2819,26 @@ window.registerFoodCategory([
       "notes": "Fresh acidity and herbal lift complement the creamy dressing and crisp salad."
     },
     "glossary": [
-      "Iceberg Lettuce: Served as a crisp wedge with a cool, crunchy texture.",
-      "Ranch Dressing: Creamy dressing made with crème fraîche, mayonnaise, garlic and herbs.",
-      "Sourdough Croutons: Toasted bread pieces adding crunch.",
-      "Chives: Mild onion herb used as a fresh garnish.",
-      "Pickled Shallots: Add sweetness and acidity."
+      {
+        "term": "Iceberg Lettuce",
+        "definition": "Served as a crisp wedge with a cool, crunchy texture."
+      },
+      {
+        "term": "Ranch Dressing",
+        "definition": "Creamy dressing made with crème fraîche, mayonnaise, garlic and herbs."
+      },
+      {
+        "term": "Sourdough Croutons",
+        "definition": "Toasted bread pieces adding crunch."
+      },
+      {
+        "term": "Chives",
+        "definition": "Mild onion herb used as a fresh garnish."
+      },
+      {
+        "term": "Pickled Shallots",
+        "definition": "Add sweetness and acidity."
+      }
     ],
     "additionalNotes": "Contains Gluten, Dairy, Celery, Mustard, Eggs, Sulphites.",
     "allergens": [
@@ -1963,11 +2864,26 @@ window.registerFoodCategory([
       "notes": "Crisp acidity and mineral freshness balance the umami of miso and dashi."
     },
     "glossary": [
-      "Chalkstream Trout: Premium freshwater trout with a clean, delicate flavour.",
-      "Miso: Fermented soybean paste used for savoury glaze and caramelisation.",
-      "Daikon: Mild white radish served in the accompanying salad.",
-      "Dashi: Light Japanese stock adding umami depth.",
-      "Coriander: Fresh herb that lifts the broth and salad."
+      {
+        "term": "Chalkstream Trout",
+        "definition": "Premium freshwater trout with a clean, delicate flavour."
+      },
+      {
+        "term": "Miso",
+        "definition": "Fermented soybean paste used for savoury glaze and caramelisation."
+      },
+      {
+        "term": "Daikon",
+        "definition": "Mild white radish served in the accompanying salad."
+      },
+      {
+        "term": "Dashi",
+        "definition": "Light Japanese stock adding umami depth."
+      },
+      {
+        "term": "Coriander",
+        "definition": "Fresh herb that lifts the broth and salad."
+      }
     ],
     "additionalNotes": "Contains Fish, Sulphites, Soya, Gluten.",
     "allergens": [
@@ -1991,11 +2907,26 @@ window.registerFoodCategory([
       "notes": "Round texture and aromatic fruit can handle warm spice and fried fish."
     },
     "glossary": [
-      "Gurnard: A firm white fish suited to frying.",
-      "Breadcrumbs: Coating used to create a crisp exterior.",
-      "Kashmiri Masala: Fragrant curry-style sauce with gentle warmth.",
-      "Pickled Shallots: Add acidity to balance richness.",
-      "Coriander: Fresh herb garnish for brightness."
+      {
+        "term": "Gurnard",
+        "definition": "A firm white fish suited to frying."
+      },
+      {
+        "term": "Breadcrumbs",
+        "definition": "Coating used to create a crisp exterior."
+      },
+      {
+        "term": "Kashmiri Masala",
+        "definition": "Fragrant curry-style sauce with gentle warmth."
+      },
+      {
+        "term": "Pickled Shallots",
+        "definition": "Add acidity to balance richness."
+      },
+      {
+        "term": "Coriander",
+        "definition": "Fresh herb garnish for brightness."
+      }
     ],
     "additionalNotes": "Contains Fish, Sulphites, Dairy, Egg, Gluten.",
     "allergens": [
@@ -2020,11 +2951,26 @@ window.registerFoodCategory([
       "notes": "Clean acidity and subtle orchard fruit keep the risotto balanced without overpowering it."
     },
     "glossary": [
-      "Carnaroli Rice: Italian risotto rice prized for its creamy texture.",
-      "Artichoke: Adds earthy, slightly nutty flavour.",
-      "Wild Garlic: Brings a soft green garlic note.",
-      "Parmesan: Adds savoury richness and depth.",
-      "Butter: Finishes the risotto with gloss and creaminess."
+      {
+        "term": "Carnaroli Rice",
+        "definition": "Italian risotto rice prized for its creamy texture."
+      },
+      {
+        "term": "Artichoke",
+        "definition": "Adds earthy, slightly nutty flavour."
+      },
+      {
+        "term": "Wild Garlic",
+        "definition": "Brings a soft green garlic note."
+      },
+      {
+        "term": "Parmesan",
+        "definition": "Adds savoury richness and depth."
+      },
+      {
+        "term": "Butter",
+        "definition": "Finishes the risotto with gloss and creaminess."
+      }
     ],
     "additionalNotes": "Contains Sulphites, Dairy, Celery.",
     "allergens": [
@@ -2047,11 +2993,26 @@ window.registerFoodCategory([
       "notes": "Dark fruit and structure pair naturally with grilled beef and herb sauce."
     },
     "glossary": [
-      "Black Angus Sirloin: Flavourful beef steak cut served as the main protein.",
-      "Potato Rosti: Crisp shredded potato cake served alongside the steak.",
-      "Chimichurri: Herb sauce made with parsley, oregano, garlic, shallot and vinegar.",
-      "Oregano: Adds an earthy herbal note to the sauce.",
-      "Chilli Flakes: Bring gentle heat to the chimichurri."
+      {
+        "term": "Black Angus Sirloin",
+        "definition": "Flavourful beef steak cut served as the main protein."
+      },
+      {
+        "term": "Potato Rosti",
+        "definition": "Crisp shredded potato cake served alongside the steak."
+      },
+      {
+        "term": "Chimichurri",
+        "definition": "Herb sauce made with parsley, oregano, garlic, shallot and vinegar."
+      },
+      {
+        "term": "Oregano",
+        "definition": "Adds an earthy herbal note to the sauce."
+      },
+      {
+        "term": "Chilli Flakes",
+        "definition": "Bring gentle heat to the chimichurri."
+      }
     ],
     "additionalNotes": "Contains Sulphites, Dairy.",
     "allergens": [
@@ -2073,11 +3034,26 @@ window.registerFoodCategory([
       "notes": "Light sweetness and floral fruit suit raspberry and almond without feeling heavy."
     },
     "glossary": [
-      "Raspberry Jam: Fruity layer inside the tart.",
-      "Almond Sponge: Classic Bakewell-style filling with nutty sweetness.",
-      "Fresh Raspberries: Used as the topping before baking.",
-      "Icing Sugar: Light finishing dust over the tart.",
-      "Crème Fraîche: Tangy cultured cream served on the side."
+      {
+        "term": "Raspberry Jam",
+        "definition": "Fruity layer inside the tart."
+      },
+      {
+        "term": "Almond Sponge",
+        "definition": "Classic Bakewell-style filling with nutty sweetness."
+      },
+      {
+        "term": "Fresh Raspberries",
+        "definition": "Used as the topping before baking."
+      },
+      {
+        "term": "Icing Sugar",
+        "definition": "Light finishing dust over the tart."
+      },
+      {
+        "term": "Crème Fraîche",
+        "definition": "Tangy cultured cream served on the side."
+      }
     ],
     "additionalNotes": "Contains Eggs, Dairy, Gluten, Almonds (Nuts).",
     "allergens": [
@@ -2102,11 +3078,26 @@ window.registerFoodCategory([
       "notes": "Rich berry fruit and sweetness stand up well to dark chocolate and sea salt."
     },
     "glossary": [
-      "Amedei Chocolate: Premium chocolate used for the mousse.",
-      "Chocolate Sponge: Diced cake base layered in the glass.",
-      "Sea Salt: Enhances the chocolate flavour.",
-      "Olive Oil: Adds richness and a savoury edge.",
-      "Cocoa Nibs: Provide bitterness and crunch."
+      {
+        "term": "Amedei Chocolate",
+        "definition": "Premium chocolate used for the mousse."
+      },
+      {
+        "term": "Chocolate Sponge",
+        "definition": "Diced cake base layered in the glass."
+      },
+      {
+        "term": "Sea Salt",
+        "definition": "Enhances the chocolate flavour."
+      },
+      {
+        "term": "Olive Oil",
+        "definition": "Adds richness and a savoury edge."
+      },
+      {
+        "term": "Cocoa Nibs",
+        "definition": "Provide bitterness and crunch."
+      }
     ],
     "additionalNotes": "Contains Eggs, Dairy, Gelatine, Gluten.",
     "allergens": [
@@ -2130,11 +3121,26 @@ window.registerFoodCategory([
       "notes": "Honeyed fruit and balancing acidity complement rhubarb and cream."
     },
     "glossary": [
-      "Yorkshire Rhubarb: Regional rhubarb used for the ripple and garnish.",
-      "Vanilla Ice Cream: Base of the coupe dessert.",
-      "Rhubarb Jam: Swirled through the ice cream.",
-      "Crème Chantilly: Light whipped cream garnish.",
-      "Vanilla Shortbread: Buttery biscuit served on the side."
+      {
+        "term": "Yorkshire Rhubarb",
+        "definition": "Regional rhubarb used for the ripple and garnish."
+      },
+      {
+        "term": "Vanilla Ice Cream",
+        "definition": "Base of the coupe dessert."
+      },
+      {
+        "term": "Rhubarb Jam",
+        "definition": "Swirled through the ice cream."
+      },
+      {
+        "term": "Crème Chantilly",
+        "definition": "Light whipped cream garnish."
+      },
+      {
+        "term": "Vanilla Shortbread",
+        "definition": "Buttery biscuit served on the side."
+      }
     ],
     "additionalNotes": "Contains Eggs, Dairy, Gluten.",
     "allergens": [
@@ -2146,5 +3152,5 @@ window.registerFoodCategory([
     "serviceMep": "Dessert spoon",
     "image": "data/categories/menu_images/yorkshire-rhubarb-ripple-coupe-generated.png"
   }
-]);
-
+]
+);

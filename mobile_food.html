@@ -472,8 +472,8 @@
                         }
                         return { term: 'Info', definition: entry };
                     }
-                    if (typeof entry === 'object' && entry.term && entry.definition) {
-                        return { term: entry.term, definition: entry.definition };
+                    if (typeof entry === 'object' && (entry.term || entry.definition)) {
+                        return { term: entry.term || 'Info', definition: entry.definition || '' };
                     }
                     if (typeof entry === 'object') {
                         const [key, val] = Object.entries(entry)[0] || ['Info', ''];

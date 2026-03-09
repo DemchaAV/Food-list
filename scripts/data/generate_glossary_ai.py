@@ -83,7 +83,7 @@ def normalize_model_output(text: str) -> str:
     return t.strip()
 
 
-def parse_glossary(text: str, item: Dict[str, Any]) -> List[str]:
+def parse_glossary(text: str, item: Dict[str, Any]) -> List[Dict[str, str]]:
     cleaned = normalize_model_output(text)
     data = json.loads(cleaned)
     if not isinstance(data, list):
@@ -137,17 +137,21 @@ def parse_glossary(text: str, item: Dict[str, Any]) -> List[str]:
             return True
         return any(term == t or term in t or t in term for t in allowed_terms)
 
-    out: List[str] = []
+    out: List[Dict[str, str]] = []
     for x in data:
         if isinstance(x, str):
             s = x.strip()
             if s and keep_line(s):
-                out.append(s)
+                term, definition = s.split(":", 1)
+                out.append({
+                    "term": term.strip(),
+                    "definition": definition.strip(),
+                })
     # Deduplicate while preserving order
-    uniq: List[str] = []
+    uniq: List[Dict[str, str]] = []
     seen = set()
     for x in out:
-        k = x.lower()
+        k = f"{x['term']}::{x['definition']}".lower()
         if k not in seen:
             seen.add(k)
             uniq.append(x)
@@ -218,7 +222,7 @@ def generate_openai(prompt: str, model: str) -> str:
             "model": model,
             "temperature": 0.2,
             "messages": [
-                {"role": "system", "content": "Return only JSON array of glossary strings."},
+{"role": "system", "content": "Return only a JSON array of objects with string keys term and definition."},
                 {"role": "user", "content": prompt},
             ],
         },

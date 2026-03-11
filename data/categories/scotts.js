@@ -1739,8 +1739,8 @@ window.registerFoodCategory(
     ],
     "additionalNotes": "When served the server must ask the guest if they would like any sauces.",
     "allergens": [],
-    "kitchenMep": "Chip bowl",
-    "serviceMep": "1 scoop - teaspoon. More than 1 scoop - dessert spoon.",
+    "kitchenMep": "Copper Saucepan",
+    "serviceMep": null,
     "image": "data/categories/menu_images/POTATOES.jpeg"
   },
   {
